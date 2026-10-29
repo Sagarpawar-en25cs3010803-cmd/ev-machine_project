@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ⚡ Electric Vehicle Market Performance & Insights
 
 > **An End-to-End Business Intelligence, Data Analytics, and Interactive Storytelling Platform for the Global EV Industry**
@@ -185,3 +186,6 @@ See [`DEMO_VIDEO_SCRIPT.md`](./DEMO_VIDEO_SCRIPT.md) for the complete 4-minute s
 ## 📄 License
 This project is open-source and distributed under the **MIT License**.
 
+=======
+# ev-machine_project
+>>>>>>> 9af3f9b1b47232db05ce2b6d0a18959c18f6436a
