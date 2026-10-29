@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Submit EV Data &mdash; EV Market Insights</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="theme/css/custom-bs.css">
+  <link rel="stylesheet" href="theme/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="theme/fonts/icomoon/style.css">
+  <link rel="stylesheet" href="theme/fonts/line-icons/style.css">
+  <link rel="stylesheet" href="theme/css/animate.min.css">
+  <link rel="stylesheet" href="theme/css/style.css">
+  <style>
+    .required-star { color: #dc3545; }
+    .form-section-title { border-left: 4px solid #059669; padding-left: 12px; margin-bottom: 24px; }
+    .preview-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px; display: none; }
+    .badge-lfp  { background: #fff3cd; color: #856404; }
+    .badge-nmc  { background: #cfe2ff; color: #084298; }
+    .badge-nca  { background: #d1e7dd; color: #0a3622; }
+    .badge-solid { background: #f8d7da; color: #842029; }
+    .badge-sodium { background: #e2d9f3; color: #432874; }
+    .ev-badge { font-size: 11px; padding: 3px 10px; border-radius: 20px; font-weight: 700; display: inline-block; }
+    .field-hint { font-size: 12px; color: #6c757d; margin-top: 3px; }
+    .step-indicator { display: flex; gap: 8px; margin-bottom: 30px; }
+    .step { flex: 1; height: 4px; border-radius: 4px; background: #e2e8f0; }
+    .step.active { background: #059669; }
+    .step.done { background: #34d399; }
+  </style>
+</head>
+<body id="top">
+
+<div id="overlayer"></div>
+<div class="loader"><div class="spinner-border text-primary" role="status"><span class="sr-only">Loading...</span></div></div>
+
+<div class="site-wrap">
+
+  <!-- Mobile Menu -->
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close mt-3"><span class="icon-close2 js-menu-toggle"></span></div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="site-navbar mt-3">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="site-logo col-6"><a href="index.html">⚡ EV Market Insights</a></div>
+        <nav class="mx-auto site-navigation">
+          <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ev-listings.html">EV Models</a></li>
+            <li><a href="dashboard.html">Analytics</a></li>
+            <li><a href="submit-ev.html" class="nav-link active">Submit EV Data</a></li>
+          </ul>
+        </nav>
+        <div class="right-cta-menu text-right d-flex align-items-center col-6">
+          <div class="ml-auto">
+            <a href="ev-listings.html" class="btn btn-outline-white border-width-2 d-none d-lg-inline-block">Browse EV Models</a>
+          </div>
+          <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="section-hero overlay inner-page bg-image" style="background-image: url('theme/images/hero_1.jpg');" id="home-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h1 class="text-white font-weight-bold">Submit EV Vehicle Data</h1>
+          <div class="custom-breadcrumbs">
+            <a href="index.html">Home</a> <span class="mx-2 slash">/</span>
+            <a href="ev-listings.html">EV Models</a> <span class="mx-2 slash">/</span>
+            <span class="text-white"><strong>Submit EV Data</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM SECTION -->
+  <section class="site-section">
+    <div class="container">
+
+      <!-- Header Row -->
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-8 mb-4 mb-lg-0">
+          <h2 class="form-section-title">Add an Electric Vehicle to the Database</h2>
+          <p class="text-muted">Fill in the details below. Your submission will appear instantly on the EV listings page and analytics dashboard.</p>
+        </div>
+        <div class="col-lg-4">
+          <div class="row">
+            <div class="col-6">
+              <a href="ev-listings.html" class="btn btn-block btn-light btn-md">View All EVs</a>
+            </div>
+            <div class="col-6">
+              <button type="button" onclick="submitEVForm()" class="btn btn-block btn-primary btn-md">Save Record</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Progress Steps -->
+      <div class="step-indicator">
+        <div class="step active" id="step1"></div>
+        <div class="step" id="step2"></div>
+        <div class="step" id="step3"></div>
+      </div>
+
+      <!-- SUCCESS ALERT (hidden initially) -->
+      <div id="successAlert" class="alert alert-success d-none mb-4" role="alert">
+        <h5 class="alert-heading">✅ EV Record Submitted Successfully!</h5>
+        <p class="mb-1">Your EV model has been added to the database and is now visible in listings and analytics.</p>
+        <hr>
+        <a href="ev-listings.html" class="btn btn-success btn-sm mr-2">View EV Listings</a>
+        <a href="dashboard.html" class="btn btn-outline-success btn-sm mr-2">View Analytics</a>
+        <button class="btn btn-light btn-sm" onclick="resetForm()">Submit Another</button>
+      </div>
+
+      <!-- ERROR ALERT -->
+      <div id="errorAlert" class="alert alert-danger d-none mb-4" role="alert">
+        <strong>⚠️ Please fix the following errors:</strong>
+        <ul id="errorList" class="mb-0 mt-2"></ul>
+      </div>
+
+      <!-- MAIN FORM -->
+      <div class="row mb-5" id="formContainer">
+        <div class="col-lg-8">
+          <form class="p-4 p-md-5 border rounded" id="evForm">
+
+            <!-- Section 1: Vehicle Identity -->
+            <h3 class="form-section-title text-black mb-4">Vehicle Identity</h3>
+
+            <div class="form-group">
+              <label>Model Name <span class="required-star">*</span></label>
+              <input type="text" class="form-control" id="model_name" placeholder="e.g. Tesla Model Y Long Range">
+              <div class="field-hint">Full model name including variant/trim level</div>
+            </div>
+
+            <div class="form-group">
+              <label>Manufacturer / Brand <span class="required-star">*</span></label>
+              <input type="text" class="form-control" id="manufacturer" placeholder="e.g. Tesla, BYD, BMW">
+              <div class="field-hint">Official manufacturer name</div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Vehicle Category <span class="required-star">*</span></label>
+                  <select class="form-control" id="category">
+                    <option value="">Select Category</option>
+                    <option>SUV</option>
+                    <option>Sedan</option>
+                    <option>Hatchback</option>
+                    <option>Truck</option>
+                    <option>Bus</option>
+                    <option>Two-Wheeler</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Model / Release Year <span class="required-star">*</span></label>
+                  <select class="form-control" id="release_year">
+                    <option value="">Select Year</option>
+                    <option>2026</option><option>2025</option><option>2024</option>
+                    <option>2023</option><option>2022</option><option>2021</option><option>2020</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Manufacturing Country <span class="required-star">*</span></label>
+                  <select class="form-control" id="manufacturing_country">
+                    <option value="">Select Country</option>
+                    <option>USA</option><option>China</option><option>Germany</option>
+                    <option>Japan</option><option>South Korea</option><option>India</option>
+                    <option>Sweden</option><option>France</option><option>UK</option><option>Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Market Segment</label>
+                  <select class="form-control" id="market_tier">
+                    <option value="">Auto-detect from country</option>
+                    <option>Budget</option>
+                    <option>Mass Market</option>
+                    <option>Premium</option>
+                    <option>Luxury</option>
+                    <option>Fleet/Commercial</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- Section 2: Battery & Performance -->
+            <h3 class="form-section-title text-black mt-5 mb-4">Battery &amp; Performance Specs</h3>
+
+            <div class="form-group">
+              <label>Battery Technology <span class="required-star">*</span></label>
+              <select class="form-control" id="battery_tech" onchange="updateBatteryHint()">
+                <option value="">Select Battery Chemistry</option>
+                <option>LFP</option>
+                <option>NMC</option>
+                <option>NCA</option>
+                <option>Sodium-Ion</option>
+                <option>Solid-State</option>
+              </select>
+              <div class="field-hint" id="batteryHint">Select a chemistry to see details.</div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Battery Capacity (kWh) <span class="required-star">*</span></label>
+                  <input type="number" class="form-control" id="battery_capacity_kwh" placeholder="e.g. 82.0" step="0.1" min="1" max="600">
+                  <div class="field-hint">Usable pack capacity in kilowatt-hours</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Driving Range (km) <span class="required-star">*</span></label>
+                  <input type="number" class="form-control" id="driving_range_km" placeholder="e.g. 533" step="1" min="50" max="1200">
+                  <div class="field-hint">WLTP or EPA standardized range</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>DC Fast Charge Time 10–80% (minutes) <span class="required-star">*</span></label>
+              <input type="number" class="form-control" id="fast_charge_mins" placeholder="e.g. 22" step="1" min="5" max="300">
+              <div class="field-hint">Time in minutes from 10% to 80% state-of-charge at rated fast charger</div>
+            </div>
+
+            <!-- Section 3: Commercial Details -->
+            <h3 class="form-section-title text-black mt-5 mb-4">Commercial &amp; Market Data</h3>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Base MSRP Price (USD) <span class="required-star">*</span></label>
+                  <input type="number" class="form-control" id="base_price_usd" placeholder="e.g. 54990" step="100" min="500">
+                  <div class="field-hint">Manufacturer Suggested Retail Price in USD</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Annual Sales Volume (units)</label>
+                  <input type="number" class="form-control" id="annual_sales_units" placeholder="e.g. 65000" step="100" min="0">
+                  <div class="field-hint">Estimated or reported annual global sales</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Customer Rating (out of 5.0)</label>
+              <input type="number" class="form-control" id="customer_rating" placeholder="e.g. 4.5" step="0.1" min="1" max="5">
+              <div class="field-hint">Average consumer/expert composite rating</div>
+            </div>
+
+            <!-- Live Preview -->
+            <div class="preview-card mt-4" id="livePreview">
+              <h5 class="text-muted mb-3 small font-weight-bold text-uppercase">Live Preview</h5>
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <span class="ev-badge" id="pvBadge">LFP</span>
+                <span class="text-warning" id="pvRating">★ —</span>
+              </div>
+              <h4 id="pvModelName" class="font-weight-bold mb-1">—</h4>
+              <p class="text-muted small" id="pvMeta">—</p>
+              <div class="row text-center border-top pt-3 mt-2">
+                <div class="col-4">
+                  <strong class="d-block text-success" id="pvRange">— km</strong>
+                  <small class="text-muted">Range</small>
+                </div>
+                <div class="col-4">
+                  <strong class="d-block text-primary" id="pvPrice">$—</strong>
+                  <small class="text-muted">MSRP</small>
+                </div>
+                <div class="col-4">
+                  <strong class="d-block text-danger" id="pvCharge">— min</strong>
+                  <small class="text-muted">Fast Charge</small>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+        <!-- SIDEBAR: Tips & Stats -->
+        <div class="col-lg-4 mt-4 mt-lg-0">
+          
+          <!-- Submission Guidelines -->
+          <div class="card border-0 shadow-sm mb-4">
+            <div class="card-body p-4">
+              <h5 class="card-title">📋 Submission Guidelines</h5>
+              <ul class="list-unstyled small text-muted">
+                <li class="mb-2">✅ Fields marked with <span class="text-danger">*</span> are required</li>
+                <li class="mb-2">✅ Use official WLTP or EPA range figures</li>
+                <li class="mb-2">✅ Prices in USD only (convert if needed)</li>
+                <li class="mb-2">✅ Fast charge = 10% to 80% at rated DC charger</li>
+                <li class="mb-2">✅ One submission per model variant</li>
+                <li class="mb-2">🚀 Data appears instantly — no approval needed</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Database Stats -->
+          <div class="card border-0 shadow-sm mb-4 bg-dark text-white">
+            <div class="card-body p-4">
+              <h5 class="card-title text-white">📊 Database Stats</h5>
+              <div class="d-flex justify-content-between border-bottom border-secondary py-2">
+                <span class="text-white-50 small">Total EV Records</span>
+                <strong id="sidebarTotal">—</strong>
+              </div>
+              <div class="d-flex justify-content-between border-bottom border-secondary py-2">
+                <span class="text-white-50 small">Manufacturers</span>
+                <strong id="sidebarMfg">—</strong>
+              </div>
+              <div class="d-flex justify-content-between border-bottom border-secondary py-2">
+                <span class="text-white-50 small">Categories</span>
+                <strong id="sidebarCats">6</strong>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <span class="text-white-50 small">Battery Types</span>
+                <strong id="sidebarBats">5</strong>
+              </div>
+              <a href="ev-listings.html" class="btn btn-outline-light btn-sm btn-block mt-2">Browse All Records</a>
+            </div>
+          </div>
+
+          <!-- Battery Quick Reference -->
+          <div class="card border-0 shadow-sm">
+            <div class="card-body p-4">
+              <h5 class="card-title">🔋 Battery Quick Reference</h5>
+              <table class="table table-sm small text-muted mb-0">
+                <thead><tr><th>Type</th><th>Range</th><th>Safety</th></tr></thead>
+                <tbody>
+                  <tr><td><span class="ev-badge badge-lfp">LFP</span></td><td>350–480 km</td><td>4.9/5</td></tr>
+                  <tr><td><span class="ev-badge badge-nmc">NMC</span></td><td>500–640 km</td><td>4.2/5</td></tr>
+                  <tr><td><span class="ev-badge badge-nca">NCA</span></td><td>520–650 km</td><td>4.0/5</td></tr>
+                  <tr><td><span class="ev-badge badge-sodium">Na-Ion</span></td><td>280–380 km</td><td>4.8/5</td></tr>
+                  <tr><td><span class="ev-badge badge-solid">Solid</span></td><td>600–750 km</td><td>4.95/5</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Bottom Buttons -->
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-4 ml-auto">
+          <div class="row">
+            <div class="col-6">
+              <button type="button" onclick="previewForm()" class="btn btn-block btn-light btn-md">
+                <span class="icon-open_in_new mr-2"></span>Preview
+              </button>
+            </div>
+            <div class="col-6">
+              <button type="button" onclick="submitEVForm()" class="btn btn-block btn-primary btn-md">Save Record</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RECENTLY SUBMITTED -->
+  <section class="site-section bg-light pt-5 pb-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-md-8">
+          <h3>Recently Added EV Records</h3>
+          <p class="text-muted">The latest community-contributed vehicles in the database.</p>
+        </div>
+        <div class="col-md-4 text-right">
+          <a href="ev-listings.html" class="btn btn-outline-primary btn-sm">View All</a>
+        </div>
+      </div>
+      <div class="row" id="recentRecords"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <a href="#top" class="smoothscroll scroll-top"><span class="icon-keyboard_arrow_up"></span></a>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12">
+          <p class="copyright"><small>Copyright &copy; <script>document.write(new Date().getFullYear());</script> EV Market Insights. Community-driven open platform.</small></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script src="theme/js/jquery.min.js"></script>
+<script src="theme/js/bootstrap.bundle.min.js"></script>
+<script src="theme/js/jquery.easing.1.3.js"></script>
+<script src="theme/js/stickyfill.min.js"></script>
+<script src="theme/js/custom.js"></script>
+<script src="ev-data.js"></script>
+<script>
+
+const BATTERY_HINTS = {
+  LFP: 'Lithium Iron Phosphate — safest, lowest cost, ideal for mass-market. Expected range: 350–480 km.',
+  NMC: 'Nickel Manganese Cobalt — high energy density for premium sedans & SUVs. Expected range: 500–640 km.',
+  NCA: 'Nickel Cobalt Aluminum — ultra-high energy density. Used by Tesla for performance models. Range: 520–650 km.',
+  'Sodium-Ion': 'Sodium-Ion — cobalt/lithium-free, very safe, cost-efficient for budget urban segments. Range: 280–380 km.',
+  'Solid-State': 'Solid-State — next-gen technology with 600+ km range and 10–18 min fast charge. Near zero thermal risk.'
+};
+
+const BADGE_MAP = { LFP:'badge-lfp', NMC:'badge-nmc', NCA:'badge-nca', 'Solid-State':'badge-solid', 'Sodium-Ion':'badge-sodium' };
+
+function updateBatteryHint() {
+  const v = document.getElementById('battery_tech').value;
+  document.getElementById('batteryHint').textContent = BATTERY_HINTS[v] || 'Select a chemistry to see details.';
+  updateLivePreview();
+}
+
+function updateLivePreview() {
+  const name = document.getElementById('model_name').value;
+  const mfg = document.getElementById('manufacturer').value;
+  const cat = document.getElementById('category').value;
+  const yr = document.getElementById('release_year').value;
+  const bat = document.getElementById('battery_tech').value;
+  const range = document.getElementById('driving_range_km').value;
+  const price = document.getElementById('base_price_usd').value;
+  const charge = document.getElementById('fast_charge_mins').value;
+  const rating = document.getElementById('customer_rating').value;
+
+  if (name || mfg || bat) {
+    document.getElementById('livePreview').style.display = 'block';
+    document.getElementById('pvModelName').textContent = name || '—';
+    document.getElementById('pvMeta').textContent = [mfg, cat, yr].filter(Boolean).join(' • ');
+    document.getElementById('pvRange').textContent = range ? range + ' km' : '— km';
+    document.getElementById('pvPrice').textContent = price ? '$' + Number(price).toLocaleString() : '$—';
+    document.getElementById('pvCharge').textContent = charge ? charge + ' min' : '— min';
+    document.getElementById('pvRating').textContent = rating ? '★ ' + rating : '★ —';
+    const badgeEl = document.getElementById('pvBadge');
+    badgeEl.textContent = bat || '—';
+    badgeEl.className = 'ev-badge ' + (BADGE_MAP[bat] || 'badge-secondary');
+  }
+
+  // Update step progress
+  const step1Done = name && mfg && cat && yr;
+  const step2Done = bat && range && charge;
+  document.getElementById('step1').className = 'step ' + (step1Done ? 'done' : 'active');
+  document.getElementById('step2').className = 'step ' + (step2Done ? 'done' : (step1Done ? 'active' : ''));
+}
+
+function val(id) { return document.getElementById(id).value.trim(); }
+
+function validateForm() {
+  const errors = [];
+  if (!val('model_name')) errors.push('Model Name is required.');
+  if (!val('manufacturer')) errors.push('Manufacturer is required.');
+  if (!val('category')) errors.push('Vehicle Category is required.');
+  if (!val('release_year')) errors.push('Release Year is required.');
+  if (!val('manufacturing_country')) errors.push('Manufacturing Country is required.');
+  if (!val('battery_tech')) errors.push('Battery Technology is required.');
+  if (!val('battery_capacity_kwh') || isNaN(val('battery_capacity_kwh'))) errors.push('Valid Battery Capacity (kWh) is required.');
+  if (!val('driving_range_km') || isNaN(val('driving_range_km'))) errors.push('Valid Driving Range (km) is required.');
+  if (!val('fast_charge_mins') || isNaN(val('fast_charge_mins'))) errors.push('Valid Fast Charge time (minutes) is required.');
+  if (!val('base_price_usd') || isNaN(val('base_price_usd'))) errors.push('Valid Base Price (USD) is required.');
+  return errors;
+}
+
+function previewForm() {
+  updateLivePreview();
+  const preview = document.getElementById('livePreview');
+  preview.style.display = 'block';
+  preview.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+function submitEVForm() {
+  const errors = validateForm();
+
+  document.getElementById('errorAlert').classList.add('d-none');
+  document.getElementById('successAlert').classList.add('d-none');
+
+  if (errors.length > 0) {
+    const ul = document.getElementById('errorList');
+    ul.innerHTML = errors.map(e => `<li>${e}</li>`).join('');
+    document.getElementById('errorAlert').classList.remove('d-none');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    return;
+  }
+
+  const record = {
+    model_name: val('model_name'),
+    manufacturer: val('manufacturer'),
+    category: val('category'),
+    release_year: parseInt(val('release_year')),
+    battery_tech: val('battery_tech'),
+    battery_capacity_kwh: parseFloat(val('battery_capacity_kwh')),
+    driving_range_km: parseFloat(val('driving_range_km')),
+    base_price_usd: parseFloat(val('base_price_usd')),
+    annual_sales_units: parseInt(val('annual_sales_units') || '0'),
+    fast_charge_mins: parseInt(val('fast_charge_mins')),
+    customer_rating: parseFloat(val('customer_rating') || '4.0'),
+    manufacturing_country: val('manufacturing_country'),
+    market_tier: val('market_tier') || ''
+  };
+
+  addEVRecord(record);
+
+  // Show success
+  document.getElementById('successAlert').classList.remove('d-none');
+  document.getElementById('formContainer').style.display = 'none';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  renderRecentRecords();
+  updateSidebarStats();
+
+  // Update step 3 to done
+  document.getElementById('step3').className = 'step done';
+}
+
+function resetForm() {
+  document.getElementById('evForm').reset();
+  document.getElementById('successAlert').classList.add('d-none');
+  document.getElementById('formContainer').style.display = '';
+  document.getElementById('livePreview').style.display = 'none';
+  document.getElementById('step1').className = 'step active';
+  document.getElementById('step2').className = 'step';
+  document.getElementById('step3').className = 'step';
+}
+
+function updateSidebarStats() {
+  const data = getEVData();
+  document.getElementById('sidebarTotal').textContent = data.length;
+  document.getElementById('sidebarMfg').textContent = new Set(data.map(d => d.manufacturer)).size;
+}
+
+function renderRecentRecords() {
+  const data = getEVData();
+  const recent = [...data].reverse().slice(0, 3);
+  const container = document.getElementById('recentRecords');
+  container.innerHTML = recent.map(ev => `
+    <div class="col-md-4 mb-4">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body p-4">
+          <span class="ev-badge ${BADGE_MAP[ev.battery_tech] || ''} mb-2">${ev.battery_tech}</span>
+          <h6 class="font-weight-bold mt-2">${ev.model_name}</h6>
+          <p class="text-muted small mb-2">${ev.manufacturer} &bull; ${ev.manufacturing_country} &bull; ${ev.release_year}</p>
+          <div class="d-flex justify-content-between text-muted small">
+            <span>⚡ ${ev.driving_range_km} km</span>
+            <span>💲 $${Number(ev.base_price_usd).toLocaleString()}</span>
+            <span>⏱️ ${ev.fast_charge_mins} min</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+// Attach live preview listeners
+['model_name','manufacturer','category','release_year','battery_tech','driving_range_km','base_price_usd','fast_charge_mins','customer_rating'].forEach(id => {
+  const el = document.getElementById(id);
+  if (el) el.addEventListener('input', updateLivePreview);
+  if (el) el.addEventListener('change', updateLivePreview);
+});
+
+$(document).ready(function() {
+  updateSidebarStats();
+  renderRecentRecords();
+});
+</script>
+</body>
+</html>
+

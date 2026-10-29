@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Analytics Dashboard &mdash; EV Market Insights</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="theme/css/custom-bs.css">
+  <link rel="stylesheet" href="theme/fonts/icomoon/style.css">
+  <link rel="stylesheet" href="theme/fonts/line-icons/style.css">
+  <link rel="stylesheet" href="theme/css/animate.min.css">
+  <link rel="stylesheet" href="theme/css/style.css">
+  <!-- Chart.js CDN (lightweight, no build needed) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <style>
+    .kpi-card { border-radius: 12px; border: 1px solid #e2e8f0; padding: 20px 24px; background: #fff; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+    .kpi-value { font-size: 2rem; font-weight: 800; margin: 4px 0; }
+    .kpi-label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: #94a3b8; font-weight: 700; }
+    .kpi-sub { font-size: 12px; color: #64748b; }
+    .kpi-icon { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 20px; }
+    .chart-card { background: #fff; border-radius: 12px; border: 1px solid #e2e8f0; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); margin-bottom: 24px; }
+    .chart-title { font-size: 14px; font-weight: 700; color: #1e293b; margin-bottom: 4px; }
+    .chart-sub { font-size: 12px; color: #94a3b8; margin-bottom: 16px; }
+    .top-list-item { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f1f5f9; }
+    .top-list-item:last-child { border-bottom: none; }
+    .ev-badge { font-size: 11px; padding: 3px 10px; border-radius: 20px; font-weight: 700; display: inline-block; }
+    .badge-lfp{background:#fff3cd;color:#856404;} .badge-nmc{background:#cfe2ff;color:#084298;}
+    .badge-nca{background:#d1e7dd;color:#0a3622;} .badge-solid{background:#f8d7da;color:#842029;}
+    .badge-sodium{background:#e2d9f3;color:#432874;}
+    canvas { max-height: 280px; }
+  </style>
+</head>
+<body id="top">
+
+<div id="overlayer"></div>
+<div class="loader"><div class="spinner-border text-primary" role="status"><span class="sr-only">Loading...</span></div></div>
+
+<div class="site-wrap">
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close mt-3"><span class="icon-close2 js-menu-toggle"></span></div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <header class="site-navbar mt-3">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="site-logo col-6"><a href="index.html">⚡ EV Market Insights</a></div>
+        <nav class="mx-auto site-navigation">
+          <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ev-listings.html">EV Models</a></li>
+            <li><a href="dashboard.html" class="nav-link active">Analytics</a></li>
+            <li><a href="submit-ev.html">Submit EV Data</a></li>
+          </ul>
+        </nav>
+        <div class="right-cta-menu text-right d-flex align-items-center col-6">
+          <div class="ml-auto">
+            <a href="submit-ev.html" class="btn btn-primary border-width-2 d-none d-lg-inline-block">
+              <span class="mr-2 icon-add"></span>Submit EV Data
+            </a>
+          </div>
+          <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section-hero overlay inner-page bg-image" style="background-image: url('theme/images/hero_1.jpg');" id="home-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h1 class="text-white font-weight-bold">Analytics Dashboard</h1>
+          <div class="custom-breadcrumbs">
+            <a href="index.html">Home</a> <span class="mx-2 slash">/</span>
+            <span class="text-white"><strong>Analytics Dashboard</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="site-section">
+    <div class="container">
+
+      <!-- KPI CARDS ROW -->
+      <div class="row mb-2">
+        <div class="col-6 col-md-3">
+          <div class="kpi-card">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <div class="kpi-icon bg-light">🚗</div>
+              <span class="badge badge-success small">Total</span>
+            </div>
+            <div class="kpi-value text-primary" id="kpiModels">—</div>
+            <div class="kpi-label">EV Models</div>
+            <div class="kpi-sub">in database</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="kpi-card">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <div class="kpi-icon bg-light">📏</div>
+              <span class="badge badge-success small">Avg</span>
+            </div>
+            <div class="kpi-value text-success" id="kpiRange">—</div>
+            <div class="kpi-label">Avg Range</div>
+            <div class="kpi-sub" id="kpiRangeSub">km per charge</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="kpi-card">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <div class="kpi-icon bg-light">💲</div>
+              <span class="badge badge-warning small">Avg</span>
+            </div>
+            <div class="kpi-value text-warning" id="kpiPrice">—</div>
+            <div class="kpi-label">Avg MSRP</div>
+            <div class="kpi-sub">USD base price</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="kpi-card">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <div class="kpi-icon bg-light">🌿</div>
+              <span class="badge badge-success small">Total</span>
+            </div>
+            <div class="kpi-value text-success" id="kpiCO2">—</div>
+            <div class="kpi-label">CO₂ Offset</div>
+            <div class="kpi-sub">Million Tons/yr</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHARTS ROW 1 -->
+      <div class="row">
+        <!-- Battery Tech Donut -->
+        <div class="col-md-4 mb-4">
+          <div class="chart-card h-100">
+            <div class="chart-title">Battery Chemistry Distribution</div>
+            <div class="chart-sub">Market share by number of models</div>
+            <canvas id="batteryChart"></canvas>
+            <div id="batteryLegend" class="mt-3"></div>
+          </div>
+        </div>
+
+        <!-- Category Bar -->
+        <div class="col-md-8 mb-4">
+          <div class="chart-card h-100">
+            <div class="chart-title">Average Driving Range by Vehicle Category</div>
+            <div class="chart-sub">Mean WLTP/EPA range in kilometres per segment</div>
+            <canvas id="categoryRangeChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHARTS ROW 2 -->
+      <div class="row">
+        <!-- Regional Pie -->
+        <div class="col-md-4 mb-4">
+          <div class="chart-card h-100">
+            <div class="chart-title">Geographic Manufacturing Distribution</div>
+            <div class="chart-sub">EV models by manufacturing region</div>
+            <canvas id="regionChart"></canvas>
+          </div>
+        </div>
+
+        <!-- Year Line -->
+        <div class="col-md-8 mb-4">
+          <div class="chart-card h-100">
+            <div class="chart-title">Model Launch Trend by Year (2020–2026)</div>
+            <div class="chart-sub">Number of EV models released per year &amp; average range</div>
+            <canvas id="yearChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHARTS ROW 3 -->
+      <div class="row">
+        <!-- Top Manufacturers -->
+        <div class="col-md-6 mb-4">
+          <div class="chart-card h-100">
+            <div class="chart-title">Top Manufacturers by Model Count</div>
+            <div class="chart-sub">Number of models from each automaker in database</div>
+            <canvas id="mfgChart"></canvas>
+          </div>
+        </div>
+
+        <!-- Top Rated -->
+        <div class="col-md-6 mb-4">
+          <div class="chart-card h-100">
+            <div class="chart-title">Top 8 EV Models by Customer Rating</div>
+            <div class="chart-sub">Highest rated vehicles in database</div>
+            <div id="topRatedList"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CALCULATED METRICS TABLE -->
+      <div class="chart-card mb-4">
+        <div class="chart-title">Calculated Performance Metrics — Battery Technology Benchmark</div>
+        <div class="chart-sub">Aggregated calculated fields: Energy Efficiency, Range, Fast Charge, CO₂ Offset, Safety Score per chemistry</div>
+        <div class="table-responsive mt-3">
+          <table class="table table-hover table-sm small">
+            <thead class="thead-light">
+              <tr>
+                <th>Battery Tech</th>
+                <th>Models</th>
+                <th>Avg Range (km)</th>
+                <th>Avg kWh/100km</th>
+                <th>Avg Fast Charge (min)</th>
+                <th>Avg Safety Score</th>
+                <th>Total CO₂ Offset (k-Tons)</th>
+              </tr>
+            </thead>
+            <tbody id="benchmarkTable"></tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <a href="#top" class="smoothscroll scroll-top"><span class="icon-keyboard_arrow_up"></span></a>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12">
+          <p class="copyright"><small>Copyright &copy; <script>document.write(new Date().getFullYear());</script> EV Market Insights.</small></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="theme/js/jquery.min.js"></script>
+<script src="theme/js/bootstrap.bundle.min.js"></script>
+<script src="theme/js/jquery.easing.1.3.js"></script>
+<script src="theme/js/stickyfill.min.js"></script>
+<script src="theme/js/custom.js"></script>
+<script src="ev-data.js"></script>
+<script>
+const COLORS = ['#10b981','#06b6d4','#8b5cf6','#f59e0b','#ec4899','#3b82f6','#14b8a6','#f97316','#64748b'];
+const BADGE_MAP = { LFP:'badge-lfp', NMC:'badge-nmc', NCA:'badge-nca', 'Solid-State':'badge-solid', 'Sodium-Ion':'badge-sodium' };
+
+function avg(arr) { return arr.length ? arr.reduce((s,v) => s+v, 0) / arr.length : 0; }
+function round(n) { return Math.round(n * 10) / 10; }
+
+function renderDashboard() {
+  const data = getEVData();
+
+  // KPI Cards
+  document.getElementById('kpiModels').textContent = data.length;
+  document.getElementById('kpiRange').textContent = Math.round(avg(data.map(d => d.driving_range_km))) + ' km';
+  document.getElementById('kpiPrice').textContent = '$' + Math.round(avg(data.map(d => d.base_price_usd))).toLocaleString();
+  const totalCO2 = data.reduce((s,d) => s + (d.co2_saved_ktons || 0), 0);
+  document.getElementById('kpiCO2').textContent = round(totalCO2 / 1000) + 'M';
+
+  // 1. Battery Donut
+  const batMap = {};
+  data.forEach(d => { batMap[d.battery_tech] = (batMap[d.battery_tech] || 0) + 1; });
+  const batLabels = Object.keys(batMap);
+  const batValues = batLabels.map(k => batMap[k]);
+  new Chart(document.getElementById('batteryChart'), {
+    type: 'doughnut',
+    data: { labels: batLabels, datasets: [{ data: batValues, backgroundColor: COLORS, borderWidth: 2, borderColor: '#fff' }] },
+    options: { plugins: { legend: { display: false } }, cutout: '65%', responsive: true, maintainAspectRatio: true }
+  });
+  document.getElementById('batteryLegend').innerHTML = batLabels.map((l,i) => `
+    <span class="mr-3 d-inline-flex align-items-center mb-1" style="font-size:12px">
+      <span style="width:10px;height:10px;background:${COLORS[i]};border-radius:50%;display:inline-block;margin-right:5px;"></span>
+      <b>${l}</b>&nbsp;(${batValues[i]})
+    </span>`).join('');
+
+  // 2. Category Range Bar
+  const catMap = {};
+  data.forEach(d => {
+    if (!catMap[d.category]) catMap[d.category] = [];
+    catMap[d.category].push(d.driving_range_km);
+  });
+  const catLabels = Object.keys(catMap);
+  const catAvgs = catLabels.map(k => Math.round(avg(catMap[k])));
+  new Chart(document.getElementById('categoryRangeChart'), {
+    type: 'bar',
+    data: {
+      labels: catLabels,
+      datasets: [{ label: 'Avg Range (km)', data: catAvgs, backgroundColor: COLORS, borderRadius: 6 }]
+    },
+    options: { responsive: true, plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true } } }
+  });
+
+  // 3. Region Pie
+  const regMap = {};
+  data.forEach(d => { regMap[d.manufacturing_region] = (regMap[d.manufacturing_region] || 0) + 1; });
+  const regLabels = Object.keys(regMap);
+  const regValues = regLabels.map(k => regMap[k]);
+  new Chart(document.getElementById('regionChart'), {
+    type: 'pie',
+    data: { labels: regLabels, datasets: [{ data: regValues, backgroundColor: COLORS, borderWidth: 2, borderColor: '#fff' }] },
+    options: { responsive: true, plugins: { legend: { position: 'bottom', labels: { font: { size: 11 } } } } }
+  });
+
+  // 4. Year Line
+  const yearMap = {};
+  data.forEach(d => {
+    if (!yearMap[d.release_year]) yearMap[d.release_year] = { count: 0, ranges: [] };
+    yearMap[d.release_year].count++;
+    yearMap[d.release_year].ranges.push(d.driving_range_km);
+  });
+  const years = Object.keys(yearMap).sort();
+  const yearCounts = years.map(y => yearMap[y].count);
+  const yearRanges = years.map(y => Math.round(avg(yearMap[y].ranges)));
+  new Chart(document.getElementById('yearChart'), {
+    type: 'line',
+    data: {
+      labels: years,
+      datasets: [
+        { label: 'Models Released', data: yearCounts, borderColor: '#059669', backgroundColor: 'rgba(5,150,105,0.1)', tension: 0.4, yAxisID: 'y' },
+        { label: 'Avg Range (km)', data: yearRanges, borderColor: '#3b82f6', backgroundColor: 'transparent', tension: 0.4, borderDash: [6,3], yAxisID: 'y1' }
+      ]
+    },
+    options: {
+      responsive: true,
+      interaction: { mode: 'index', intersect: false },
+      plugins: { legend: { labels: { font: { size: 11 } } } },
+      scales: {
+        y: { position: 'left', beginAtZero: true },
+        y1: { position: 'right', grid: { drawOnChartArea: false }, beginAtZero: false }
+      }
+    }
+  });
+
+  // 5. Manufacturer Bar
+  const mfgMap = {};
+  data.forEach(d => { mfgMap[d.manufacturer] = (mfgMap[d.manufacturer] || 0) + 1; });
+  const topMfgs = Object.entries(mfgMap).sort((a,b) => b[1]-a[1]).slice(0,10);
+  new Chart(document.getElementById('mfgChart'), {
+    type: 'bar',
+    data: {
+      labels: topMfgs.map(m => m[0]),
+      datasets: [{ label: 'Models', data: topMfgs.map(m => m[1]), backgroundColor: COLORS, borderRadius: 4 }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      plugins: { legend: { display: false } },
+      scales: { x: { beginAtZero: true } }
+    }
+  });
+
+  // 6. Top Rated List
+  const topRated = [...data].sort((a,b) => b.customer_rating - a.customer_rating).slice(0,8);
+  document.getElementById('topRatedList').innerHTML = topRated.map(ev => `
+    <div class="top-list-item">
+      <div>
+        <span class="ev-badge ${BADGE_MAP[ev.battery_tech] || ''} mr-2" style="font-size:10px">${ev.battery_tech}</span>
+        <strong style="font-size:13px">${ev.model_name}</strong>
+        <div class="text-muted" style="font-size:11px">${ev.manufacturer} &bull; ${ev.driving_range_km} km</div>
+      </div>
+      <div class="text-right">
+        <span class="text-warning font-weight-bold">★ ${ev.customer_rating}</span>
+      </div>
+    </div>
+  `).join('');
+
+  // 7. Benchmark Table
+  const techGroups = {};
+  data.forEach(d => {
+    if (!techGroups[d.battery_tech]) techGroups[d.battery_tech] = [];
+    techGroups[d.battery_tech].push(d);
+  });
+  const tableBody = document.getElementById('benchmarkTable');
+  tableBody.innerHTML = Object.entries(techGroups).map(([tech, evs]) => {
+    const avgRange = Math.round(avg(evs.map(e => e.driving_range_km)));
+    const avgEff = round(avg(evs.map(e => e.energy_efficiency_kwh_100km)));
+    const avgCharge = Math.round(avg(evs.map(e => e.fast_charge_mins)));
+    const avgSafety = round(avg(evs.map(e => e.safety_score)));
+    const totalCO2 = round(evs.reduce((s,e) => s+(e.co2_saved_ktons||0), 0));
+    return `<tr>
+      <td><span class="ev-badge ${BADGE_MAP[tech] || ''}">${tech}</span></td>
+      <td>${evs.length}</td>
+      <td class="text-success font-weight-bold">${avgRange}</td>
+      <td>${avgEff}</td>
+      <td>${avgCharge}</td>
+      <td>${avgSafety}</td>
+      <td>${totalCO2.toLocaleString()}</td>
+    </tr>`;
+  }).join('');
+}
+
+$(document).ready(function() {
+  renderDashboard();
+});
+</script>
+</body>
+</html>
+

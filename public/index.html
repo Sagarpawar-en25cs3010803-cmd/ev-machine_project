@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>EV Market Insights &mdash; Electric Vehicle Analytics Platform</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Explore Electric Vehicle Market Performance, battery tech insights, and contribute EV data." />
+
+  <link rel="stylesheet" href="theme/css/custom-bs.css">
+  <link rel="stylesheet" href="theme/css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="theme/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="theme/fonts/icomoon/style.css">
+  <link rel="stylesheet" href="theme/fonts/line-icons/style.css">
+  <link rel="stylesheet" href="theme/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="theme/css/animate.min.css">
+  <link rel="stylesheet" href="theme/css/style.css">
+  <style>
+    .ev-badge { font-size: 11px; padding: 3px 10px; border-radius: 20px; font-weight: 700; display: inline-block; }
+    .badge-lfp  { background: #fff3cd; color: #856404; }
+    .badge-nmc  { background: #cfe2ff; color: #084298; }
+    .badge-nca  { background: #d1e7dd; color: #0a3622; }
+    .badge-solid { background: #f8d7da; color: #842029; }
+    .badge-sodium { background: #e2d9f3; color: #432874; }
+    .ev-stat-card { border-left: 4px solid #3b82f6; }
+    .stat-num { font-size: 2rem; font-weight: 800; color: #1e293b; }
+    .hero-ev { background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 60%, #0a5940 100%); }
+    .search-hero { background: rgba(255,255,255,0.08); border-radius: 12px; padding: 30px; }
+    .ev-listing-item:hover { box-shadow: 0 8px 30px rgba(0,0,0,0.12); transform: translateY(-2px); transition: all .2s; }
+    .btn-ev-primary { background: #059669; border-color: #059669; color: #fff; }
+    .btn-ev-primary:hover { background: #047857; border-color: #047857; color: #fff; }
+    .site-logo a { color: #fff !important; font-weight: 800; font-size: 1.3rem; }
+    .kpi-icon { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 22px; }
+  </style>
+</head>
+<body id="top">
+
+<div id="overlayer"></div>
+<div class="loader">
+  <div class="spinner-border text-primary" role="status"><span class="sr-only">Loading...</span></div>
+</div>
+
+<div class="site-wrap">
+
+  <!-- Mobile Menu -->
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close mt-3"><span class="icon-close2 js-menu-toggle"></span></div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="site-navbar mt-3" style="background: transparent;">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="site-logo col-6">
+          <a href="index.html" style="color:#fff; font-weight:800; font-size:1.25rem;">
+            ⚡ EV Market Insights
+          </a>
+        </div>
+        <nav class="mx-auto site-navigation">
+          <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="ev-listings.html">EV Models</a></li>
+            <li><a href="dashboard.html">Analytics Dashboard</a></li>
+            <li><a href="submit-ev.html">Submit EV Data</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="right-cta-menu text-right d-flex align-items-center col-6">
+          <div class="ml-auto">
+            <a href="submit-ev.html" class="btn btn-ev-primary border-width-2 d-none d-lg-inline-block">
+              <span class="mr-2 icon-add"></span>Submit EV Data
+            </a>
+          </div>
+          <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3">
+            <span class="icon-menu h3 m-0 p-0 mt-2"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="home-section section-hero overlay bg-image" style="background-image: url('theme/images/hero_1.jpg');" id="home-section">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-12">
+          <div class="mb-5 text-center">
+            <h1 class="text-white font-weight-bold">Electric Vehicle Market Performance &amp; Insights</h1>
+            <p class="text-white-50 lead">Explore battery technologies, driving range benchmarks &amp; manufacturer data. Contribute your own EV records to our growing database.</p>
+          </div>
+
+          <!-- Search Bar -->
+          <div class="search-hero">
+            <div class="row mb-3">
+              <div class="col-12 col-md-4 mb-3 mb-md-0">
+                <input type="text" id="heroSearch" class="form-control form-control-lg" placeholder="Search model, brand, battery...">
+              </div>
+              <div class="col-12 col-md-3 mb-3 mb-md-0">
+                <select id="heroCategory" class="selectpicker" data-style="btn-white btn-lg" data-width="100%" title="Vehicle Category">
+                  <option value="">All Categories</option>
+                  <option>SUV</option><option>Sedan</option><option>Hatchback</option>
+                  <option>Truck</option><option>Bus</option><option>Two-Wheeler</option>
+                </select>
+              </div>
+              <div class="col-12 col-md-3 mb-3 mb-md-0">
+                <select id="heroBattery" class="selectpicker" data-style="btn-white btn-lg" data-width="100%" title="Battery Technology">
+                  <option value="">All Batteries</option>
+                  <option>LFP</option><option>NMC</option><option>NCA</option>
+                  <option>Sodium-Ion</option><option>Solid-State</option>
+                </select>
+              </div>
+              <div class="col-12 col-md-2">
+                <button onclick="searchAndGo()" class="btn btn-ev-primary btn-lg btn-block">
+                  <span class="icon-search icon mr-2"></span>Search
+                </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <h6 class="text-white-50 mb-2">Trending:</h6>
+                <ul class="keywords list-unstyled m-0 p-0">
+                  <li><a href="ev-listings.html?battery=LFP" class="">LFP Battery</a></li>
+                  <li><a href="ev-listings.html?category=SUV" class="">Electric SUV</a></li>
+                  <li><a href="ev-listings.html?battery=Solid-State" class="">Solid-State</a></li>
+                  <li><a href="ev-listings.html?category=Sedan" class="">EV Sedan</a></li>
+                  <li><a href="ev-listings.html?mfg=Tesla" class="">Tesla</a></li>
+                  <li><a href="ev-listings.html?mfg=BYD" class="">BYD</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <a href="#next" class="scroll-button smoothscroll">
+      <span class="icon-keyboard_arrow_down"></span>
+    </a>
+  </section>
+
+  <!-- LIVE KPI STATS -->
+  <section class="py-5 bg-image overlay-primary fixed overlay" id="next" style="background-image: url('theme/images/hero_1.jpg');">
+    <div class="container">
+      <div class="row mb-4 justify-content-center">
+        <div class="col-md-8 text-center">
+          <h2 class="section-title mb-2 text-white">EV Market Live Stats</h2>
+          <p class="lead text-white-50">Real-time figures from our growing community-driven database</p>
+        </div>
+      </div>
+      <div class="row pb-0 block__19738 section-counter" id="liveStatsRow">
+        <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0">
+          <div class="d-flex align-items-center justify-content-center mb-2">
+            <strong class="number" id="statModels" data-number="650">0</strong>
+          </div>
+          <span class="caption">EV Models</span>
+        </div>
+        <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0">
+          <div class="d-flex align-items-center justify-content-center mb-2">
+            <strong class="number" id="statMfg" data-number="26">0</strong>
+          </div>
+          <span class="caption">Manufacturers</span>
+        </div>
+        <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0">
+          <div class="d-flex align-items-center justify-content-center mb-2">
+            <strong class="number" id="statRange" data-number="558">0</strong>
+          </div>
+          <span class="caption">Max Range (km)</span>
+        </div>
+        <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0">
+          <div class="d-flex align-items-center justify-content-center mb-2">
+            <strong class="number" id="statYear" data-number="2026">0</strong>
+          </div>
+          <span class="caption">Latest Model Year</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED EV LISTINGS (Dynamic from Data) -->
+  <section class="site-section" id="featured-evs">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-8">
+          <h2 class="section-title">Featured EV Models</h2>
+          <p class="text-muted">Top performing electric vehicles from our database — filtered by highest customer rating.</p>
+        </div>
+        <div class="col-md-4 text-right">
+          <a href="ev-listings.html" class="btn btn-outline-primary btn-sm">Browse All Models</a>
+        </div>
+      </div>
+
+      <!-- Cards rendered by JS -->
+      <div class="row" id="featuredEVCards">
+        <div class="col-12 text-center py-5">
+          <div class="spinner-border text-primary" role="status"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BATTERY TECH HIGHLIGHTS -->
+  <section class="site-section bg-light">
+    <div class="container">
+      <div class="row mb-5 justify-content-center">
+        <div class="col-md-7 text-center">
+          <h2 class="section-title">Battery Technology Breakdown</h2>
+          <p class="text-muted">Understanding the five major battery chemistries powering the EV revolution</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <span class="ev-badge badge-lfp mb-2">LFP</span>
+              <h5 class="card-title">Lithium Iron Phosphate</h5>
+              <p class="card-text text-muted small">Industry-leading thermal safety and cycle life. Dominant in mass-market &amp; commercial segments. 25–30% lower cost than nickel chemistries.</p>
+              <div class="d-flex justify-content-between small text-muted">
+                <span>⚡ Range: 350–480 km</span>
+                <span>🛡️ Safety: 4.9/5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <span class="ev-badge badge-nmc mb-2">NMC</span>
+              <h5 class="card-title">Nickel Manganese Cobalt</h5>
+              <p class="card-text text-muted small">High energy density ideal for performance sedans and premium SUVs. Delivers 500–600 km range but at higher cost.</p>
+              <div class="d-flex justify-content-between small text-muted">
+                <span>⚡ Range: 500–640 km</span>
+                <span>🛡️ Safety: 4.2/5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <span class="ev-badge badge-solid mb-2">Solid-State</span>
+              <h5 class="card-title">Solid-State Battery</h5>
+              <p class="card-text text-muted small">Next-generation technology offering 600+ km range and 10–18 min ultra-fast charging. Near-zero thermal runaway risk.</p>
+              <div class="d-flex justify-content-between small text-muted">
+                <span>⚡ Range: 620–750 km</span>
+                <span>🛡️ Safety: 4.95/5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <span class="ev-badge badge-nca mb-2">NCA</span>
+              <h5 class="card-title">Nickel Cobalt Aluminum</h5>
+              <p class="card-text text-muted small">Preferred by luxury and performance brands for ultra-high energy density. Tesla's original chemistry of choice for flagship vehicles.</p>
+              <div class="d-flex justify-content-between small text-muted">
+                <span>⚡ Range: 520–650 km</span>
+                <span>🛡️ Safety: 4.0/5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <span class="ev-badge badge-sodium mb-2">Sodium-Ion</span>
+              <h5 class="card-title">Sodium-Ion</h5>
+              <p class="card-text text-muted small">Cobalt-free and lithium-free chemistry offering outstanding cost efficiency for budget and urban mobility segments.</p>
+              <div class="d-flex justify-content-between small text-muted">
+                <span>⚡ Range: 280–380 km</span>
+                <span>🛡️ Safety: 4.8/5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm bg-dark text-white">
+            <div class="card-body p-4 d-flex flex-column justify-content-center align-items-center text-center">
+              <span class="icon-add display-4 text-success mb-3"></span>
+              <h5>Know a missing EV model?</h5>
+              <p class="small text-white-50">Contribute your EV data to our community database and help grow the platform.</p>
+              <a href="submit-ev.html" class="btn btn-ev-primary btn-sm mt-2">+ Submit EV Record</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CONTRIBUTE CTA -->
+  <section class="site-section py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <h2 class="section-title">Help Build the World's Best EV Database</h2>
+          <p class="text-muted">Our platform thrives on community-contributed data. Submit details about any EV model — manufacturer, battery specs, range, pricing, charging speed — and it appears instantly in our live analytics.</p>
+          <ul class="list-unstyled text-muted">
+            <li class="mb-2"><span class="text-success mr-2">✓</span> Data appears immediately on the EV listings page</li>
+            <li class="mb-2"><span class="text-success mr-2">✓</span> Your submission feeds into real-time analytics charts</li>
+            <li class="mb-2"><span class="text-success mr-2">✓</span> Supports researchers, industry analysts, and policymakers</li>
+          </ul>
+        </div>
+        <div class="col-lg-5 text-center text-lg-right">
+          <a href="submit-ev.html" class="btn btn-ev-primary btn-lg px-5">
+            <span class="icon-add mr-2"></span> Submit EV Data Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <a href="#top" class="smoothscroll scroll-top"><span class="icon-keyboard_arrow_up"></span></a>
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-6 col-md-3 mb-4 mb-md-0">
+          <h3>EV Categories</h3>
+          <ul class="list-unstyled">
+            <li><a href="ev-listings.html?category=SUV">Electric SUVs</a></li>
+            <li><a href="ev-listings.html?category=Sedan">Electric Sedans</a></li>
+            <li><a href="ev-listings.html?category=Truck">Electric Trucks</a></li>
+            <li><a href="ev-listings.html?category=Bus">Electric Buses</a></li>
+            <li><a href="ev-listings.html?category=Two-Wheeler">Two-Wheelers</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 mb-4 mb-md-0">
+          <h3>Battery Tech</h3>
+          <ul class="list-unstyled">
+            <li><a href="ev-listings.html?battery=LFP">LFP Chemistry</a></li>
+            <li><a href="ev-listings.html?battery=NMC">NMC Chemistry</a></li>
+            <li><a href="ev-listings.html?battery=NCA">NCA Chemistry</a></li>
+            <li><a href="ev-listings.html?battery=Solid-State">Solid-State</a></li>
+            <li><a href="ev-listings.html?battery=Sodium-Ion">Sodium-Ion</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 mb-4 mb-md-0">
+          <h3>Platform</h3>
+          <ul class="list-unstyled">
+            <li><a href="dashboard.html">Analytics Dashboard</a></li>
+            <li><a href="ev-listings.html">Browse EV Models</a></li>
+            <li><a href="submit-ev.html">Submit EV Data</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 mb-4 mb-md-0">
+          <h3>EV Market Insights</h3>
+          <p class="text-muted small">Community-driven Electric Vehicle analytics platform. Powering data-driven decisions for manufacturers, analysts, and policymakers worldwide.</p>
+          <div class="footer-social">
+            <a href="#"><span class="icon-facebook"></span></a>
+            <a href="#"><span class="icon-twitter"></span></a>
+            <a href="#"><span class="icon-linkedin"></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-12">
+          <p class="copyright"><small>Copyright &copy; <script>document.write(new Date().getFullYear());</script> EV Market Insights. Open-source community platform.</small></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div><!-- .site-wrap -->
+
+<script src="theme/js/jquery.min.js"></script>
+<script src="theme/js/bootstrap.bundle.min.js"></script>
+<script src="theme/js/isotope.pkgd.min.js"></script>
+<script src="theme/js/stickyfill.min.js"></script>
+<script src="theme/js/jquery.easing.1.3.js"></script>
+<script src="theme/js/jquery.waypoints.min.js"></script>
+<script src="theme/js/jquery.animateNumber.min.js"></script>
+<script src="theme/js/owl.carousel.min.js"></script>
+<script src="theme/js/bootstrap-select.min.js"></script>
+<script src="theme/js/custom.js"></script>
+<script src="ev-data.js"></script>
+<script>
+function getBadgeClass(tech) {
+  const map = { 'LFP':'badge-lfp','NMC':'badge-nmc','NCA':'badge-nca','Solid-State':'badge-solid','Sodium-Ion':'badge-sodium' };
+  return map[tech] || 'badge-secondary';
+}
+
+function renderFeaturedCards() {
+  const allData = getEVData();
+  // Sort by customer_rating desc, pick top 6
+  const top = [...allData].sort((a,b) => b.customer_rating - a.customer_rating).slice(0,6);
+  const container = document.getElementById('featuredEVCards');
+  if (!top.length) { container.innerHTML = '<div class="col-12 text-center text-muted">No records yet.</div>'; return; }
+  container.innerHTML = top.map(ev => `
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="card border-0 shadow-sm h-100 ev-listing-item">
+        <div class="card-body p-4">
+          <div class="d-flex justify-content-between align-items-start mb-2">
+            <span class="ev-badge ${getBadgeClass(ev.battery_tech)}">${ev.battery_tech}</span>
+            <span class="text-warning small">★ ${ev.customer_rating}</span>
+          </div>
+          <h5 class="card-title font-weight-bold">${ev.model_name}</h5>
+          <p class="text-muted small mb-1"><span class="icon-place mr-1"></span>${ev.manufacturer} &bull; ${ev.manufacturing_country}</p>
+          <p class="text-muted small mb-3"><span class="icon-calendar mr-1"></span>${ev.release_year} &bull; ${ev.category}</p>
+          <div class="row text-center border-top pt-3">
+            <div class="col-4">
+              <strong class="d-block text-success">${ev.driving_range_km} km</strong>
+              <small class="text-muted">Range</small>
+            </div>
+            <div class="col-4">
+              <strong class="d-block text-primary">$${Number(ev.base_price_usd).toLocaleString()}</strong>
+              <small class="text-muted">Price</small>
+            </div>
+            <div class="col-4">
+              <strong class="d-block text-danger">${ev.fast_charge_mins} min</strong>
+              <small class="text-muted">Fast Charge</small>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer bg-white border-0 pb-3 px-4">
+          <a href="ev-detail.html?id=${ev.id}" class="btn btn-sm btn-ev-primary btn-block">View Details</a>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function updateLiveStats() {
+  const data = getEVData();
+  const mfgs = new Set(data.map(d => d.manufacturer)).size;
+  const maxRange = Math.max(...data.map(d => d.driving_range_km));
+  const maxYear = Math.max(...data.map(d => d.release_year));
+  document.getElementById('statModels').setAttribute('data-number', data.length);
+  document.getElementById('statMfg').setAttribute('data-number', mfgs);
+  document.getElementById('statRange').setAttribute('data-number', Math.round(maxRange));
+  document.getElementById('statYear').setAttribute('data-number', maxYear);
+}
+
+function searchAndGo() {
+  const q = document.getElementById('heroSearch').value;
+  const cat = document.getElementById('heroCategory').value;
+  const bat = document.getElementById('heroBattery').value;
+  let params = [];
+  if (q) params.push('search=' + encodeURIComponent(q));
+  if (cat) params.push('category=' + encodeURIComponent(cat));
+  if (bat) params.push('battery=' + encodeURIComponent(bat));
+  window.location.href = 'ev-listings.html' + (params.length ? '?' + params.join('&') : '');
+}
+
+$(document).ready(function(){
+  updateLiveStats();
+  renderFeaturedCards();
+  $('.selectpicker').selectpicker('refresh');
+});
+</script>
+</body>
+</html>
+

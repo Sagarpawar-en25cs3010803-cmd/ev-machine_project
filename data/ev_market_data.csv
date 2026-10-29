@@ -1,0 +1,651 @@
+id,model_name,manufacturer,category,release_year,battery_tech,battery_tech_full,battery_capacity_kwh,driving_range_km,driving_range_mi,base_price_usd,annual_sales_units,fast_charge_mins,customer_rating,manufacturing_country,manufacturing_region,market_tier,energy_efficiency_kwh_100km,price_per_km_range,co2_saved_ktons,safety_score
+1,Toyota bZ4X Ultra,Toyota,SUV,2025,LFP,Lithium Iron Phosphate (LFP),100.5,510.8,317.4,55323.0,410706,24,4.0,Japan,Asia-Pacific,Mass Market,19.68,108.31,985.69,4.9
+2,Rivian R1T Adventure Performance,Rivian,Truck,2024,LFP,Lithium Iron Phosphate (LFP),141.3,632.4,393.0,58688.0,43118,30,4.1,USA,North America,Premium,22.34,92.8,181.1,4.9
+3,Proterra Catalyst E2 Standard,Proterra,Bus,2023,LFP,Lithium Iron Phosphate (LFP),371.4,285.0,177.1,248125.0,1109,34,4.7,USA,North America,Fleet/Commercial,130.32,870.61,29.39,4.9
+4,Yutong T13 Coach Long Range,Yutong,Bus,2023,NMC,Nickel Manganese Cobalt (NMC),281.3,470.6,292.4,372862.0,3312,24,4.5,China,Asia-Pacific,Fleet/Commercial,59.77,792.31,87.77,4.2
+5,BYD Dolphin Pro,BYD,Hatchback,2026,LFP,Lithium Iron Phosphate (LFP),42.0,338.8,210.5,16742.0,718416,36,4.1,China,Asia-Pacific,Mass Market,12.4,49.42,1077.62,4.9
+6,Kia EV5 Dual Motor,Kia,Hatchback,2025,Solid-State,Solid-State Battery,53.3,591.2,367.4,31334.0,205855,12,3.8,South Korea,Asia-Pacific,Mass Market,9.02,53.0,308.78,4.95
+7,Lucid Motors Air Pure Ultra,Lucid Motors,Hatchback,2025,NMC,Nickel Manganese Cobalt (NMC),66.3,482.4,299.7,47360.0,195111,19,4.4,USA,North America,Luxury,13.74,98.18,292.67,4.2
+8,Ford Mustang Mach-E Max,Ford,Sedan,2021,NMC,Nickel Manganese Cobalt (NMC),115.8,562.7,349.6,73487.0,111455,22,3.8,USA,North America,Mass Market,20.58,130.6,211.76,4.2
+9,Yutong E12 City Bus Performance,Yutong,Bus,2024,NMC,Nickel Manganese Cobalt (NMC),277.6,397.3,246.9,464019.0,1483,34,3.5,China,Asia-Pacific,Fleet/Commercial,69.87,1167.93,39.3,4.2
+10,Toyota bZ4X Long Range,Toyota,SUV,2025,NMC,Nickel Manganese Cobalt (NMC),89.1,452.1,280.9,88618.0,399630,26,4.1,Japan,Asia-Pacific,Mass Market,19.71,196.01,959.11,4.2
+11,Nissan Ariya e-4ORCE Max,Nissan,Sedan,2026,NMC,Nickel Manganese Cobalt (NMC),86.8,557.6,346.5,61772.0,245411,34,4.1,Japan,Asia-Pacific,Mass Market,15.57,110.78,466.28,4.2
+12,Toyota bZ Compact SUV Plus,Toyota,Sedan,2021,LFP,Lithium Iron Phosphate (LFP),84.7,696.9,433.0,76823.0,203318,22,3.7,Japan,Asia-Pacific,Mass Market,12.15,110.24,386.3,4.9
+13,Tesla Model 3 Performance,Tesla,SUV,2022,NCA,Nickel Cobalt Aluminum (NCA),76.9,653.5,406.1,52684.0,751843,20,4.6,USA,North America,Premium,11.77,80.62,1804.42,4.0
+14,Mercedes-Benz EQA 250 Dual Motor,Mercedes-Benz,Hatchback,2024,LFP,Lithium Iron Phosphate (LFP),53.2,425.8,264.6,41692.0,356530,28,4.3,Germany,Europe,Luxury,12.49,97.91,534.79,4.9
+15,Nissan Ariya e-4ORCE Long Range,Nissan,Hatchback,2023,Sodium-Ion,Sodium-Ion (Na-Ion),42.4,352.2,218.8,13770.0,40207,24,3.7,Japan,Asia-Pacific,Mass Market,12.04,39.1,60.31,4.8
+16,Proterra Catalyst E2 Plus,Proterra,Bus,2025,LFP,Lithium Iron Phosphate (LFP),186.3,286.0,177.7,230696.0,4561,29,3.9,USA,North America,Fleet/Commercial,65.14,806.63,120.87,4.9
+17,Kia Niro EV Dual Motor,Kia,Sedan,2025,Solid-State,Solid-State Battery,81.0,918.5,570.7,115400.0,316440,13,4.5,South Korea,Asia-Pacific,Mass Market,8.82,125.64,601.24,4.95
+18,Polestar Polestar 3 Ultra,Polestar,Sedan,2025,LFP,Lithium Iron Phosphate (LFP),90.5,770.2,478.6,32077.0,270259,25,4.4,Sweden,Europe,Premium,11.75,41.65,513.49,4.9
+19,Kia EV3 Standard,Kia,Sedan,2021,NMC,Nickel Manganese Cobalt (NMC),75.6,519.9,323.1,111147.0,173136,35,4.5,South Korea,Asia-Pacific,Mass Market,14.54,213.79,328.96,4.2
+20,Volkswagen ID.3 Dual Motor,Volkswagen,SUV,2021,LFP,Lithium Iron Phosphate (LFP),107.6,516.7,321.1,73743.0,76768,34,4.4,Germany,Europe,Mass Market,20.82,142.72,184.24,4.9
+21,Lucid Motors Air Pure Standard,Lucid Motors,Sedan,2022,NMC,Nickel Manganese Cobalt (NMC),120.7,801.2,497.8,106421.0,233826,22,4.4,USA,North America,Luxury,15.06,132.83,444.27,4.2
+22,Yutong T13 Coach Long Range,Yutong,Bus,2022,LFP,Lithium Iron Phosphate (LFP),280.6,367.2,228.2,355278.0,1639,23,4.3,China,Asia-Pacific,Fleet/Commercial,76.42,967.53,43.43,4.9
+23,Hyundai Elec City Bus Pro,Hyundai,SUV,2020,NMC,Nickel Manganese Cobalt (NMC),73.3,420.6,261.3,97621.0,79543,19,3.8,South Korea,Asia-Pacific,Mass Market,17.43,232.1,190.9,4.2
+24,Lucid Motors Air Pure Standard,Lucid Motors,SUV,2025,LFP,Lithium Iron Phosphate (LFP),67.2,526.4,327.1,72952.0,350630,32,4.1,USA,North America,Luxury,12.77,138.59,841.51,4.9
+25,Tata Motors Punch EV Plus,Tata Motors,Hatchback,2024,Solid-State,Solid-State Battery,41.4,391.4,243.2,26130.0,242797,11,4.3,India,Asia-Pacific,Budget,10.58,66.76,364.2,4.95
+26,Porsche Macan Electric Long Range,Porsche,Hatchback,2024,Solid-State,Solid-State Battery,50.9,618.7,384.4,60906.0,365677,14,4.1,Germany,Europe,Luxury,8.23,98.44,548.52,4.95
+27,Mercedes-Benz eCitaro Bus Plus,Mercedes-Benz,SUV,2020,NMC,Nickel Manganese Cobalt (NMC),83.0,396.6,246.4,74259.0,104884,24,3.8,Germany,Europe,Luxury,20.93,187.24,251.72,4.2
+28,Lucid Motors Air Touring Plus,Lucid Motors,SUV,2020,NMC,Nickel Manganese Cobalt (NMC),68.7,598.8,372.1,84664.0,49293,26,3.7,USA,North America,Luxury,11.47,141.39,118.3,4.2
+29,Porsche Taycan 4S Dual Motor,Porsche,Hatchback,2024,LFP,Lithium Iron Phosphate (LFP),61.5,313.6,194.9,40471.0,360292,23,4.5,Germany,Europe,Luxury,19.61,129.05,540.44,4.9
+30,Mercedes-Benz EQE 350+ Pro,Mercedes-Benz,SUV,2022,NCA,Nickel Cobalt Aluminum (NCA),107.3,641.8,398.8,133628.0,114914,25,3.7,Germany,Europe,Luxury,16.72,208.21,275.79,4.0
+31,Ola Electric Diamondhead Cruiser Standard,Ola Electric,Two-Wheeler,2024,Sodium-Ion,Sodium-Ion (Na-Ion),5.6,147.4,91.6,939.0,74059,17,4.7,India,Asia-Pacific,Budget,3.8,6.37,44.44,4.8
+32,Hyundai Ioniq 6 Long Range,Hyundai,Hatchback,2022,NMC,Nickel Manganese Cobalt (NMC),60.6,366.7,227.9,37949.0,131290,26,4.0,South Korea,Asia-Pacific,Mass Market,16.53,103.49,196.94,4.2
+33,Volvo C40 Recharge Max,Volvo,Sedan,2021,LFP,Lithium Iron Phosphate (LFP),74.2,753.9,468.5,107257.0,98553,29,4.3,Sweden,Europe,Luxury,9.84,142.27,187.25,4.9
+34,Volkswagen ID.5 Performance,Volkswagen,Sedan,2022,NMC,Nickel Manganese Cobalt (NMC),119.9,588.5,365.7,77294.0,36465,21,4.1,Germany,Europe,Mass Market,20.37,131.34,69.28,4.2
+35,Ford Mustang Mach-E Max,Ford,Sedan,2020,LFP,Lithium Iron Phosphate (LFP),95.1,552.1,343.1,49164.0,173914,38,4.7,USA,North America,Mass Market,17.23,89.05,330.44,4.9
+36,BYD Dolphin Dual Motor,BYD,Hatchback,2020,NMC,Nickel Manganese Cobalt (NMC),61.2,419.4,260.6,44886.0,534242,24,4.8,China,Asia-Pacific,Mass Market,14.59,107.02,801.36,4.2
+37,Volkswagen ID. Buzz Performance,Volkswagen,Sedan,2024,LFP,Lithium Iron Phosphate (LFP),94.6,822.2,510.9,42505.0,219055,35,3.9,Germany,Europe,Mass Market,11.51,51.7,416.2,4.9
+38,Kia Niro EV Max,Kia,Sedan,2023,NMC,Nickel Manganese Cobalt (NMC),97.7,812.6,504.9,56929.0,310930,18,4.6,South Korea,Asia-Pacific,Mass Market,12.02,70.06,590.77,4.2
+39,Kia EV9 Long Range,Kia,Sedan,2024,NMC,Nickel Manganese Cobalt (NMC),87.2,605.1,376.0,82617.0,339722,33,4.3,South Korea,Asia-Pacific,Mass Market,14.41,136.53,645.47,4.2
+40,NIO ES6 Performance,NIO,Sedan,2025,NMC,Nickel Manganese Cobalt (NMC),118.1,530.0,329.3,55752.0,250572,25,3.2,China,Asia-Pacific,Premium,22.28,105.19,476.09,4.2
+41,Tesla Model X Ultra,Tesla,SUV,2023,NMC,Nickel Manganese Cobalt (NMC),93.6,658.9,409.4,101888.0,910502,24,4.2,USA,North America,Premium,14.21,154.63,2185.2,4.2
+42,Mercedes-Benz eCitaro Bus Plus,Mercedes-Benz,Hatchback,2020,NCA,Nickel Cobalt Aluminum (NCA),61.6,430.7,267.6,59846.0,72367,23,3.8,Germany,Europe,Luxury,14.3,138.95,108.55,4.0
+43,BYD Tang EV Dual Motor,BYD,Sedan,2026,LFP,Lithium Iron Phosphate (LFP),80.6,567.3,352.5,51833.0,1320570,32,5.0,China,Asia-Pacific,Mass Market,14.21,91.37,2509.08,4.9
+44,Porsche Macan Electric Plus,Porsche,Sedan,2021,NMC,Nickel Manganese Cobalt (NMC),76.2,591.6,367.6,76042.0,240449,26,4.1,Germany,Europe,Luxury,12.88,128.54,456.85,4.2
+45,Toyota bZ3 Ultra,Toyota,SUV,2023,LFP,Lithium Iron Phosphate (LFP),74.9,494.5,307.3,43489.0,306930,24,4.3,Japan,Asia-Pacific,Mass Market,15.15,87.95,736.63,4.9
+46,Volkswagen ID. Buzz Dual Motor,Volkswagen,Sedan,2022,NMC,Nickel Manganese Cobalt (NMC),73.0,594.6,369.5,68173.0,275703,18,4.3,Germany,Europe,Mass Market,12.28,114.65,523.84,4.2
+47,Mahindra e-Verito Ultra,Mahindra,SUV,2022,LFP,Lithium Iron Phosphate (LFP),109.0,509.0,316.3,51318.0,255989,39,4.3,India,Asia-Pacific,Budget,21.41,100.82,614.37,4.9
+48,Lucid Motors Air Pure Dual Motor,Lucid Motors,Sedan,2020,LFP,Lithium Iron Phosphate (LFP),98.9,634.1,394.0,102171.0,137523,26,3.6,USA,North America,Luxury,15.6,161.13,261.29,4.9
+49,Ford F-150 Lightning Dual Motor,Ford,Sedan,2020,LFP,Lithium Iron Phosphate (LFP),102.7,550.0,341.8,40640.0,83198,34,3.9,USA,North America,Mass Market,18.67,73.89,158.08,4.9
+50,Lucid Motors Air Touring Long Range,Lucid Motors,Truck,2026,NMC,Nickel Manganese Cobalt (NMC),148.5,737.1,458.0,121699.0,7913,29,4.6,USA,North America,Luxury,20.15,165.11,33.23,4.2
+51,Ola Electric S1 Pro Gen 2 Ultra,Ola Electric,Two-Wheeler,2025,LFP,Lithium Iron Phosphate (LFP),3.7,114.8,71.3,3078.0,174879,26,4.1,India,Asia-Pacific,Budget,3.22,26.81,104.93,4.9
+52,Tata Motors Nexon EV Max Standard,Tata Motors,Hatchback,2026,NMC,Nickel Manganese Cobalt (NMC),70.3,479.1,297.7,24602.0,169155,27,4.5,India,Asia-Pacific,Budget,14.67,51.35,253.73,4.2
+53,NIO EC7 Long Range,NIO,Sedan,2023,NMC,Nickel Manganese Cobalt (NMC),65.1,738.0,458.6,99559.0,351676,25,4.6,China,Asia-Pacific,Premium,8.82,134.9,668.18,4.2
+54,Ather Energy 450X Gen 3 Dual Motor,Ather Energy,Two-Wheeler,2024,NCA,Nickel Cobalt Aluminum (NCA),4.6,155.4,96.6,2562.0,144634,28,4.5,India,Asia-Pacific,Budget,2.96,16.49,86.78,4.0
+55,Mahindra e-Verito Plus,Mahindra,SUV,2022,NMC,Nickel Manganese Cobalt (NMC),108.8,652.5,405.4,48719.0,248906,26,3.5,India,Asia-Pacific,Budget,16.67,74.67,597.37,4.2
+56,Polestar Polestar 5 Dual Motor,Polestar,Truck,2024,LFP,Lithium Iron Phosphate (LFP),165.6,689.6,428.5,51784.0,34043,29,3.6,Sweden,Europe,Premium,24.01,75.09,142.98,4.9
+57,XPeng G9 Flagship Long Range,XPeng,SUV,2026,LFP,Lithium Iron Phosphate (LFP),79.5,630.3,391.7,36750.0,257865,30,3.7,China,Asia-Pacific,Mass Market,12.61,58.31,618.88,4.9
+58,Rivian R1T Adventure Max,Rivian,SUV,2023,NMC,Nickel Manganese Cobalt (NMC),94.8,479.1,297.7,90452.0,259672,18,4.0,USA,North America,Premium,19.79,188.8,623.21,4.2
+59,Rivian R1S Dual-Motor Plus,Rivian,SUV,2025,LFP,Lithium Iron Phosphate (LFP),80.3,672.8,418.1,57786.0,273293,35,4.5,USA,North America,Premium,11.94,85.89,655.9,4.9
+60,Lucid Motors Air Touring Plus,Lucid Motors,SUV,2021,LFP,Lithium Iron Phosphate (LFP),66.6,426.1,264.8,76295.0,83866,28,4.3,USA,North America,Luxury,15.63,179.05,201.28,4.9
+61,Lucid Motors Air Touring Max,Lucid Motors,Hatchback,2026,NMC,Nickel Manganese Cobalt (NMC),41.8,393.0,244.2,31517.0,217928,29,4.3,USA,North America,Luxury,10.64,80.2,326.89,4.2
+62,BYD Han EV Plus,BYD,Hatchback,2022,NMC,Nickel Manganese Cobalt (NMC),67.2,301.4,187.3,32899.0,83643,27,4.4,China,Asia-Pacific,Mass Market,22.3,109.15,125.46,4.2
+63,Tata Motors Punch EV Performance,Tata Motors,SUV,2020,LFP,Lithium Iron Phosphate (LFP),66.3,608.5,378.1,26599.0,143908,24,3.6,India,Asia-Pacific,Budget,10.9,43.71,345.38,4.9
+64,Ather Energy Rizta Family Dual Motor,Ather Energy,Two-Wheeler,2024,Solid-State,Solid-State Battery,3.7,147.8,91.8,4064.0,121097,13,3.9,India,Asia-Pacific,Budget,2.5,27.5,72.66,4.95
+65,Tata Motors Nexon EV Max Performance,Tata Motors,Sedan,2026,NMC,Nickel Manganese Cobalt (NMC),94.9,698.6,434.1,26098.0,119757,24,3.9,India,Asia-Pacific,Budget,13.58,37.36,227.54,4.2
+66,Rivian R1T Adventure Max,Rivian,Truck,2024,LFP,Lithium Iron Phosphate (LFP),133.3,449.2,279.1,77959.0,23587,23,3.9,USA,North America,Premium,29.67,173.55,99.07,4.9
+67,Proterra ZX5 Electric Bus Max,Proterra,Bus,2022,NMC,Nickel Manganese Cobalt (NMC),349.2,338.8,210.5,477438.0,1970,31,4.3,USA,North America,Fleet/Commercial,103.07,1409.2,52.2,4.2
+68,Mercedes-Benz EQB 300 Max,Mercedes-Benz,SUV,2021,NMC,Nickel Manganese Cobalt (NMC),115.9,552.3,343.2,130372.0,171759,21,4.3,Germany,Europe,Luxury,20.98,236.05,412.22,4.2
+69,Proterra ZX5 Electric Bus Long Range,Proterra,Bus,2023,Sodium-Ion,Sodium-Ion (Na-Ion),278.8,327.0,203.2,153380.0,676,21,4.1,USA,North America,Fleet/Commercial,85.26,469.05,17.91,4.8
+70,Rivian Commercial Van EDV Plus,Rivian,Truck,2026,NMC,Nickel Manganese Cobalt (NMC),108.3,564.7,350.9,104120.0,35334,34,3.6,USA,North America,Premium,19.18,184.38,148.4,4.2
+71,Lucid Motors Air Touring Pro,Lucid Motors,SUV,2024,NMC,Nickel Manganese Cobalt (NMC),124.6,701.2,435.7,84668.0,278264,28,4.2,USA,North America,Luxury,17.77,120.75,667.83,4.2
+72,Polestar Polestar 4 Pro,Polestar,Hatchback,2022,NMC,Nickel Manganese Cobalt (NMC),63.6,364.2,226.3,27033.0,62457,28,4.2,Sweden,Europe,Premium,17.46,74.23,93.69,4.2
+73,BMW iX3 Plus,BMW,Sedan,2026,NMC,Nickel Manganese Cobalt (NMC),100.3,947.2,588.6,91616.0,360123,19,4.2,Germany,Europe,Luxury,10.59,96.72,684.23,4.2
+74,Ola Electric S1 Pro Gen 2 Ultra,Ola Electric,Two-Wheeler,2020,LFP,Lithium Iron Phosphate (LFP),7.1,155.9,96.9,2317.0,139064,25,4.4,India,Asia-Pacific,Budget,4.55,14.86,83.44,4.9
+75,Proterra ZX5 Electric Bus Plus,Proterra,Bus,2021,LFP,Lithium Iron Phosphate (LFP),261.6,232.8,144.7,242344.0,1279,36,4.6,USA,North America,Fleet/Commercial,112.37,1041.0,33.89,4.9
+76,Proterra ZX5 Electric Bus Dual Motor,Proterra,Bus,2022,NMC,Nickel Manganese Cobalt (NMC),381.6,299.4,186.0,491418.0,2346,32,3.9,USA,North America,Fleet/Commercial,127.45,1641.34,62.17,4.2
+77,Kia EV6 GT Max,Kia,Hatchback,2025,Sodium-Ion,Sodium-Ion (Na-Ion),43.3,475.7,295.6,20885.0,321812,20,4.5,South Korea,Asia-Pacific,Mass Market,9.1,43.9,482.72,4.8
+78,Yutong ICe12 Intercity Pro,Yutong,Bus,2022,NMC,Nickel Manganese Cobalt (NMC),343.2,366.2,227.5,462883.0,4008,35,3.9,China,Asia-Pacific,Fleet/Commercial,93.72,1264.02,106.21,4.2
+79,XPeng G6 Ultra Pro,XPeng,Sedan,2024,NMC,Nickel Manganese Cobalt (NMC),113.1,857.3,532.7,105066.0,176930,30,4.2,China,Asia-Pacific,Mass Market,13.19,122.55,336.17,4.2
+80,Yutong E12 City Bus Performance,Yutong,Bus,2023,NMC,Nickel Manganese Cobalt (NMC),282.9,433.9,269.6,399685.0,1596,33,4.7,China,Asia-Pacific,Fleet/Commercial,65.2,921.15,42.29,4.2
+81,Audi Q8 e-tron Long Range,Audi,Sedan,2026,LFP,Lithium Iron Phosphate (LFP),60.5,883.6,549.0,97100.0,55547,26,3.7,Germany,Europe,Luxury,6.85,109.89,105.54,4.9
+82,Mahindra XEV 9e Plus,Mahindra,Truck,2022,LFP,Lithium Iron Phosphate (LFP),150.2,595.4,370.0,63584.0,39471,34,4.4,India,Asia-Pacific,Budget,25.23,106.79,165.78,4.9
+83,Porsche Macan Electric Long Range,Porsche,SUV,2020,LFP,Lithium Iron Phosphate (LFP),75.8,555.3,345.0,58484.0,38692,35,4.9,Germany,Europe,Luxury,13.65,105.32,92.86,4.9
+84,Tata Motors Punch EV Ultra,Tata Motors,SUV,2022,NCA,Nickel Cobalt Aluminum (NCA),103.8,396.5,246.4,45523.0,185749,31,4.0,India,Asia-Pacific,Budget,26.18,114.81,445.8,4.0
+85,Audi Q8 e-tron Plus,Audi,Sedan,2025,NCA,Nickel Cobalt Aluminum (NCA),59.3,562.9,349.8,135654.0,461377,25,3.6,Germany,Europe,Luxury,10.53,240.99,876.62,4.0
+86,Toyota bZ4X Plus,Toyota,SUV,2022,NMC,Nickel Manganese Cobalt (NMC),94.1,675.4,419.7,56244.0,259590,23,4.1,Japan,Asia-Pacific,Mass Market,13.93,83.28,623.02,4.2
+87,Geely / Zeekr Zeekr 009 Max,Geely / Zeekr,Sedan,2025,Solid-State,Solid-State Battery,80.1,982.5,610.5,70205.0,301197,17,4.4,China,Asia-Pacific,Mass Market,8.15,71.46,572.27,4.95
+88,Proterra Catalyst E2 Ultra,Proterra,Bus,2022,LFP,Lithium Iron Phosphate (LFP),259.2,420.7,261.4,193313.0,751,37,4.3,USA,North America,Fleet/Commercial,61.61,459.5,19.9,4.9
+89,General Motors Chevrolet Bolt EUV Max,General Motors,Truck,2021,NMC,Nickel Manganese Cobalt (NMC),167.9,552.8,343.5,104839.0,47700,22,3.6,USA,North America,Mass Market,30.37,189.65,200.34,4.2
+90,Ather Energy 450X Gen 3 Ultra,Ather Energy,Two-Wheeler,2023,LFP,Lithium Iron Phosphate (LFP),3.2,151.8,94.3,3503.0,97647,35,3.6,India,Asia-Pacific,Budget,2.11,23.08,58.59,4.9
+91,Mercedes-Benz EQE 350+ Plus,Mercedes-Benz,Truck,2022,NMC,Nickel Manganese Cobalt (NMC),182.1,653.2,405.9,98297.0,36078,27,4.1,Germany,Europe,Luxury,27.88,150.49,151.53,4.2
+92,Volkswagen ID.3 Dual Motor,Volkswagen,SUV,2021,NCA,Nickel Cobalt Aluminum (NCA),113.9,592.8,368.3,106602.0,212646,29,3.8,Germany,Europe,Mass Market,19.21,179.83,510.35,4.0
+93,Tesla Model 3 Pro,Tesla,SUV,2020,NMC,Nickel Manganese Cobalt (NMC),106.7,551.8,342.9,90220.0,510694,29,4.5,USA,North America,Premium,19.34,163.5,1225.67,4.2
+94,General Motors Chevrolet Bolt EUV Standard,General Motors,SUV,2020,NMC,Nickel Manganese Cobalt (NMC),108.4,489.3,304.0,82507.0,45585,22,4.3,USA,North America,Mass Market,22.15,168.62,109.4,4.2
+95,NIO ES8 Long Range,NIO,SUV,2020,LFP,Lithium Iron Phosphate (LFP),81.4,511.3,317.7,57817.0,156608,35,3.6,China,Asia-Pacific,Premium,15.92,113.08,375.86,4.9
+96,Mahindra XEV 9e Pro,Mahindra,Hatchback,2022,LFP,Lithium Iron Phosphate (LFP),48.3,357.3,222.0,24576.0,180523,25,3.8,India,Asia-Pacific,Budget,13.52,68.78,270.78,4.9
+97,BYD Atto 3 Ultra,BYD,Sedan,2021,NCA,Nickel Cobalt Aluminum (NCA),100.3,765.1,475.4,46891.0,260944,18,4.6,China,Asia-Pacific,Mass Market,13.11,61.29,495.79,4.0
+98,Volkswagen ID.5 Performance,Volkswagen,Truck,2024,LFP,Lithium Iron Phosphate (LFP),168.9,509.6,316.7,55886.0,14170,22,4.2,Germany,Europe,Mass Market,33.14,109.67,59.51,4.9
+99,Mercedes-Benz EQE 350+ Performance,Mercedes-Benz,Sedan,2026,LFP,Lithium Iron Phosphate (LFP),56.4,801.8,498.2,33055.0,225926,40,4.0,Germany,Europe,Luxury,7.03,41.23,429.26,4.9
+100,Yutong ICe12 Intercity Ultra,Yutong,Bus,2023,NMC,Nickel Manganese Cobalt (NMC),302.8,419.0,260.4,427151.0,4554,21,4.3,China,Asia-Pacific,Fleet/Commercial,72.27,1019.45,120.68,4.2
+101,General Motors Silverado EV Long Range,General Motors,SUV,2026,Sodium-Ion,Sodium-Ion (Na-Ion),76.6,626.0,389.0,39799.0,67641,15,4.8,USA,North America,Mass Market,12.24,63.58,162.34,4.8
+102,Mahindra XEV 9e Dual Motor,Mahindra,Hatchback,2023,LFP,Lithium Iron Phosphate (LFP),53.2,303.0,188.3,13525.0,170702,40,4.1,India,Asia-Pacific,Budget,17.56,44.64,256.05,4.9
+103,General Motors Silverado EV Ultra,General Motors,Sedan,2023,NMC,Nickel Manganese Cobalt (NMC),108.5,624.9,388.3,42738.0,365792,35,4.1,USA,North America,Mass Market,17.36,68.39,695.0,4.2
+104,Polestar Polestar 3 Plus,Polestar,SUV,2023,NMC,Nickel Manganese Cobalt (NMC),84.9,645.7,401.2,64250.0,160361,29,3.9,Sweden,Europe,Premium,13.15,99.5,384.87,4.2
+105,Volkswagen ID.5 Long Range,Volkswagen,SUV,2020,LFP,Lithium Iron Phosphate (LFP),100.6,379.0,235.5,71630.0,160849,23,3.7,Germany,Europe,Mass Market,26.54,189.0,386.04,4.9
+106,Polestar Polestar 4 Long Range,Polestar,Sedan,2025,Solid-State,Solid-State Battery,105.4,839.2,521.5,53733.0,235040,14,3.9,Sweden,Europe,Premium,12.56,64.03,446.58,4.95
+107,Ford F-150 Lightning Standard,Ford,Sedan,2021,NMC,Nickel Manganese Cobalt (NMC),67.0,500.0,310.7,104831.0,146985,21,4.1,USA,North America,Mass Market,13.4,209.66,279.27,4.2
+108,General Motors Cadillac LYRIQ Performance,General Motors,Hatchback,2022,LFP,Lithium Iron Phosphate (LFP),57.9,335.1,208.2,32304.0,175509,22,3.6,USA,North America,Mass Market,17.28,96.4,263.26,4.9
+109,Ford F-150 Lightning Max,Ford,Hatchback,2020,LFP,Lithium Iron Phosphate (LFP),35.9,383.0,238.0,31384.0,71395,34,3.8,USA,North America,Mass Market,9.37,81.94,107.09,4.9
+110,Yutong T13 Coach Long Range,Yutong,Bus,2022,NMC,Nickel Manganese Cobalt (NMC),216.7,363.5,225.9,261215.0,1639,19,4.3,China,Asia-Pacific,Fleet/Commercial,59.61,718.61,43.43,4.2
+111,Lucid Motors Gravity SUV Max,Lucid Motors,Sedan,2023,NMC,Nickel Manganese Cobalt (NMC),77.0,629.6,391.2,123481.0,87878,29,4.0,USA,North America,Luxury,12.23,196.13,166.97,4.2
+112,BYD Dolphin Long Range,BYD,SUV,2024,LFP,Lithium Iron Phosphate (LFP),112.0,485.4,301.6,61141.0,523371,31,4.4,China,Asia-Pacific,Mass Market,23.07,125.96,1256.09,4.9
+113,Tesla Model 3 Dual Motor,Tesla,Sedan,2023,LFP,Lithium Iron Phosphate (LFP),93.7,605.0,375.9,64064.0,1043400,33,4.9,USA,North America,Premium,15.49,105.89,1982.46,4.9
+114,Tesla Model 3 Dual Motor,Tesla,Sedan,2020,NCA,Nickel Cobalt Aluminum (NCA),86.5,601.5,373.8,119310.0,348586,27,4.6,USA,North America,Premium,14.38,198.35,662.31,4.0
+115,Tesla Cybertruck Long Range,Tesla,SUV,2026,Solid-State,Solid-State Battery,97.9,774.7,481.4,80162.0,1058634,11,4.3,USA,North America,Premium,12.64,103.47,2540.72,4.95
+116,Volvo EX90 Pro,Volvo,Hatchback,2022,LFP,Lithium Iron Phosphate (LFP),37.3,450.8,280.1,37391.0,252714,38,4.6,Sweden,Europe,Luxury,8.27,82.94,379.07,4.9
+117,Geely / Zeekr Zeekr X Plus,Geely / Zeekr,Hatchback,2026,NMC,Nickel Manganese Cobalt (NMC),41.9,356.9,221.8,24462.0,176604,22,4.1,China,Asia-Pacific,Mass Market,11.74,68.54,264.91,4.2
+118,Tata Motors Tiago EV Performance,Tata Motors,Truck,2026,NMC,Nickel Manganese Cobalt (NMC),187.0,690.2,428.9,63307.0,45428,28,3.6,India,Asia-Pacific,Budget,27.09,91.72,190.8,4.2
+119,Tata Motors Tiago EV Max,Tata Motors,SUV,2023,NMC,Nickel Manganese Cobalt (NMC),101.8,668.4,415.3,43589.0,67518,27,4.0,India,Asia-Pacific,Budget,15.23,65.21,162.04,4.2
+120,Volkswagen ID. Buzz Ultra,Volkswagen,Hatchback,2026,LFP,Lithium Iron Phosphate (LFP),46.5,475.9,295.7,23424.0,75198,36,4.1,Germany,Europe,Mass Market,9.77,49.22,112.8,4.9
+121,XPeng G9 Flagship Plus,XPeng,Hatchback,2024,LFP,Lithium Iron Phosphate (LFP),38.1,310.3,192.8,29907.0,239468,24,3.9,China,Asia-Pacific,Mass Market,12.28,96.38,359.2,4.9
+122,Tata Motors Tiago EV Long Range,Tata Motors,Sedan,2024,LFP,Lithium Iron Phosphate (LFP),70.6,626.0,389.0,36502.0,236436,23,4.1,India,Asia-Pacific,Budget,11.28,58.31,449.23,4.9
+123,XPeng G9 Flagship Pro,XPeng,SUV,2025,NMC,Nickel Manganese Cobalt (NMC),117.5,521.4,324.0,86928.0,449784,22,3.9,China,Asia-Pacific,Mass Market,22.54,166.72,1079.48,4.2
+124,NIO ES6 Long Range,NIO,Hatchback,2025,NMC,Nickel Manganese Cobalt (NMC),69.5,459.3,285.4,30313.0,295734,28,4.5,China,Asia-Pacific,Premium,15.13,66.0,443.6,4.2
+125,Toyota bZ4X Max,Toyota,Hatchback,2024,NMC,Nickel Manganese Cobalt (NMC),44.4,384.9,239.2,25443.0,324838,24,4.1,Japan,Asia-Pacific,Mass Market,11.54,66.1,487.26,4.2
+126,Ather Energy Rizta Family Dual Motor,Ather Energy,Two-Wheeler,2020,NMC,Nickel Manganese Cobalt (NMC),6.8,154.8,96.2,3370.0,100280,22,4.3,India,Asia-Pacific,Budget,4.39,21.77,60.17,4.2
+127,Mercedes-Benz EQB 300 Max,Mercedes-Benz,SUV,2026,NCA,Nickel Cobalt Aluminum (NCA),109.6,682.5,424.1,103335.0,77242,31,3.7,Germany,Europe,Luxury,16.06,151.41,185.38,4.0
+128,Ola Electric S1 X Plus,Ola Electric,Two-Wheeler,2025,NCA,Nickel Cobalt Aluminum (NCA),3.7,144.6,89.9,4758.0,134949,24,4.5,India,Asia-Pacific,Budget,2.56,32.9,80.97,4.0
+129,Tata Motors Curvv EV Pro,Tata Motors,Truck,2026,NMC,Nickel Manganese Cobalt (NMC),194.8,643.4,399.8,70365.0,44127,22,4.2,India,Asia-Pacific,Budget,30.28,109.36,185.33,4.2
+130,Porsche Taycan 4S Dual Motor,Porsche,Hatchback,2026,NMC,Nickel Manganese Cobalt (NMC),41.3,350.8,218.0,30694.0,387735,34,4.2,Germany,Europe,Luxury,11.77,87.5,581.6,4.2
+131,Volkswagen ID.5 Ultra,Volkswagen,SUV,2026,NMC,Nickel Manganese Cobalt (NMC),67.6,577.7,359.0,37014.0,428066,29,4.2,Germany,Europe,Mass Market,11.7,64.07,1027.36,4.2
+132,Tesla Semi Performance,Tesla,SUV,2020,NMC,Nickel Manganese Cobalt (NMC),113.9,545.0,338.6,57992.0,252568,33,5.0,USA,North America,Premium,20.9,106.41,606.16,4.2
+133,Ola Electric Diamondhead Cruiser Long Range,Ola Electric,Two-Wheeler,2025,NMC,Nickel Manganese Cobalt (NMC),7.7,200.7,124.7,1050.0,68532,22,3.6,India,Asia-Pacific,Budget,3.84,5.23,41.12,4.2
+134,Ola Electric S1 Pro Gen 2 Long Range,Ola Electric,Two-Wheeler,2022,LFP,Lithium Iron Phosphate (LFP),3.7,114.0,70.8,2792.0,175266,36,3.9,India,Asia-Pacific,Budget,3.25,24.49,105.16,4.9
+135,Mahindra XUV400 Pro Pro,Mahindra,Sedan,2020,NMC,Nickel Manganese Cobalt (NMC),104.0,601.3,373.6,46313.0,15410,29,4.1,India,Asia-Pacific,Budget,17.3,77.02,29.28,4.2
+136,Volkswagen ID.5 Max,Volkswagen,Hatchback,2024,NCA,Nickel Cobalt Aluminum (NCA),35.6,420.8,261.5,40982.0,60219,30,4.5,Germany,Europe,Mass Market,8.46,97.39,90.33,4.0
+137,Yutong E12 City Bus Pro,Yutong,Bus,2020,LFP,Lithium Iron Phosphate (LFP),228.2,233.5,145.1,338049.0,1199,40,4.1,China,Asia-Pacific,Fleet/Commercial,97.73,1447.75,31.77,4.9
+138,Porsche Taycan 4S Long Range,Porsche,SUV,2025,LFP,Lithium Iron Phosphate (LFP),85.6,715.1,444.3,75725.0,469573,27,4.0,Germany,Europe,Luxury,11.97,105.89,1126.98,4.9
+139,Proterra Catalyst E2 Max,Proterra,Bus,2026,Solid-State,Solid-State Battery,220.3,361.0,224.3,511111.0,693,15,4.5,USA,North America,Fleet/Commercial,61.02,1415.82,18.36,4.95
+140,BYD eBus K9 Pro,BYD,Truck,2021,LFP,Lithium Iron Phosphate (LFP),99.1,613.3,381.1,77787.0,22405,25,4.1,China,Asia-Pacific,Mass Market,16.16,126.83,94.1,4.9
+141,Polestar Polestar 2 Dual Motor,Polestar,Hatchback,2023,Sodium-Ion,Sodium-Ion (Na-Ion),64.2,338.3,210.2,21716.0,285027,20,4.5,Sweden,Europe,Premium,18.98,64.19,427.54,4.8
+142,Volkswagen ID.7 Dual Motor,Volkswagen,Sedan,2026,LFP,Lithium Iron Phosphate (LFP),60.6,638.6,396.8,41069.0,270100,31,3.9,Germany,Europe,Mass Market,9.49,64.31,513.19,4.9
+143,Hyundai Ioniq 5 Long Range,Hyundai,Hatchback,2022,NMC,Nickel Manganese Cobalt (NMC),68.6,438.9,272.7,35463.0,211587,26,3.7,South Korea,Asia-Pacific,Mass Market,15.63,80.8,317.38,4.2
+144,Nissan Ariya e-4ORCE Performance,Nissan,Hatchback,2022,NMC,Nickel Manganese Cobalt (NMC),43.8,444.2,276.0,23392.0,285804,32,3.6,Japan,Asia-Pacific,Mass Market,9.86,52.66,428.71,4.2
+145,Volkswagen ID.3 Performance,Volkswagen,SUV,2025,NMC,Nickel Manganese Cobalt (NMC),100.3,569.4,353.8,67779.0,501831,32,4.4,Germany,Europe,Mass Market,17.62,119.04,1204.39,4.2
+146,Audi A6 Avant e-tron Long Range,Audi,Sedan,2022,NMC,Nickel Manganese Cobalt (NMC),67.4,531.2,330.1,125507.0,239146,34,4.0,Germany,Europe,Luxury,12.69,236.27,454.38,4.2
+147,Lucid Motors Gravity SUV Performance,Lucid Motors,Truck,2025,NMC,Nickel Manganese Cobalt (NMC),131.2,758.4,471.2,138833.0,36691,24,4.8,USA,North America,Luxury,17.3,183.06,154.1,4.2
+148,Proterra Catalyst E2 Max,Proterra,Bus,2023,Sodium-Ion,Sodium-Ion (Na-Ion),373.5,390.3,242.5,282014.0,3196,16,4.6,USA,North America,Fleet/Commercial,95.7,722.56,84.69,4.8
+149,Hyundai Kona Electric Pro,Hyundai,Hatchback,2025,NMC,Nickel Manganese Cobalt (NMC),55.3,510.4,317.1,22839.0,175981,22,4.1,South Korea,Asia-Pacific,Mass Market,10.83,44.75,263.97,4.2
+150,Tata Motors Curvv EV Dual Motor,Tata Motors,Truck,2024,LFP,Lithium Iron Phosphate (LFP),100.6,698.8,434.2,44257.0,35869,38,4.5,India,Asia-Pacific,Budget,14.4,63.33,150.65,4.9
+151,Ford E-Transit Van Standard,Ford,SUV,2022,NMC,Nickel Manganese Cobalt (NMC),107.1,528.6,328.5,59597.0,261612,23,4.1,USA,North America,Mass Market,20.26,112.74,627.87,4.2
+152,BMW i4 eDrive40 Max,BMW,Sedan,2022,LFP,Lithium Iron Phosphate (LFP),94.0,559.1,347.4,65040.0,247681,31,3.9,Germany,Europe,Luxury,16.81,116.33,470.59,4.9
+153,Kia EV9 Pro,Kia,Hatchback,2024,LFP,Lithium Iron Phosphate (LFP),53.4,449.9,279.6,17854.0,417310,27,3.7,South Korea,Asia-Pacific,Mass Market,11.87,39.68,625.97,4.9
+154,Ford E-Transit Van Dual Motor,Ford,SUV,2026,LFP,Lithium Iron Phosphate (LFP),95.3,461.8,286.9,49401.0,542211,28,3.8,USA,North America,Mass Market,20.64,106.97,1301.31,4.9
+155,General Motors Chevrolet Bolt EUV Performance,General Motors,Hatchback,2023,Sodium-Ion,Sodium-Ion (Na-Ion),54.3,372.4,231.4,16587.0,155218,25,3.8,USA,North America,Mass Market,14.58,44.54,232.83,4.8
+156,Tata Motors Punch EV Pro,Tata Motors,Sedan,2023,LFP,Lithium Iron Phosphate (LFP),72.2,695.0,431.9,51397.0,206850,34,4.3,India,Asia-Pacific,Budget,10.39,73.95,393.01,4.9
+157,Audi A6 Avant e-tron Ultra,Audi,Sedan,2022,LFP,Lithium Iron Phosphate (LFP),79.7,482.7,299.9,48223.0,46354,31,4.8,Germany,Europe,Luxury,16.51,99.9,88.07,4.9
+158,Hyundai Kona Electric Plus,Hyundai,Truck,2024,NCA,Nickel Cobalt Aluminum (NCA),108.5,502.2,312.1,119165.0,35093,33,3.9,South Korea,Asia-Pacific,Mass Market,21.6,237.29,147.39,4.0
+159,Tesla Semi Plus,Tesla,SUV,2023,NMC,Nickel Manganese Cobalt (NMC),79.0,726.4,451.4,66899.0,155024,27,3.6,USA,North America,Premium,10.88,92.1,372.06,4.2
+160,NIO ET7 Dual Motor,NIO,Sedan,2026,LFP,Lithium Iron Phosphate (LFP),69.5,567.5,352.6,49535.0,352473,33,4.1,China,Asia-Pacific,Premium,12.25,87.29,669.7,4.9
+161,BYD Tang EV Long Range,BYD,Sedan,2021,LFP,Lithium Iron Phosphate (LFP),76.2,523.6,325.3,56253.0,588184,30,4.5,China,Asia-Pacific,Mass Market,14.55,107.44,1117.55,4.9
+162,Mercedes-Benz EQB 300 Standard,Mercedes-Benz,Sedan,2022,NMC,Nickel Manganese Cobalt (NMC),117.3,565.4,351.3,127554.0,110176,34,3.7,Germany,Europe,Luxury,20.75,225.6,209.33,4.2
+163,BYD Atto 3 Dual Motor,BYD,SUV,2025,LFP,Lithium Iron Phosphate (LFP),85.1,602.9,374.6,52422.0,1092988,26,4.1,China,Asia-Pacific,Mass Market,14.12,86.95,2623.17,4.9
+164,General Motors Silverado EV Standard,General Motors,Hatchback,2022,NMC,Nickel Manganese Cobalt (NMC),55.3,388.6,241.5,32878.0,266609,27,4.5,USA,North America,Mass Market,14.23,84.61,399.91,4.2
+165,Geely / Zeekr Zeekr X Standard,Geely / Zeekr,SUV,2020,NCA,Nickel Cobalt Aluminum (NCA),103.8,525.1,326.3,93625.0,179956,18,3.9,China,Asia-Pacific,Mass Market,19.77,178.3,431.89,4.0
+166,Ford Mustang Mach-E Long Range,Ford,Sedan,2024,NMC,Nickel Manganese Cobalt (NMC),111.4,728.0,452.4,43784.0,441061,25,3.9,USA,North America,Mass Market,15.3,60.14,838.02,4.2
+167,Kia EV6 GT Performance,Kia,SUV,2022,LFP,Lithium Iron Phosphate (LFP),71.2,516.5,320.9,53216.0,287483,37,4.5,South Korea,Asia-Pacific,Mass Market,13.79,103.03,689.96,4.9
+168,Audi e-tron GT Pro,Audi,SUV,2022,NCA,Nickel Cobalt Aluminum (NCA),80.7,537.9,334.2,138558.0,222216,35,3.7,Germany,Europe,Luxury,15.0,257.59,533.32,4.0
+169,Nissan Leaf Gen 2 Max,Nissan,Truck,2025,NMC,Nickel Manganese Cobalt (NMC),129.2,701.8,436.1,78588.0,20655,26,3.9,Japan,Asia-Pacific,Mass Market,18.41,111.98,86.75,4.2
+170,Proterra ZX5 Electric Bus Dual Motor,Proterra,Bus,2021,NMC,Nickel Manganese Cobalt (NMC),303.6,332.1,206.4,399610.0,2590,27,4.0,USA,North America,Fleet/Commercial,91.42,1203.28,68.64,4.2
+171,Volvo EX90 Ultra,Volvo,Truck,2026,Sodium-Ion,Sodium-Ion (Na-Ion),119.4,514.0,319.4,70407.0,27199,22,3.8,Sweden,Europe,Luxury,23.23,136.98,114.24,4.8
+172,Porsche Macan Electric Ultra,Porsche,SUV,2024,NCA,Nickel Cobalt Aluminum (NCA),93.9,461.6,286.8,100161.0,179112,19,3.8,Germany,Europe,Luxury,20.34,216.99,429.87,4.0
+173,Toyota Solid-State Prototype Plus,Toyota,SUV,2020,LFP,Lithium Iron Phosphate (LFP),65.5,565.2,351.2,69644.0,16358,39,4.3,Japan,Asia-Pacific,Mass Market,11.59,123.22,39.26,4.9
+174,Toyota bZ4X Performance,Toyota,SUV,2022,LFP,Lithium Iron Phosphate (LFP),109.9,592.7,368.3,34436.0,271428,29,4.1,Japan,Asia-Pacific,Mass Market,18.54,58.1,651.43,4.9
+175,Polestar Polestar 2 Pro,Polestar,SUV,2020,NCA,Nickel Cobalt Aluminum (NCA),87.2,469.1,291.5,124012.0,90882,19,4.6,Sweden,Europe,Premium,18.59,264.36,218.12,4.0
+176,NIO ES6 Long Range,NIO,Sedan,2025,NMC,Nickel Manganese Cobalt (NMC),117.3,701.8,436.1,106106.0,357988,26,4.1,China,Asia-Pacific,Premium,16.71,151.19,680.18,4.2
+177,XPeng X9 MPV Dual Motor,XPeng,SUV,2023,NMC,Nickel Manganese Cobalt (NMC),66.9,641.9,398.9,57273.0,180982,24,4.4,China,Asia-Pacific,Mass Market,10.42,89.22,434.36,4.2
+178,Audi e-tron GT Dual Motor,Audi,SUV,2023,NMC,Nickel Manganese Cobalt (NMC),74.5,460.2,286.0,76277.0,156847,18,4.7,Germany,Europe,Luxury,16.19,165.75,376.43,4.2
+179,Rivian R1T Adventure Plus,Rivian,SUV,2026,LFP,Lithium Iron Phosphate (LFP),92.0,570.1,354.2,56633.0,244006,33,4.1,USA,North America,Premium,16.14,99.34,585.61,4.9
+180,NIO ET5 Touring Ultra,NIO,SUV,2025,NMC,Nickel Manganese Cobalt (NMC),108.6,757.7,470.8,59919.0,119025,27,4.0,China,Asia-Pacific,Premium,14.33,79.08,285.66,4.2
+181,Rivian R1T Adventure Ultra,Rivian,Truck,2023,LFP,Lithium Iron Phosphate (LFP),146.5,635.0,394.6,71118.0,40494,37,4.1,USA,North America,Premium,23.07,112.0,170.07,4.9
+182,Nissan Ariya e-4ORCE Ultra,Nissan,Truck,2026,NCA,Nickel Cobalt Aluminum (NCA),139.9,642.8,399.4,74222.0,41473,21,3.5,Japan,Asia-Pacific,Mass Market,21.76,115.47,174.19,4.0
+183,Ford Mustang Mach-E Plus,Ford,Sedan,2021,LFP,Lithium Iron Phosphate (LFP),61.4,608.3,378.0,40904.0,221585,37,4.5,USA,North America,Mass Market,10.09,67.24,421.01,4.9
+184,Mercedes-Benz EQA 250 Standard,Mercedes-Benz,Sedan,2023,NMC,Nickel Manganese Cobalt (NMC),101.2,676.0,420.0,77596.0,40583,30,4.3,Germany,Europe,Luxury,14.97,114.79,77.11,4.2
+185,Yutong ICe12 Intercity Dual Motor,Yutong,Bus,2021,NMC,Nickel Manganese Cobalt (NMC),273.8,239.4,148.8,272408.0,843,20,4.5,China,Asia-Pacific,Fleet/Commercial,114.37,1137.88,22.34,4.2
+186,Hyundai Ioniq 7 Dual Motor,Hyundai,Truck,2026,NMC,Nickel Manganese Cobalt (NMC),194.6,704.9,438.0,69876.0,29566,32,4.1,South Korea,Asia-Pacific,Mass Market,27.61,99.13,124.18,4.2
+187,Volkswagen ID.4 Standard,Volkswagen,Hatchback,2025,Sodium-Ion,Sodium-Ion (Na-Ion),60.8,306.4,190.4,13466.0,405181,21,3.5,Germany,Europe,Mass Market,19.84,43.95,607.77,4.8
+188,Ola Electric S1 Air Plus,Ola Electric,Two-Wheeler,2020,NCA,Nickel Cobalt Aluminum (NCA),6.1,145.6,90.5,3153.0,111425,25,4.0,India,Asia-Pacific,Budget,4.19,21.66,66.86,4.0
+189,Geely / Zeekr Zeekr 001 Plus,Geely / Zeekr,SUV,2021,NCA,Nickel Cobalt Aluminum (NCA),66.2,593.0,368.5,96307.0,164869,18,4.1,China,Asia-Pacific,Mass Market,11.16,162.41,395.69,4.0
+190,General Motors Cadillac LYRIQ Max,General Motors,Hatchback,2026,LFP,Lithium Iron Phosphate (LFP),47.1,515.0,320.0,18601.0,210108,23,4.2,USA,North America,Mass Market,9.15,36.12,315.16,4.9
+191,Rivian R1T Adventure Performance,Rivian,SUV,2024,NMC,Nickel Manganese Cobalt (NMC),85.4,651.1,404.6,61449.0,119823,34,4.2,USA,North America,Premium,13.12,94.38,287.58,4.2
+192,Toyota Solid-State Prototype Dual Motor,Toyota,Hatchback,2024,NMC,Nickel Manganese Cobalt (NMC),69.6,535.9,333.0,34293.0,347663,28,4.4,Japan,Asia-Pacific,Mass Market,12.99,63.99,521.49,4.2
+193,Mercedes-Benz EQB 300 Performance,Mercedes-Benz,SUV,2021,NMC,Nickel Manganese Cobalt (NMC),117.4,514.2,319.5,79429.0,69748,32,4.5,Germany,Europe,Luxury,22.83,154.47,167.4,4.2
+194,Volvo EX30 Max,Volvo,SUV,2021,LFP,Lithium Iron Phosphate (LFP),84.7,390.5,242.6,65840.0,205145,28,3.9,Sweden,Europe,Luxury,21.69,168.6,492.35,4.9
+195,Volvo C40 Recharge Max,Volvo,Hatchback,2024,LFP,Lithium Iron Phosphate (LFP),59.1,313.0,194.5,34082.0,435516,39,4.1,Sweden,Europe,Luxury,18.88,108.89,653.27,4.9
+196,Tesla Model X Ultra,Tesla,SUV,2021,NCA,Nickel Cobalt Aluminum (NCA),115.0,402.5,250.1,85952.0,290483,24,4.5,USA,North America,Premium,28.57,213.55,697.16,4.0
+197,Porsche Macan Electric Plus,Porsche,SUV,2022,LFP,Lithium Iron Phosphate (LFP),79.8,556.0,345.5,57070.0,245066,37,3.7,Germany,Europe,Luxury,14.35,102.64,588.16,4.9
+198,Ola Electric S1 Pro Gen 2 Max,Ola Electric,Two-Wheeler,2026,LFP,Lithium Iron Phosphate (LFP),4.1,145.3,90.3,854.0,70005,26,4.2,India,Asia-Pacific,Budget,2.82,5.88,42.0,4.9
+199,Porsche Taycan Turbo S Max,Porsche,Hatchback,2025,NMC,Nickel Manganese Cobalt (NMC),49.4,345.5,214.7,37359.0,206481,33,3.5,Germany,Europe,Luxury,14.3,108.13,309.72,4.2
+200,Ola Electric S1 Air Plus,Ola Electric,Two-Wheeler,2026,NMC,Nickel Manganese Cobalt (NMC),6.8,224.6,139.6,2537.0,104320,23,3.8,India,Asia-Pacific,Budget,3.03,11.3,62.59,4.2
+201,Hyundai Ioniq 6 Long Range,Hyundai,Hatchback,2025,Solid-State,Solid-State Battery,60.2,551.3,342.6,28947.0,494436,10,4.1,South Korea,Asia-Pacific,Mass Market,10.92,52.51,741.65,4.95
+202,Proterra ZX5 Electric Bus Standard,Proterra,Bus,2021,LFP,Lithium Iron Phosphate (LFP),254.6,335.6,208.5,320137.0,4308,37,3.7,USA,North America,Fleet/Commercial,75.86,953.92,114.16,4.9
+203,Porsche Taycan 4S Long Range,Porsche,Sedan,2020,LFP,Lithium Iron Phosphate (LFP),84.5,652.8,405.6,64017.0,146652,35,4.6,Germany,Europe,Luxury,12.94,98.07,278.64,4.9
+204,Audi A6 Avant e-tron Plus,Audi,SUV,2021,NMC,Nickel Manganese Cobalt (NMC),87.4,444.9,276.4,120006.0,47142,29,3.4,Germany,Europe,Luxury,19.64,269.74,113.14,4.2
+205,Ford E-Transit Van Plus,Ford,SUV,2025,LFP,Lithium Iron Phosphate (LFP),106.6,680.1,422.6,54377.0,481949,23,4.4,USA,North America,Mass Market,15.67,79.95,1156.68,4.9
+206,BYD Tang EV Standard,BYD,Hatchback,2025,LFP,Lithium Iron Phosphate (LFP),48.0,434.8,270.2,27229.0,1189078,25,4.5,China,Asia-Pacific,Mass Market,11.04,62.62,1783.62,4.9
+207,Rivian R1S Dual-Motor Standard,Rivian,Truck,2026,NCA,Nickel Cobalt Aluminum (NCA),118.0,655.4,407.2,122902.0,22874,35,4.0,USA,North America,Premium,18.0,187.52,96.07,4.0
+208,Kia EV3 Dual Motor,Kia,Sedan,2026,Sodium-Ion,Sodium-Ion (Na-Ion),106.1,785.6,488.1,30245.0,475486,18,4.1,South Korea,Asia-Pacific,Mass Market,13.51,38.5,903.42,4.8
+209,Nissan Ariya e-4ORCE Pro,Nissan,Sedan,2023,NMC,Nickel Manganese Cobalt (NMC),120.3,509.6,316.7,89125.0,286706,29,4.5,Japan,Asia-Pacific,Mass Market,23.61,174.89,544.74,4.2
+210,General Motors Cadillac LYRIQ Pro,General Motors,Truck,2024,NMC,Nickel Manganese Cobalt (NMC),107.3,667.5,414.8,69115.0,34027,33,4.2,USA,North America,Mass Market,16.07,103.54,142.91,4.2
+211,Porsche Macan Electric Performance,Porsche,Sedan,2021,NMC,Nickel Manganese Cobalt (NMC),65.7,659.6,409.9,116698.0,105078,20,4.5,Germany,Europe,Luxury,9.96,176.92,199.65,4.2
+212,Yutong E12 City Bus Performance,Yutong,Bus,2023,LFP,Lithium Iron Phosphate (LFP),181.0,273.9,170.2,242867.0,3298,30,4.2,China,Asia-Pacific,Fleet/Commercial,66.08,886.7,87.4,4.9
+213,Volkswagen ID.7 Standard,Volkswagen,SUV,2023,NMC,Nickel Manganese Cobalt (NMC),72.2,571.7,355.2,43151.0,314158,20,3.6,Germany,Europe,Mass Market,12.63,75.48,753.98,4.2
+214,NIO ES6 Dual Motor,NIO,Sedan,2026,LFP,Lithium Iron Phosphate (LFP),104.8,908.6,564.6,86841.0,481610,38,3.7,China,Asia-Pacific,Premium,11.53,95.58,915.06,4.9
+215,Hyundai Ioniq 6 Plus,Hyundai,SUV,2022,LFP,Lithium Iron Phosphate (LFP),69.2,429.2,266.7,42930.0,153467,37,4.2,South Korea,Asia-Pacific,Mass Market,16.12,100.02,368.32,4.9
+216,General Motors Hummer EV Plus,General Motors,Hatchback,2023,LFP,Lithium Iron Phosphate (LFP),63.5,356.4,221.5,22156.0,348054,34,3.8,USA,North America,Mass Market,17.82,62.17,522.08,4.9
+217,XPeng P7i Performance Max,XPeng,Sedan,2026,Sodium-Ion,Sodium-Ion (Na-Ion),62.5,846.9,526.2,31112.0,197543,22,3.7,China,Asia-Pacific,Mass Market,7.38,36.74,375.33,4.8
+218,Yutong ICe12 Intercity Long Range,Yutong,Bus,2025,NMC,Nickel Manganese Cobalt (NMC),370.0,506.6,314.8,297529.0,2646,30,4.9,China,Asia-Pacific,Fleet/Commercial,73.04,587.31,70.12,4.2
+219,Ford Mustang Mach-E Dual Motor,Ford,SUV,2024,LFP,Lithium Iron Phosphate (LFP),61.5,684.7,425.5,59429.0,159504,36,4.3,USA,North America,Mass Market,8.98,86.8,382.81,4.9
+220,Nissan Leaf Gen 2 Plus,Nissan,Sedan,2025,LFP,Lithium Iron Phosphate (LFP),63.5,598.3,371.8,47799.0,295945,24,3.5,Japan,Asia-Pacific,Mass Market,10.61,79.89,562.3,4.9
+221,Ford Mustang Mach-E Ultra,Ford,Sedan,2024,Solid-State,Solid-State Battery,78.0,1038.9,645.5,46949.0,249085,18,3.5,USA,North America,Mass Market,7.51,45.19,473.26,4.95
+222,Nissan Leaf Gen 2 Long Range,Nissan,Hatchback,2021,NMC,Nickel Manganese Cobalt (NMC),71.0,271.0,168.4,37931.0,158079,28,3.7,Japan,Asia-Pacific,Mass Market,26.2,139.97,237.12,4.2
+223,Tesla Cybertruck Performance,Tesla,SUV,2021,NMC,Nickel Manganese Cobalt (NMC),101.1,528.4,328.3,86861.0,487346,29,3.8,USA,North America,Premium,19.13,164.38,1169.63,4.2
+224,Geely / Zeekr Zeekr 009 Pro,Geely / Zeekr,Sedan,2020,LFP,Lithium Iron Phosphate (LFP),59.7,722.2,448.8,82603.0,52139,33,4.5,China,Asia-Pacific,Mass Market,8.27,114.38,99.06,4.9
+225,Tata Motors Nexon EV Max Standard,Tata Motors,Truck,2024,NMC,Nickel Manganese Cobalt (NMC),145.5,583.2,362.4,70281.0,25400,20,3.9,India,Asia-Pacific,Budget,24.95,120.51,106.68,4.2
+226,XPeng P7i Performance Dual Motor,XPeng,Hatchback,2025,Sodium-Ion,Sodium-Ion (Na-Ion),57.2,490.9,305.0,17857.0,415165,17,4.7,China,Asia-Pacific,Mass Market,11.65,36.38,622.75,4.8
+227,Tata Motors Nexon EV Max Ultra,Tata Motors,SUV,2023,NMC,Nickel Manganese Cobalt (NMC),105.8,460.7,286.3,45457.0,344928,24,3.7,India,Asia-Pacific,Budget,22.97,98.67,827.83,4.2
+228,Kia Niro EV Ultra,Kia,SUV,2025,Sodium-Ion,Sodium-Ion (Na-Ion),65.6,406.6,252.6,48456.0,166426,20,4.2,South Korea,Asia-Pacific,Mass Market,16.13,119.17,399.42,4.8
+229,Tata Motors Curvv EV Performance,Tata Motors,SUV,2025,Sodium-Ion,Sodium-Ion (Na-Ion),95.2,560.4,348.2,29846.0,455650,21,3.8,India,Asia-Pacific,Budget,16.99,53.26,1093.56,4.8
+230,Nissan Ariya e-4ORCE Performance,Nissan,Hatchback,2022,NCA,Nickel Cobalt Aluminum (NCA),55.2,407.6,253.3,31350.0,127165,27,3.9,Japan,Asia-Pacific,Mass Market,13.54,76.91,190.75,4.0
+231,Geely / Zeekr Zeekr X Performance,Geely / Zeekr,Hatchback,2024,NMC,Nickel Manganese Cobalt (NMC),57.5,442.8,275.1,29486.0,325075,35,3.9,China,Asia-Pacific,Mass Market,12.99,66.59,487.61,4.2
+232,Mahindra BE.05 Ultra,Mahindra,SUV,2021,LFP,Lithium Iron Phosphate (LFP),62.9,507.1,315.1,36153.0,23115,37,3.6,India,Asia-Pacific,Budget,12.4,71.29,55.48,4.9
+233,Volvo EX90 Max,Volvo,Hatchback,2025,NMC,Nickel Manganese Cobalt (NMC),52.2,482.4,299.7,48973.0,372083,23,4.2,Sweden,Europe,Luxury,10.82,101.52,558.12,4.2
+234,BYD Tang EV Long Range,BYD,SUV,2024,LFP,Lithium Iron Phosphate (LFP),91.1,689.4,428.4,61362.0,924676,39,4.3,China,Asia-Pacific,Mass Market,13.21,89.01,2219.22,4.9
+235,Ford E-Transit Van Ultra,Ford,SUV,2026,NMC,Nickel Manganese Cobalt (NMC),98.8,822.0,510.8,73185.0,381646,35,4.2,USA,North America,Mass Market,12.02,89.03,915.95,4.2
+236,NIO ES6 Pro,NIO,SUV,2023,LFP,Lithium Iron Phosphate (LFP),64.8,690.8,429.2,77675.0,89713,29,4.5,China,Asia-Pacific,Premium,9.38,112.44,215.31,4.9
+237,Proterra ZX5 Electric Bus Pro,Proterra,Bus,2024,NMC,Nickel Manganese Cobalt (NMC),228.6,298.8,185.7,280322.0,2045,19,3.7,USA,North America,Fleet/Commercial,76.51,938.16,54.19,4.2
+238,Proterra Catalyst E2 Standard,Proterra,Bus,2022,LFP,Lithium Iron Phosphate (LFP),351.6,298.1,185.2,380737.0,1130,26,3.9,USA,North America,Fleet/Commercial,117.95,1277.21,29.95,4.9
+239,Lucid Motors Air Grand Touring Dual Motor,Lucid Motors,SUV,2025,Sodium-Ion,Sodium-Ion (Na-Ion),99.1,468.5,291.1,63566.0,499902,21,3.8,USA,North America,Luxury,21.15,135.68,1199.76,4.8
+240,Volvo XC40 Recharge Pro,Volvo,Sedan,2025,NCA,Nickel Cobalt Aluminum (NCA),77.2,819.7,509.3,123198.0,290547,32,4.1,Sweden,Europe,Luxury,9.42,150.3,552.04,4.0
+241,Ford F-150 Lightning Ultra,Ford,SUV,2026,Sodium-Ion,Sodium-Ion (Na-Ion),113.5,432.0,268.4,39541.0,318002,16,4.2,USA,North America,Mass Market,26.27,91.53,763.2,4.8
+242,Mahindra XUV400 Pro Long Range,Mahindra,SUV,2026,LFP,Lithium Iron Phosphate (LFP),67.2,653.0,405.8,45264.0,306918,23,3.8,India,Asia-Pacific,Budget,10.29,69.32,736.6,4.9
+243,Toyota bZ Compact SUV Performance,Toyota,Truck,2023,LFP,Lithium Iron Phosphate (LFP),108.4,684.5,425.3,63730.0,32536,28,4.9,Japan,Asia-Pacific,Mass Market,15.84,93.1,136.65,4.9
+244,Lucid Motors Air Touring Dual Motor,Lucid Motors,SUV,2022,LFP,Lithium Iron Phosphate (LFP),109.7,503.1,312.6,51166.0,194992,31,4.3,USA,North America,Luxury,21.8,101.7,467.98,4.9
+245,Toyota bZ4X Dual Motor,Toyota,SUV,2020,LFP,Lithium Iron Phosphate (LFP),67.3,493.0,306.3,43259.0,193253,36,4.6,Japan,Asia-Pacific,Mass Market,13.65,87.75,463.81,4.9
+246,Proterra Catalyst E2 Max,Proterra,Bus,2021,NMC,Nickel Manganese Cobalt (NMC),217.7,277.7,172.6,462469.0,1195,28,4.1,USA,North America,Fleet/Commercial,78.39,1665.35,31.67,4.2
+247,Mercedes-Benz EQA 250 Ultra,Mercedes-Benz,Sedan,2026,NCA,Nickel Cobalt Aluminum (NCA),109.6,567.2,352.4,58595.0,449881,18,3.9,Germany,Europe,Luxury,19.32,103.31,854.77,4.0
+248,Toyota Solid-State Prototype Pro,Toyota,Hatchback,2023,NMC,Nickel Manganese Cobalt (NMC),45.7,389.2,241.8,39972.0,101337,21,4.0,Japan,Asia-Pacific,Mass Market,11.74,102.7,152.01,4.2
+249,Polestar Polestar 4 Ultra,Polestar,SUV,2021,LFP,Lithium Iron Phosphate (LFP),73.6,567.8,352.8,68512.0,230044,31,4.2,Sweden,Europe,Premium,12.96,120.66,552.11,4.9
+250,Audi A6 Avant e-tron Long Range,Audi,Hatchback,2021,NMC,Nickel Manganese Cobalt (NMC),40.3,326.1,202.6,57558.0,102618,33,3.6,Germany,Europe,Luxury,12.36,176.5,153.93,4.2
+251,Rivian R1S Dual-Motor Pro,Rivian,SUV,2025,NMC,Nickel Manganese Cobalt (NMC),125.2,622.9,387.1,101345.0,254698,22,3.6,USA,North America,Premium,20.1,162.7,611.28,4.2
+252,Porsche Taycan 4S Standard,Porsche,Hatchback,2026,NMC,Nickel Manganese Cobalt (NMC),40.9,580.8,360.9,41094.0,54355,26,4.7,Germany,Europe,Luxury,7.04,70.75,81.53,4.2
+253,BYD Atto 3 Max,BYD,Sedan,2024,LFP,Lithium Iron Phosphate (LFP),97.2,766.3,476.2,49511.0,768977,24,4.0,China,Asia-Pacific,Mass Market,12.68,64.61,1461.06,4.9
+254,Volkswagen ID.5 Dual Motor,Volkswagen,SUV,2024,Solid-State,Solid-State Battery,68.5,947.4,588.7,72253.0,384704,11,3.8,Germany,Europe,Mass Market,7.23,76.26,923.29,4.95
+255,Yutong E12 City Bus Long Range,Yutong,Bus,2026,LFP,Lithium Iron Phosphate (LFP),364.9,341.5,212.2,186682.0,800,31,3.8,China,Asia-Pacific,Fleet/Commercial,106.85,546.65,21.2,4.9
+256,Tesla Model S Performance,Tesla,Hatchback,2025,LFP,Lithium Iron Phosphate (LFP),45.4,434.0,269.7,26874.0,603946,27,3.9,USA,North America,Premium,10.46,61.92,905.92,4.9
+257,Yutong T13 Coach Long Range,Yutong,Bus,2026,Sodium-Ion,Sodium-Ion (Na-Ion),203.6,419.0,260.4,243035.0,3094,21,4.1,China,Asia-Pacific,Fleet/Commercial,48.59,580.04,81.99,4.8
+258,Mahindra XUV400 Pro Ultra,Mahindra,Sedan,2022,LFP,Lithium Iron Phosphate (LFP),64.2,763.8,474.6,27539.0,68839,40,4.2,India,Asia-Pacific,Budget,8.41,36.06,130.79,4.9
+259,Yutong E12 City Bus Dual Motor,Yutong,Bus,2024,LFP,Lithium Iron Phosphate (LFP),182.5,462.3,287.3,187775.0,3331,34,4.3,China,Asia-Pacific,Fleet/Commercial,39.48,406.18,88.27,4.9
+260,Rivian Commercial Van EDV Standard,Rivian,SUV,2021,LFP,Lithium Iron Phosphate (LFP),74.9,591.6,367.6,40240.0,148802,25,4.0,USA,North America,Premium,12.66,68.02,357.12,4.9
+261,Hyundai Ioniq 5 Pro,Hyundai,SUV,2024,Solid-State,Solid-State Battery,63.8,938.4,583.1,82315.0,202931,14,3.9,South Korea,Asia-Pacific,Mass Market,6.8,87.72,487.03,4.95
+262,Kia EV3 Ultra,Kia,SUV,2026,LFP,Lithium Iron Phosphate (LFP),85.5,681.8,423.7,49993.0,421446,28,4.5,South Korea,Asia-Pacific,Mass Market,12.54,73.33,1011.47,4.9
+263,Mercedes-Benz EQA 250 Long Range,Mercedes-Benz,SUV,2023,LFP,Lithium Iron Phosphate (LFP),95.0,581.6,361.4,80956.0,34329,32,4.6,Germany,Europe,Luxury,16.33,139.2,82.39,4.9
+264,Kia EV6 GT Ultra,Kia,Sedan,2021,LFP,Lithium Iron Phosphate (LFP),108.5,769.6,478.2,36954.0,116627,24,4.1,South Korea,Asia-Pacific,Mass Market,14.1,48.02,221.59,4.9
+265,Audi A6 Avant e-tron Performance,Audi,Sedan,2022,NMC,Nickel Manganese Cobalt (NMC),95.6,721.3,448.2,101081.0,298548,30,4.5,Germany,Europe,Luxury,13.25,140.14,567.24,4.2
+266,Rivian R1S Dual-Motor Max,Rivian,SUV,2022,NCA,Nickel Cobalt Aluminum (NCA),81.6,684.3,425.2,108958.0,164859,28,4.3,USA,North America,Premium,11.92,159.23,395.66,4.0
+267,Rivian R1S Dual-Motor Ultra,Rivian,Truck,2021,LFP,Lithium Iron Phosphate (LFP),104.3,590.3,366.8,58161.0,33962,36,4.0,USA,North America,Premium,17.67,98.53,142.64,4.9
+268,Tata Motors Punch EV Pro,Tata Motors,SUV,2022,NCA,Nickel Cobalt Aluminum (NCA),104.4,411.1,255.4,46038.0,283969,19,4.3,India,Asia-Pacific,Budget,25.4,111.99,681.53,4.0
+269,Mercedes-Benz eCitaro Bus Ultra,Mercedes-Benz,SUV,2021,NCA,Nickel Cobalt Aluminum (NCA),62.7,490.0,304.5,85039.0,79962,18,4.8,Germany,Europe,Luxury,12.8,173.55,191.91,4.0
+270,BMW iX xDrive50 Dual Motor,BMW,Sedan,2026,NCA,Nickel Cobalt Aluminum (NCA),58.4,562.0,349.2,121943.0,213951,22,3.9,Germany,Europe,Luxury,10.39,216.98,406.51,4.0
+271,Geely / Zeekr Zeekr X Long Range,Geely / Zeekr,Hatchback,2025,LFP,Lithium Iron Phosphate (LFP),62.5,457.0,284.0,16979.0,82940,28,4.4,China,Asia-Pacific,Mass Market,13.68,37.15,124.41,4.9
+272,Ather Energy 450S Standard,Ather Energy,Two-Wheeler,2022,LFP,Lithium Iron Phosphate (LFP),2.8,221.4,137.6,3663.0,125549,34,3.9,India,Asia-Pacific,Budget,1.26,16.54,75.33,4.9
+273,Volvo C40 Recharge Plus,Volvo,Hatchback,2021,LFP,Lithium Iron Phosphate (LFP),43.2,460.6,286.2,34417.0,71229,23,3.7,Sweden,Europe,Luxury,9.38,74.72,106.84,4.9
+274,Polestar Polestar 2 Dual Motor,Polestar,Sedan,2020,LFP,Lithium Iron Phosphate (LFP),78.1,534.1,331.9,80978.0,152839,29,3.8,Sweden,Europe,Premium,14.62,151.62,290.39,4.9
+275,Ather Energy 450S Ultra,Ather Energy,Two-Wheeler,2025,NMC,Nickel Manganese Cobalt (NMC),5.4,190.3,118.2,4246.0,143699,28,3.9,India,Asia-Pacific,Budget,2.84,22.31,86.22,4.2
+276,Tesla Model 3 Ultra,Tesla,Sedan,2020,NMC,Nickel Manganese Cobalt (NMC),82.1,565.1,351.1,99155.0,212847,23,4.4,USA,North America,Premium,14.53,175.46,404.41,4.2
+277,Nissan Leaf Gen 2 Performance,Nissan,SUV,2024,Sodium-Ion,Sodium-Ion (Na-Ion),63.1,663.9,412.5,54222.0,165338,24,4.5,Japan,Asia-Pacific,Mass Market,9.5,81.67,396.81,4.8
+278,Hyundai Elec City Bus Ultra,Hyundai,SUV,2022,NMC,Nickel Manganese Cobalt (NMC),121.3,609.6,378.8,40954.0,175793,22,3.6,South Korea,Asia-Pacific,Mass Market,19.9,67.18,421.9,4.2
+279,Ather Energy 450S Ultra,Ather Energy,Two-Wheeler,2023,NMC,Nickel Manganese Cobalt (NMC),3.0,126.1,78.4,1266.0,169722,25,4.5,India,Asia-Pacific,Budget,2.38,10.04,101.83,4.2
+280,Ather Energy 450X Gen 3 Performance,Ather Energy,Two-Wheeler,2021,LFP,Lithium Iron Phosphate (LFP),6.5,116.3,72.3,3604.0,27612,22,4.1,India,Asia-Pacific,Budget,5.59,30.99,16.57,4.9
+281,Ola Electric S1 Air Dual Motor,Ola Electric,Two-Wheeler,2020,NMC,Nickel Manganese Cobalt (NMC),8.0,193.3,120.1,2727.0,115703,21,3.9,India,Asia-Pacific,Budget,4.14,14.11,69.42,4.2
+282,Ather Energy 450X Gen 3 Performance,Ather Energy,Two-Wheeler,2025,Solid-State,Solid-State Battery,3.4,257.1,159.8,5861.0,172880,15,4.4,India,Asia-Pacific,Budget,1.32,22.8,103.73,4.95
+283,Volvo EX30 Performance,Volvo,SUV,2025,LFP,Lithium Iron Phosphate (LFP),60.1,494.1,307.0,76093.0,429429,34,4.5,Sweden,Europe,Luxury,12.16,154.0,1030.63,4.9
+284,General Motors Chevrolet Bolt EUV Ultra,General Motors,SUV,2026,Solid-State,Solid-State Battery,91.1,660.8,410.6,108664.0,151454,15,3.6,USA,North America,Mass Market,13.79,164.44,363.49,4.95
+285,Geely / Zeekr Zeekr 001 Pro,Geely / Zeekr,SUV,2025,Sodium-Ion,Sodium-Ion (Na-Ion),99.0,415.2,258.0,41122.0,267836,22,4.3,China,Asia-Pacific,Mass Market,23.84,99.04,642.81,4.8
+286,Lucid Motors Gravity SUV Pro,Lucid Motors,Truck,2025,LFP,Lithium Iron Phosphate (LFP),157.3,579.0,359.8,110360.0,31633,37,4.3,USA,North America,Luxury,27.17,190.6,132.86,4.9
+287,Porsche Taycan Turbo S Standard,Porsche,Sedan,2026,NMC,Nickel Manganese Cobalt (NMC),99.9,892.1,554.3,104995.0,168305,32,4.9,Germany,Europe,Luxury,11.2,117.69,319.78,4.2
+288,XPeng P7i Performance Plus,XPeng,SUV,2020,LFP,Lithium Iron Phosphate (LFP),80.7,401.0,249.2,67765.0,158404,24,4.4,China,Asia-Pacific,Mass Market,20.12,168.99,380.17,4.9
+289,Proterra Catalyst E2 Max,Proterra,Bus,2020,NMC,Nickel Manganese Cobalt (NMC),331.6,350.7,217.9,378629.0,788,21,3.6,USA,North America,Fleet/Commercial,94.55,1079.64,20.88,4.2
+290,Nissan Ariya e-4ORCE Dual Motor,Nissan,SUV,2021,LFP,Lithium Iron Phosphate (LFP),90.2,488.9,303.8,54404.0,38660,33,4.9,Japan,Asia-Pacific,Mass Market,18.45,111.28,92.78,4.9
+291,Volkswagen ID.3 Max,Volkswagen,SUV,2025,NMC,Nickel Manganese Cobalt (NMC),71.9,605.3,376.1,46560.0,473972,27,4.5,Germany,Europe,Mass Market,11.88,76.92,1137.53,4.2
+292,Ather Energy 450S Dual Motor,Ather Energy,Two-Wheeler,2023,NMC,Nickel Manganese Cobalt (NMC),4.2,224.0,139.2,3509.0,113587,23,4.0,India,Asia-Pacific,Budget,1.88,15.67,68.15,4.2
+293,Geely / Zeekr Zeekr 001 Pro,Geely / Zeekr,SUV,2020,LFP,Lithium Iron Phosphate (LFP),72.4,489.5,304.2,45312.0,31158,26,4.1,China,Asia-Pacific,Mass Market,14.79,92.57,74.78,4.9
+294,Ather Energy 450S Plus,Ather Energy,Two-Wheeler,2024,NMC,Nickel Manganese Cobalt (NMC),4.0,213.3,132.5,1242.0,113477,34,3.6,India,Asia-Pacific,Budget,1.88,5.82,68.09,4.2
+295,Ford Mustang Mach-E Plus,Ford,Sedan,2022,LFP,Lithium Iron Phosphate (LFP),94.3,780.4,484.9,57656.0,246787,40,3.9,USA,North America,Mass Market,12.08,73.88,468.9,4.9
+296,Hyundai Ioniq 6 Max,Hyundai,SUV,2021,NMC,Nickel Manganese Cobalt (NMC),91.6,405.3,251.8,100652.0,170458,24,3.7,South Korea,Asia-Pacific,Mass Market,22.6,248.34,409.1,4.2
+297,XPeng X9 MPV Long Range,XPeng,SUV,2020,LFP,Lithium Iron Phosphate (LFP),77.9,469.2,291.5,45682.0,135103,22,4.2,China,Asia-Pacific,Mass Market,16.6,97.36,324.25,4.9
+298,Polestar Polestar 4 Pro,Polestar,SUV,2024,NMC,Nickel Manganese Cobalt (NMC),122.8,681.5,423.5,100991.0,370509,21,3.6,Sweden,Europe,Premium,18.02,148.19,889.22,4.2
+299,Polestar Polestar 4 Ultra,Polestar,SUV,2025,NMC,Nickel Manganese Cobalt (NMC),68.3,652.5,405.4,57739.0,137046,30,4.8,Sweden,Europe,Premium,10.47,88.49,328.91,4.2
+300,BYD eBus K9 Long Range,BYD,Hatchback,2022,NCA,Nickel Cobalt Aluminum (NCA),59.5,277.1,172.2,31125.0,406349,33,4.5,China,Asia-Pacific,Mass Market,21.47,112.32,609.52,4.0
+301,Rivian R1S Dual-Motor Plus,Rivian,Truck,2022,NCA,Nickel Cobalt Aluminum (NCA),165.2,530.1,329.4,90777.0,31813,20,4.2,USA,North America,Premium,31.16,171.25,133.61,4.0
+302,Ola Electric Diamondhead Cruiser Performance,Ola Electric,Two-Wheeler,2024,Sodium-Ion,Sodium-Ion (Na-Ion),5.1,200.2,124.4,948.0,93559,23,4.3,India,Asia-Pacific,Budget,2.55,4.74,56.14,4.8
+303,Ola Electric S1 X Ultra,Ola Electric,Two-Wheeler,2026,NMC,Nickel Manganese Cobalt (NMC),3.7,201.0,124.9,3967.0,64619,19,4.1,India,Asia-Pacific,Budget,1.84,19.74,38.77,4.2
+304,Lucid Motors Gravity SUV Performance,Lucid Motors,Sedan,2023,NMC,Nickel Manganese Cobalt (NMC),68.0,706.4,438.9,49085.0,220772,33,4.7,USA,North America,Luxury,9.63,69.49,419.47,4.2
+305,Mahindra BE.05 Ultra,Mahindra,Sedan,2022,LFP,Lithium Iron Phosphate (LFP),69.2,755.6,469.5,58215.0,63459,31,4.2,India,Asia-Pacific,Budget,9.16,77.04,120.57,4.9
+306,Toyota Solid-State Prototype Performance,Toyota,SUV,2021,LFP,Lithium Iron Phosphate (LFP),61.1,494.1,307.0,68003.0,255860,22,4.1,Japan,Asia-Pacific,Mass Market,12.37,137.63,614.06,4.9
+307,Toyota bZ Compact SUV Plus,Toyota,SUV,2026,LFP,Lithium Iron Phosphate (LFP),104.3,540.7,336.0,38622.0,535790,30,3.8,Japan,Asia-Pacific,Mass Market,19.29,71.43,1285.9,4.9
+308,Lucid Motors Air Grand Touring Max,Lucid Motors,SUV,2022,NMC,Nickel Manganese Cobalt (NMC),90.0,651.0,404.5,61185.0,244507,29,4.5,USA,North America,Luxury,13.82,93.99,586.82,4.2
+309,Nissan Ariya e-4ORCE Standard,Nissan,SUV,2020,LFP,Lithium Iron Phosphate (LFP),77.9,432.9,269.0,45715.0,186997,31,4.3,Japan,Asia-Pacific,Mass Market,17.99,105.6,448.79,4.9
+310,Ather Energy 450S Max,Ather Energy,Two-Wheeler,2026,Sodium-Ion,Sodium-Ion (Na-Ion),5.8,185.2,115.1,1948.0,18672,25,4.5,India,Asia-Pacific,Budget,3.13,10.52,11.2,4.8
+311,Lucid Motors Gravity SUV Pro,Lucid Motors,Sedan,2023,NMC,Nickel Manganese Cobalt (NMC),120.7,685.6,426.0,129753.0,205719,25,4.1,USA,North America,Luxury,17.61,189.25,390.87,4.2
+312,Audi Q8 e-tron Pro,Audi,SUV,2021,NMC,Nickel Manganese Cobalt (NMC),77.0,640.5,398.0,62751.0,64071,26,3.6,Germany,Europe,Luxury,12.02,97.97,153.77,4.2
+313,Toyota bZ4X Plus,Toyota,SUV,2022,LFP,Lithium Iron Phosphate (LFP),83.1,666.5,414.1,70752.0,184391,30,3.8,Japan,Asia-Pacific,Mass Market,12.47,106.15,442.54,4.9
+314,BYD Tang EV Max,BYD,Hatchback,2024,Solid-State,Solid-State Battery,61.7,390.8,242.8,40844.0,1234920,16,4.1,China,Asia-Pacific,Mass Market,15.79,104.51,1852.38,4.95
+315,Polestar Polestar 2 Plus,Polestar,SUV,2026,LFP,Lithium Iron Phosphate (LFP),78.8,822.6,511.1,75562.0,394051,26,3.9,Sweden,Europe,Premium,9.58,91.86,945.72,4.9
+316,XPeng G9 Flagship Plus,XPeng,Hatchback,2021,LFP,Lithium Iron Phosphate (LFP),48.6,274.0,170.3,21592.0,78141,40,4.6,China,Asia-Pacific,Mass Market,17.74,78.8,117.21,4.9
+317,Ather Energy 450X Gen 3 Pro,Ather Energy,Two-Wheeler,2026,NCA,Nickel Cobalt Aluminum (NCA),4.7,134.0,83.3,2605.0,124466,33,4.0,India,Asia-Pacific,Budget,3.51,19.44,74.68,4.0
+318,Tesla Model Y Long Range,Tesla,Hatchback,2021,LFP,Lithium Iron Phosphate (LFP),57.0,262.2,162.9,25151.0,389073,31,4.4,USA,North America,Premium,21.74,95.92,583.61,4.9
+319,Volvo EX90 Pro,Volvo,Sedan,2022,LFP,Lithium Iron Phosphate (LFP),71.4,750.3,466.2,60515.0,248279,38,3.7,Sweden,Europe,Luxury,9.52,80.65,471.73,4.9
+320,Mahindra BE.05 Standard,Mahindra,Sedan,2021,LFP,Lithium Iron Phosphate (LFP),99.7,749.7,465.8,21924.0,97421,26,4.7,India,Asia-Pacific,Budget,13.3,29.24,185.1,4.9
+321,Ford Mustang Mach-E Long Range,Ford,Sedan,2020,LFP,Lithium Iron Phosphate (LFP),57.1,627.7,390.0,85525.0,82053,39,3.8,USA,North America,Mass Market,9.1,136.25,155.9,4.9
+322,Toyota bZ4X Max,Toyota,SUV,2025,LFP,Lithium Iron Phosphate (LFP),66.8,592.0,367.9,37863.0,143366,28,3.8,Japan,Asia-Pacific,Mass Market,11.28,63.96,344.08,4.9
+323,Polestar Polestar 2 Long Range,Polestar,Hatchback,2025,NMC,Nickel Manganese Cobalt (NMC),61.6,466.5,289.9,32662.0,110505,34,4.1,Sweden,Europe,Premium,13.2,70.02,165.76,4.2
+324,Mahindra BE.05 Standard,Mahindra,SUV,2021,NMC,Nickel Manganese Cobalt (NMC),124.9,626.4,389.2,46736.0,161587,27,3.9,India,Asia-Pacific,Budget,19.94,74.61,387.81,4.2
+325,Porsche Taycan 4S Long Range,Porsche,Sedan,2021,NMC,Nickel Manganese Cobalt (NMC),74.7,593.8,369.0,50371.0,50596,21,4.6,Germany,Europe,Luxury,12.58,84.83,96.13,4.2
+326,Ola Electric S1 X Plus,Ola Electric,Two-Wheeler,2024,LFP,Lithium Iron Phosphate (LFP),7.0,208.7,129.7,2629.0,131734,31,3.7,India,Asia-Pacific,Budget,3.35,12.6,79.04,4.9
+327,BYD Seal Standard,BYD,SUV,2021,NCA,Nickel Cobalt Aluminum (NCA),79.8,632.9,393.3,87649.0,468178,21,4.8,China,Asia-Pacific,Mass Market,12.61,138.49,1123.63,4.0
+328,Mercedes-Benz EQA 250 Performance,Mercedes-Benz,Hatchback,2021,LFP,Lithium Iron Phosphate (LFP),63.7,457.6,284.3,30461.0,51963,33,4.4,Germany,Europe,Luxury,13.92,66.57,77.94,4.9
+329,BMW i4 eDrive40 Performance,BMW,Sedan,2023,LFP,Lithium Iron Phosphate (LFP),101.8,607.2,377.3,98985.0,362778,27,4.5,Germany,Europe,Luxury,16.77,163.02,689.28,4.9
+330,BMW iX xDrive50 Plus,BMW,Sedan,2024,NMC,Nickel Manganese Cobalt (NMC),87.0,707.0,439.3,105146.0,248529,18,4.5,Germany,Europe,Luxury,12.31,148.72,472.21,4.2
+331,Mahindra BE.05 Pro,Mahindra,SUV,2023,NMC,Nickel Manganese Cobalt (NMC),105.6,418.8,260.2,29057.0,377719,34,4.2,India,Asia-Pacific,Budget,25.21,69.38,906.53,4.2
+332,Audi Q8 e-tron Standard,Audi,Sedan,2025,NMC,Nickel Manganese Cobalt (NMC),104.5,675.6,419.8,89148.0,491366,30,3.6,Germany,Europe,Luxury,15.47,131.95,933.6,4.2
+333,Tesla Model 3 Ultra,Tesla,Hatchback,2021,NMC,Nickel Manganese Cobalt (NMC),54.9,364.2,226.3,31054.0,531787,28,4.4,USA,North America,Premium,15.07,85.27,797.68,4.2
+334,Porsche Taycan Turbo S Pro,Porsche,Hatchback,2023,NCA,Nickel Cobalt Aluminum (NCA),48.3,302.5,188.0,48506.0,74623,33,5.0,Germany,Europe,Luxury,15.97,160.35,111.93,4.0
+335,BMW iX3 Pro,BMW,Hatchback,2025,LFP,Lithium Iron Phosphate (LFP),36.1,410.0,254.8,32170.0,100950,31,4.4,Germany,Europe,Luxury,8.8,78.46,151.43,4.9
+336,Geely / Zeekr Galaxy E8 Long Range,Geely / Zeekr,Truck,2026,LFP,Lithium Iron Phosphate (LFP),142.6,621.1,385.9,64253.0,35507,33,3.8,China,Asia-Pacific,Mass Market,22.96,103.45,149.13,4.9
+337,BMW iX xDrive50 Plus,BMW,Truck,2021,LFP,Lithium Iron Phosphate (LFP),148.9,486.2,302.1,114641.0,40393,38,4.0,Germany,Europe,Luxury,30.63,235.79,169.65,4.9
+338,Mercedes-Benz EQB 300 Ultra,Mercedes-Benz,Truck,2025,NCA,Nickel Cobalt Aluminum (NCA),146.9,496.9,308.8,89709.0,30248,24,4.2,Germany,Europe,Luxury,29.56,180.54,127.04,4.0
+339,Proterra ZX5 Electric Bus Plus,Proterra,Bus,2022,LFP,Lithium Iron Phosphate (LFP),365.3,330.2,205.2,352353.0,1359,36,3.6,USA,North America,Fleet/Commercial,110.63,1067.09,36.01,4.9
+340,Tesla Semi Performance,Tesla,Sedan,2020,NMC,Nickel Manganese Cobalt (NMC),95.9,551.5,342.7,131879.0,172065,23,4.4,USA,North America,Premium,17.39,239.13,326.92,4.2
+341,BMW i7 xDrive60 Plus,BMW,Sedan,2024,NMC,Nickel Manganese Cobalt (NMC),113.8,604.9,375.9,86012.0,398188,25,4.0,Germany,Europe,Luxury,18.81,142.19,756.56,4.2
+342,Ather Energy Rizta Family Ultra,Ather Energy,Two-Wheeler,2021,LFP,Lithium Iron Phosphate (LFP),6.9,169.6,105.4,2481.0,155604,32,5.0,India,Asia-Pacific,Budget,4.07,14.63,93.36,4.9
+343,Kia Niro EV Long Range,Kia,SUV,2025,LFP,Lithium Iron Phosphate (LFP),97.0,555.6,345.2,67869.0,482081,27,3.6,South Korea,Asia-Pacific,Mass Market,17.46,122.15,1156.99,4.9
+344,Ola Electric Diamondhead Cruiser Standard,Ola Electric,Two-Wheeler,2022,NMC,Nickel Manganese Cobalt (NMC),7.9,174.3,108.3,3894.0,151959,27,4.1,India,Asia-Pacific,Budget,4.53,22.34,91.18,4.2
+345,Audi Q4 e-tron Max,Audi,SUV,2023,LFP,Lithium Iron Phosphate (LFP),71.0,625.5,388.7,84332.0,112088,31,4.0,Germany,Europe,Luxury,11.35,134.82,269.01,4.9
+346,Kia EV3 Dual Motor,Kia,Truck,2020,LFP,Lithium Iron Phosphate (LFP),147.4,488.6,303.6,81202.0,41323,29,3.9,South Korea,Asia-Pacific,Mass Market,30.17,166.19,173.56,4.9
+347,Rivian Commercial Van EDV Max,Rivian,SUV,2025,NMC,Nickel Manganese Cobalt (NMC),89.4,769.2,478.0,99495.0,505978,28,4.2,USA,North America,Premium,11.62,129.35,1214.35,4.2
+348,Kia EV3 Ultra,Kia,Hatchback,2026,Sodium-Ion,Sodium-Ion (Na-Ion),41.8,392.1,243.6,18482.0,539534,20,4.1,South Korea,Asia-Pacific,Mass Market,10.66,47.14,809.3,4.8
+349,Ola Electric S1 Pro Gen 2 Dual Motor,Ola Electric,Two-Wheeler,2025,Solid-State,Solid-State Battery,3.4,191.9,119.2,4512.0,61014,12,4.1,India,Asia-Pacific,Budget,1.77,23.51,36.61,4.95
+350,Lucid Motors Air Touring Pro,Lucid Motors,Sedan,2021,LFP,Lithium Iron Phosphate (LFP),55.3,727.4,452.0,77293.0,73366,23,4.1,USA,North America,Luxury,7.6,106.26,139.4,4.9
+351,General Motors Cadillac LYRIQ Performance,General Motors,SUV,2025,NMC,Nickel Manganese Cobalt (NMC),95.7,672.0,417.6,66051.0,283059,20,4.2,USA,North America,Mass Market,14.24,98.29,679.34,4.2
+352,Audi e-tron GT Pro,Audi,SUV,2024,LFP,Lithium Iron Phosphate (LFP),82.2,605.3,376.1,58484.0,161718,32,3.8,Germany,Europe,Luxury,13.58,96.62,388.12,4.9
+353,NIO ES6 Ultra,NIO,SUV,2026,NMC,Nickel Manganese Cobalt (NMC),100.0,625.4,388.6,83888.0,540813,18,4.3,China,Asia-Pacific,Premium,15.99,134.13,1297.95,4.2
+354,BYD Tang EV Pro,BYD,Hatchback,2022,LFP,Lithium Iron Phosphate (LFP),38.4,454.8,282.6,21678.0,409334,22,4.5,China,Asia-Pacific,Mass Market,8.44,47.66,614.0,4.9
+355,Audi Q4 e-tron Long Range,Audi,Truck,2023,NMC,Nickel Manganese Cobalt (NMC),165.4,512.0,318.1,100296.0,9896,21,4.5,Germany,Europe,Luxury,32.3,195.89,41.56,4.2
+356,Kia EV9 Standard,Kia,Hatchback,2026,LFP,Lithium Iron Phosphate (LFP),60.1,500.3,310.9,18200.0,376954,24,4.9,South Korea,Asia-Pacific,Mass Market,12.01,36.38,565.43,4.9
+357,Tata Motors Curvv EV Dual Motor,Tata Motors,Hatchback,2020,LFP,Lithium Iron Phosphate (LFP),58.8,261.4,162.4,21141.0,165722,29,4.4,India,Asia-Pacific,Budget,22.49,80.88,248.58,4.9
+358,Polestar Polestar 2 Pro,Polestar,SUV,2023,NMC,Nickel Manganese Cobalt (NMC),104.8,579.4,360.0,84317.0,330285,19,3.9,Sweden,Europe,Premium,18.09,145.52,792.68,4.2
+359,Audi Q8 e-tron Ultra,Audi,SUV,2026,NMC,Nickel Manganese Cobalt (NMC),83.0,675.6,419.8,110593.0,335756,30,4.1,Germany,Europe,Luxury,12.29,163.7,805.81,4.2
+360,Mercedes-Benz EQE 350+ Performance,Mercedes-Benz,Hatchback,2026,NCA,Nickel Cobalt Aluminum (NCA),63.8,463.0,287.7,32502.0,562237,29,4.0,Germany,Europe,Luxury,13.78,70.2,843.36,4.0
+361,BMW i5 eDrive40 Performance,BMW,SUV,2024,NMC,Nickel Manganese Cobalt (NMC),123.3,603.2,374.8,72354.0,239714,24,3.7,Germany,Europe,Luxury,20.44,119.95,575.31,4.2
+362,Hyundai Ioniq 7 Long Range,Hyundai,SUV,2024,Sodium-Ion,Sodium-Ion (Na-Ion),70.0,433.6,269.4,47808.0,66705,23,4.4,South Korea,Asia-Pacific,Mass Market,16.14,110.26,160.09,4.8
+363,NIO ES6 Pro,NIO,Hatchback,2022,LFP,Lithium Iron Phosphate (LFP),49.6,438.6,272.5,26295.0,79720,29,4.5,China,Asia-Pacific,Premium,11.31,59.95,119.58,4.9
+364,Mahindra BE.05 Standard,Mahindra,Sedan,2024,NMC,Nickel Manganese Cobalt (NMC),69.7,758.4,471.2,55961.0,223266,31,4.4,India,Asia-Pacific,Budget,9.19,73.79,424.21,4.2
+365,XPeng P7i Performance Max,XPeng,SUV,2021,NMC,Nickel Manganese Cobalt (NMC),82.7,566.7,352.1,62410.0,254954,28,4.4,China,Asia-Pacific,Mass Market,14.59,110.13,611.89,4.2
+366,Mahindra XEV 9e Long Range,Mahindra,Sedan,2021,NMC,Nickel Manganese Cobalt (NMC),77.5,448.0,278.4,77472.0,206177,24,3.8,India,Asia-Pacific,Budget,17.3,172.93,391.74,4.2
+367,Yutong T13 Coach Plus,Yutong,Bus,2020,NCA,Nickel Cobalt Aluminum (NCA),306.3,389.9,242.3,513340.0,3668,24,4.5,China,Asia-Pacific,Fleet/Commercial,78.56,1316.59,97.2,4.0
+368,Toyota bZ4X Dual Motor,Toyota,Truck,2022,LFP,Lithium Iron Phosphate (LFP),145.1,647.4,402.3,85037.0,13274,36,3.9,Japan,Asia-Pacific,Mass Market,22.41,131.35,55.75,4.9
+369,Geely / Zeekr Zeekr X Plus,Geely / Zeekr,Sedan,2025,LFP,Lithium Iron Phosphate (LFP),109.0,903.3,561.3,62132.0,389420,26,3.9,China,Asia-Pacific,Mass Market,12.07,68.78,739.9,4.9
+370,Geely / Zeekr Zeekr 009 Dual Motor,Geely / Zeekr,SUV,2026,NMC,Nickel Manganese Cobalt (NMC),88.4,468.5,291.1,36477.0,202075,34,4.2,China,Asia-Pacific,Mass Market,18.87,77.86,484.98,4.2
+371,Mahindra e-Verito Dual Motor,Mahindra,SUV,2020,NCA,Nickel Cobalt Aluminum (NCA),98.7,447.2,277.9,59931.0,86695,26,3.7,India,Asia-Pacific,Budget,22.07,134.01,208.07,4.0
+372,Geely / Zeekr Zeekr 009 Plus,Geely / Zeekr,Sedan,2026,LFP,Lithium Iron Phosphate (LFP),108.5,619.8,385.1,35505.0,354455,33,3.9,China,Asia-Pacific,Mass Market,17.51,57.28,673.46,4.9
+373,Ather Energy 450X Gen 3 Performance,Ather Energy,Two-Wheeler,2023,Sodium-Ion,Sodium-Ion (Na-Ion),6.9,92.7,57.6,1616.0,72290,16,3.8,India,Asia-Pacific,Budget,7.44,17.43,43.37,4.8
+374,Hyundai Ioniq 7 Plus,Hyundai,Sedan,2025,Sodium-Ion,Sodium-Ion (Na-Ion),77.8,696.1,432.5,32651.0,116248,22,4.1,South Korea,Asia-Pacific,Mass Market,11.18,46.91,220.87,4.8
+375,Kia EV3 Performance,Kia,Sedan,2025,Sodium-Ion,Sodium-Ion (Na-Ion),57.4,449.7,279.4,42866.0,148821,17,4.0,South Korea,Asia-Pacific,Mass Market,12.76,95.32,282.76,4.8
+376,BYD Seal Ultra,BYD,SUV,2021,NMC,Nickel Manganese Cobalt (NMC),124.6,492.9,306.3,79326.0,696591,27,4.2,China,Asia-Pacific,Mass Market,25.28,160.94,1671.82,4.2
+377,Tata Motors Punch EV Pro,Tata Motors,Hatchback,2023,NCA,Nickel Cobalt Aluminum (NCA),59.9,324.4,201.6,27395.0,328764,23,3.8,India,Asia-Pacific,Budget,18.46,84.45,493.15,4.0
+378,Tata Motors Punch EV Long Range,Tata Motors,Sedan,2020,LFP,Lithium Iron Phosphate (LFP),61.0,534.9,332.4,31479.0,147214,35,3.8,India,Asia-Pacific,Budget,11.4,58.85,279.71,4.9
+379,Hyundai Elec City Bus Standard,Hyundai,Sedan,2024,NMC,Nickel Manganese Cobalt (NMC),92.7,834.5,518.5,88263.0,89898,33,3.7,South Korea,Asia-Pacific,Mass Market,11.11,105.77,170.81,4.2
+380,Ola Electric S1 Air Plus,Ola Electric,Two-Wheeler,2025,NMC,Nickel Manganese Cobalt (NMC),4.8,187.0,116.2,1137.0,150888,31,3.5,India,Asia-Pacific,Budget,2.57,6.08,90.53,4.2
+381,Ather Energy 450X Gen 3 Long Range,Ather Energy,Two-Wheeler,2026,NMC,Nickel Manganese Cobalt (NMC),6.8,204.1,126.8,3575.0,163026,21,3.9,India,Asia-Pacific,Budget,3.33,17.52,97.82,4.2
+382,NIO ET7 Standard,NIO,Sedan,2024,NMC,Nickel Manganese Cobalt (NMC),103.4,550.1,341.8,104636.0,379654,34,4.2,China,Asia-Pacific,Premium,18.8,190.21,721.34,4.2
+383,Volvo C40 Recharge Max,Volvo,Hatchback,2025,Sodium-Ion,Sodium-Ion (Na-Ion),38.2,370.3,230.1,22765.0,437972,19,4.1,Sweden,Europe,Luxury,10.32,61.48,656.96,4.8
+384,Nissan Leaf Gen 2 Max,Nissan,Sedan,2021,LFP,Lithium Iron Phosphate (LFP),81.5,704.7,437.9,51231.0,211815,37,4.5,Japan,Asia-Pacific,Mass Market,11.57,72.7,402.45,4.9
+385,Ford Mustang Mach-E Ultra,Ford,SUV,2025,NMC,Nickel Manganese Cobalt (NMC),118.3,479.5,297.9,41877.0,195605,32,4.3,USA,North America,Mass Market,24.67,87.33,469.45,4.2
+386,Audi Q4 e-tron Performance,Audi,Sedan,2022,NMC,Nickel Manganese Cobalt (NMC),101.9,670.3,416.5,52983.0,191881,18,3.3,Germany,Europe,Luxury,15.2,79.04,364.57,4.2
+387,Mahindra XUV400 Pro Performance,Mahindra,Sedan,2020,LFP,Lithium Iron Phosphate (LFP),59.4,477.6,296.8,23504.0,115748,34,3.8,India,Asia-Pacific,Budget,12.44,49.21,219.92,4.9
+388,Toyota bZ3 Performance,Toyota,Sedan,2020,LFP,Lithium Iron Phosphate (LFP),99.2,629.9,391.4,47376.0,23810,38,3.8,Japan,Asia-Pacific,Mass Market,15.75,75.21,45.24,4.9
+389,Nissan Ariya e-4ORCE Standard,Nissan,SUV,2021,NMC,Nickel Manganese Cobalt (NMC),71.3,671.6,417.3,57328.0,158015,29,3.9,Japan,Asia-Pacific,Mass Market,10.62,85.36,379.24,4.2
+390,Yutong ICe12 Intercity Ultra,Yutong,Bus,2025,LFP,Lithium Iron Phosphate (LFP),236.9,291.6,181.2,317281.0,3201,33,3.8,China,Asia-Pacific,Fleet/Commercial,81.24,1088.07,84.83,4.9
+391,General Motors Equinox EV Max,General Motors,Sedan,2023,NMC,Nickel Manganese Cobalt (NMC),85.1,557.7,346.5,42133.0,66591,34,3.9,USA,North America,Mass Market,15.26,75.55,126.52,4.2
+392,Porsche Taycan Turbo S Plus,Porsche,Truck,2024,LFP,Lithium Iron Phosphate (LFP),127.1,573.8,356.5,84841.0,20443,32,5.0,Germany,Europe,Luxury,22.15,147.86,85.86,4.9
+393,Ford E-Transit Van Standard,Ford,Sedan,2020,LFP,Lithium Iron Phosphate (LFP),98.4,533.9,331.7,43137.0,75274,32,3.8,USA,North America,Mass Market,18.43,80.8,143.02,4.9
+394,Proterra ZX5 Electric Bus Plus,Proterra,Bus,2026,LFP,Lithium Iron Phosphate (LFP),259.8,352.4,219.0,292537.0,3151,24,4.3,USA,North America,Fleet/Commercial,73.72,830.13,83.5,4.9
+395,XPeng P7i Performance Ultra,XPeng,Sedan,2024,LFP,Lithium Iron Phosphate (LFP),92.6,863.2,536.4,77160.0,332444,28,4.1,China,Asia-Pacific,Mass Market,10.73,89.39,631.64,4.9
+396,Rivian Commercial Van EDV Standard,Rivian,Truck,2026,LFP,Lithium Iron Phosphate (LFP),108.3,671.1,417.0,49216.0,9643,37,4.4,USA,North America,Premium,16.14,73.34,40.5,4.9
+397,Ola Electric S1 X Dual Motor,Ola Electric,Two-Wheeler,2026,NMC,Nickel Manganese Cobalt (NMC),5.4,120.7,75.0,3088.0,141064,26,3.1,India,Asia-Pacific,Budget,4.47,25.58,84.64,4.2
+398,Rivian Commercial Van EDV Performance,Rivian,Truck,2020,NMC,Nickel Manganese Cobalt (NMC),192.4,481.6,299.3,72047.0,27259,30,4.2,USA,North America,Premium,39.95,149.6,114.49,4.2
+399,Tata Motors Tiago EV Performance,Tata Motors,Hatchback,2024,NMC,Nickel Manganese Cobalt (NMC),38.9,465.8,289.4,19032.0,381459,21,3.9,India,Asia-Pacific,Budget,8.35,40.86,572.19,4.2
+400,Porsche Macan Electric Pro,Porsche,SUV,2022,NMC,Nickel Manganese Cobalt (NMC),88.1,582.0,361.6,92729.0,115109,31,4.7,Germany,Europe,Luxury,15.14,159.33,276.26,4.2
+401,Geely / Zeekr Galaxy E8 Ultra,Geely / Zeekr,Sedan,2023,LFP,Lithium Iron Phosphate (LFP),86.7,506.1,314.5,39736.0,80712,30,4.2,China,Asia-Pacific,Mass Market,17.13,78.51,153.35,4.9
+402,Mercedes-Benz eCitaro Bus Pro,Mercedes-Benz,Truck,2025,LFP,Lithium Iron Phosphate (LFP),110.0,702.4,436.5,82883.0,45830,38,3.7,Germany,Europe,Luxury,15.66,118.0,192.49,4.9
+403,Ather Energy Rizta Family Long Range,Ather Energy,Two-Wheeler,2023,LFP,Lithium Iron Phosphate (LFP),5.3,178.7,111.0,1991.0,54819,23,4.2,India,Asia-Pacific,Budget,2.97,11.14,32.89,4.9
+404,Tata Motors Nexon EV Max Pro,Tata Motors,Hatchback,2022,LFP,Lithium Iron Phosphate (LFP),63.0,400.8,249.0,16272.0,33126,35,4.4,India,Asia-Pacific,Budget,15.72,40.6,49.69,4.9
+405,Nissan Sakura Kei EV Plus,Nissan,SUV,2024,NMC,Nickel Manganese Cobalt (NMC),76.6,642.8,399.4,79838.0,246442,28,3.9,Japan,Asia-Pacific,Mass Market,11.92,124.2,591.46,4.2
+406,Volkswagen ID.2all Concept Dual Motor,Volkswagen,Sedan,2022,NMC,Nickel Manganese Cobalt (NMC),113.0,800.9,497.7,85495.0,169648,31,3.7,Germany,Europe,Mass Market,14.11,106.75,322.33,4.2
+407,Volkswagen ID.5 Plus,Volkswagen,SUV,2022,LFP,Lithium Iron Phosphate (LFP),76.0,485.1,301.4,42543.0,301741,34,4.0,Germany,Europe,Mass Market,15.67,87.7,724.18,4.9
+408,Polestar Polestar 3 Dual Motor,Polestar,SUV,2026,LFP,Lithium Iron Phosphate (LFP),96.4,721.8,448.5,73426.0,105084,28,4.5,Sweden,Europe,Premium,13.36,101.73,252.2,4.9
+409,BMW iX3 Max,BMW,SUV,2023,NMC,Nickel Manganese Cobalt (NMC),90.0,406.2,252.4,110277.0,72173,21,4.1,Germany,Europe,Luxury,22.16,271.48,173.22,4.2
+410,Rivian Commercial Van EDV Pro,Rivian,Truck,2025,LFP,Lithium Iron Phosphate (LFP),106.2,649.7,403.7,87500.0,6372,23,4.3,USA,North America,Premium,16.35,134.68,26.76,4.9
+411,XPeng X9 MPV Max,XPeng,Sedan,2026,NMC,Nickel Manganese Cobalt (NMC),87.4,629.1,390.9,97132.0,456603,23,3.8,China,Asia-Pacific,Mass Market,13.89,154.4,867.55,4.2
+412,Geely / Zeekr Zeekr 001 Performance,Geely / Zeekr,Sedan,2021,NMC,Nickel Manganese Cobalt (NMC),82.6,579.6,360.1,57346.0,124844,18,3.9,China,Asia-Pacific,Mass Market,14.25,98.94,237.2,4.2
+413,Geely / Zeekr Zeekr 001 Pro,Geely / Zeekr,SUV,2024,LFP,Lithium Iron Phosphate (LFP),112.1,739.4,459.4,48764.0,39658,35,4.2,China,Asia-Pacific,Mass Market,15.16,65.95,95.18,4.9
+414,Kia Niro EV Long Range,Kia,Sedan,2024,NMC,Nickel Manganese Cobalt (NMC),103.8,575.2,357.4,80436.0,260339,25,3.6,South Korea,Asia-Pacific,Mass Market,18.05,139.84,494.64,4.2
+415,Polestar Polestar 2 Performance,Polestar,Hatchback,2024,NCA,Nickel Cobalt Aluminum (NCA),59.2,520.5,323.4,42623.0,204347,35,4.2,Sweden,Europe,Premium,11.37,81.89,306.52,4.0
+416,Mercedes-Benz EQS 450+ Standard,Mercedes-Benz,SUV,2025,NMC,Nickel Manganese Cobalt (NMC),108.4,595.1,369.8,83364.0,257540,18,3.8,Germany,Europe,Luxury,18.22,140.08,618.1,4.2
+417,Porsche Taycan Turbo S Max,Porsche,SUV,2020,LFP,Lithium Iron Phosphate (LFP),84.1,387.5,240.8,44142.0,38644,26,4.5,Germany,Europe,Luxury,21.7,113.91,92.75,4.9
+418,Ather Energy 450X Gen 3 Max,Ather Energy,Two-Wheeler,2026,NMC,Nickel Manganese Cobalt (NMC),6.6,170.9,106.2,1057.0,33030,22,4.1,India,Asia-Pacific,Budget,3.86,6.18,19.82,4.2
+419,Ola Electric S1 Air Dual Motor,Ola Electric,Two-Wheeler,2023,LFP,Lithium Iron Phosphate (LFP),3.5,166.2,103.3,3302.0,112028,22,4.5,India,Asia-Pacific,Budget,2.11,19.87,67.22,4.9
+420,Ola Electric S1 Air Plus,Ola Electric,Two-Wheeler,2023,LFP,Lithium Iron Phosphate (LFP),3.5,237.6,147.6,2988.0,36631,38,4.5,India,Asia-Pacific,Budget,1.47,12.58,21.98,4.9
+421,Volvo C40 Recharge Ultra,Volvo,Hatchback,2022,NCA,Nickel Cobalt Aluminum (NCA),56.8,308.8,191.9,55247.0,260873,34,4.4,Sweden,Europe,Luxury,18.39,178.91,391.31,4.0
+422,Geely / Zeekr Galaxy E8 Ultra,Geely / Zeekr,Hatchback,2021,NCA,Nickel Cobalt Aluminum (NCA),48.0,313.0,194.5,25526.0,115337,21,4.4,China,Asia-Pacific,Mass Market,15.34,81.55,173.01,4.0
+423,Tesla Model S Standard,Tesla,Hatchback,2026,NCA,Nickel Cobalt Aluminum (NCA),39.6,501.1,311.4,41634.0,655721,23,3.8,USA,North America,Premium,7.9,83.09,983.58,4.0
+424,BYD eBus K9 Plus,BYD,Sedan,2021,NMC,Nickel Manganese Cobalt (NMC),68.1,707.5,439.6,55146.0,596415,29,4.3,China,Asia-Pacific,Mass Market,9.63,77.94,1133.19,4.2
+425,Yutong T13 Coach Plus,Yutong,Bus,2021,LFP,Lithium Iron Phosphate (LFP),324.9,308.9,191.9,247488.0,673,37,4.0,China,Asia-Pacific,Fleet/Commercial,105.18,801.19,17.83,4.9
+426,Kia EV6 GT Performance,Kia,Sedan,2024,NMC,Nickel Manganese Cobalt (NMC),77.2,774.5,481.3,94073.0,365629,23,3.7,South Korea,Asia-Pacific,Mass Market,9.97,121.46,694.7,4.2
+427,Tata Motors Harrier EV Ultra,Tata Motors,SUV,2022,NMC,Nickel Manganese Cobalt (NMC),112.9,530.0,329.3,51834.0,104363,18,3.9,India,Asia-Pacific,Budget,21.3,97.8,250.47,4.2
+428,XPeng P7i Performance Pro,XPeng,Hatchback,2025,Solid-State,Solid-State Battery,40.7,646.2,401.5,43956.0,414863,12,3.9,China,Asia-Pacific,Mass Market,6.3,68.02,622.29,4.95
+429,Polestar Polestar 2 Standard,Polestar,Hatchback,2020,LFP,Lithium Iron Phosphate (LFP),36.3,388.4,241.3,39839.0,61829,23,4.2,Sweden,Europe,Premium,9.35,102.57,92.74,4.9
+430,Ford E-Transit Van Long Range,Ford,Hatchback,2023,NMC,Nickel Manganese Cobalt (NMC),61.6,409.1,254.2,27146.0,217632,25,4.5,USA,North America,Mass Market,15.06,66.36,326.45,4.2
+431,Tesla Model X Pro,Tesla,SUV,2025,NMC,Nickel Manganese Cobalt (NMC),70.8,755.7,469.6,89953.0,225037,29,3.5,USA,North America,Premium,9.37,119.03,540.09,4.2
+432,Ather Energy 450X Gen 3 Long Range,Ather Energy,Two-Wheeler,2025,LFP,Lithium Iron Phosphate (LFP),5.1,200.9,124.8,2788.0,91666,24,3.8,India,Asia-Pacific,Budget,2.54,13.88,55.0,4.9
+433,BMW i4 eDrive40 Pro,BMW,Hatchback,2024,NMC,Nickel Manganese Cobalt (NMC),60.2,342.9,213.1,43648.0,141125,35,4.1,Germany,Europe,Luxury,17.56,127.29,211.69,4.2
+434,Nissan Sakura Kei EV Performance,Nissan,Sedan,2025,NMC,Nickel Manganese Cobalt (NMC),108.4,534.6,332.2,70871.0,382985,28,3.7,Japan,Asia-Pacific,Mass Market,20.28,132.57,727.67,4.2
+435,Porsche Taycan 4S Ultra,Porsche,Sedan,2022,NCA,Nickel Cobalt Aluminum (NCA),109.8,645.9,401.3,147060.0,201872,31,4.4,Germany,Europe,Luxury,17.0,227.68,383.56,4.0
+436,Volvo EX30 Performance,Volvo,Truck,2025,LFP,Lithium Iron Phosphate (LFP),133.0,748.2,464.9,76884.0,6771,31,3.8,Sweden,Europe,Luxury,17.78,102.76,28.44,4.9
+437,NIO EC7 Performance,NIO,SUV,2021,LFP,Lithium Iron Phosphate (LFP),102.4,464.5,288.6,87015.0,115288,39,3.6,China,Asia-Pacific,Premium,22.05,187.33,276.69,4.9
+438,BMW i4 eDrive40 Dual Motor,BMW,SUV,2022,LFP,Lithium Iron Phosphate (LFP),108.9,468.2,290.9,56351.0,134762,31,4.1,Germany,Europe,Luxury,23.26,120.36,323.43,4.9
+439,Ford E-Transit Van Dual Motor,Ford,Hatchback,2020,NMC,Nickel Manganese Cobalt (NMC),44.2,416.5,258.8,42366.0,166055,21,3.9,USA,North America,Mass Market,10.61,101.72,249.08,4.2
+440,Volkswagen ID.2all Concept Standard,Volkswagen,Truck,2026,LFP,Lithium Iron Phosphate (LFP),131.9,750.8,466.5,77238.0,12399,29,3.9,Germany,Europe,Mass Market,17.57,102.87,52.08,4.9
+441,Toyota Solid-State Prototype Plus,Toyota,Truck,2023,LFP,Lithium Iron Phosphate (LFP),122.1,574.1,356.7,68760.0,25919,38,4.0,Japan,Asia-Pacific,Mass Market,21.27,119.77,108.86,4.9
+442,Ola Electric S1 X Long Range,Ola Electric,Two-Wheeler,2024,NMC,Nickel Manganese Cobalt (NMC),5.1,119.0,73.9,3928.0,50800,22,3.9,India,Asia-Pacific,Budget,4.29,33.01,30.48,4.2
+443,Mahindra e-Verito Ultra,Mahindra,Sedan,2020,NMC,Nickel Manganese Cobalt (NMC),84.6,491.9,305.7,55293.0,49177,22,3.9,India,Asia-Pacific,Budget,17.2,112.41,93.44,4.2
+444,Porsche Taycan 4S Dual Motor,Porsche,Hatchback,2025,NMC,Nickel Manganese Cobalt (NMC),47.3,368.6,229.0,38627.0,505697,20,4.3,Germany,Europe,Luxury,12.83,104.79,758.55,4.2
+445,Polestar Polestar 3 Ultra,Polestar,Sedan,2021,LFP,Lithium Iron Phosphate (LFP),56.3,635.2,394.7,54204.0,140812,36,3.8,Sweden,Europe,Premium,8.86,85.33,267.54,4.9
+446,Nissan Leaf Gen 2 Standard,Nissan,Sedan,2026,NCA,Nickel Cobalt Aluminum (NCA),95.7,546.1,339.3,50772.0,519152,22,3.8,Japan,Asia-Pacific,Mass Market,17.52,92.97,986.39,4.0
+447,XPeng X9 MPV Performance,XPeng,Hatchback,2020,LFP,Lithium Iron Phosphate (LFP),45.0,348.9,216.8,31280.0,70541,28,3.5,China,Asia-Pacific,Mass Market,12.9,89.65,105.81,4.9
+448,Proterra ZX5 Electric Bus Max,Proterra,Bus,2025,NMC,Nickel Manganese Cobalt (NMC),397.3,361.8,224.8,342614.0,2442,23,3.9,USA,North America,Fleet/Commercial,109.81,946.97,64.71,4.2
+449,Kia Niro EV Long Range,Kia,Truck,2024,LFP,Lithium Iron Phosphate (LFP),175.3,580.1,360.5,44129.0,47778,30,3.7,South Korea,Asia-Pacific,Mass Market,30.22,76.07,200.67,4.9
+450,Tesla Cybertruck Long Range,Tesla,SUV,2025,NMC,Nickel Manganese Cobalt (NMC),96.8,788.8,490.1,84356.0,711211,33,3.6,USA,North America,Premium,12.27,106.94,1706.91,4.2
+451,Hyundai Ioniq 5 Pro,Hyundai,SUV,2023,NMC,Nickel Manganese Cobalt (NMC),68.4,639.8,397.6,90660.0,186070,28,3.5,South Korea,Asia-Pacific,Mass Market,10.69,141.7,446.57,4.2
+452,Nissan Leaf Gen 2 Standard,Nissan,Sedan,2025,LFP,Lithium Iron Phosphate (LFP),108.8,917.0,569.8,39713.0,81263,30,4.1,Japan,Asia-Pacific,Mass Market,11.86,43.31,154.4,4.9
+453,Porsche Taycan Turbo S Max,Porsche,SUV,2021,LFP,Lithium Iron Phosphate (LFP),67.5,488.9,303.8,88605.0,199983,29,3.9,Germany,Europe,Luxury,13.81,181.23,479.96,4.9
+454,General Motors Hummer EV Performance,General Motors,SUV,2024,LFP,Lithium Iron Phosphate (LFP),92.0,644.0,400.2,57589.0,155117,26,4.3,USA,North America,Mass Market,14.29,89.42,372.28,4.9
+455,Polestar Polestar 2 Pro,Polestar,SUV,2025,Solid-State,Solid-State Battery,77.5,957.2,594.8,98888.0,119688,12,3.8,Sweden,Europe,Premium,8.1,103.31,287.25,4.95
+456,Polestar Polestar 2 Performance,Polestar,Sedan,2023,NMC,Nickel Manganese Cobalt (NMC),99.0,780.4,484.9,103735.0,107474,24,4.8,Sweden,Europe,Premium,12.69,132.93,204.2,4.2
+457,Hyundai Ioniq 7 Performance,Hyundai,SUV,2024,NMC,Nickel Manganese Cobalt (NMC),103.0,627.4,389.8,69689.0,172212,18,3.8,South Korea,Asia-Pacific,Mass Market,16.42,111.08,413.31,4.2
+458,Audi Q8 e-tron Standard,Audi,Sedan,2025,NMC,Nickel Manganese Cobalt (NMC),83.9,568.9,353.5,88373.0,150631,24,4.5,Germany,Europe,Luxury,14.75,155.34,286.2,4.2
+459,Polestar Polestar 5 Plus,Polestar,Truck,2020,NCA,Nickel Cobalt Aluminum (NCA),113.9,608.0,377.8,129295.0,17792,24,4.8,Sweden,Europe,Premium,18.73,212.66,74.73,4.0
+460,Proterra Catalyst E2 Standard,Proterra,Bus,2022,NCA,Nickel Cobalt Aluminum (NCA),265.5,433.3,269.2,472843.0,3466,28,4.4,USA,North America,Fleet/Commercial,61.27,1091.26,91.85,4.0
+461,Audi Q4 e-tron Ultra,Audi,SUV,2023,NCA,Nickel Cobalt Aluminum (NCA),114.8,411.7,255.8,97946.0,232665,19,3.7,Germany,Europe,Luxury,27.88,237.91,558.4,4.0
+462,NIO ES6 Plus,NIO,Sedan,2022,NMC,Nickel Manganese Cobalt (NMC),70.6,545.1,338.7,67037.0,48050,34,4.0,China,Asia-Pacific,Premium,12.95,122.98,91.3,4.2
+463,Toyota bZ4X Performance,Toyota,Sedan,2025,NMC,Nickel Manganese Cobalt (NMC),95.9,567.1,352.4,95341.0,411416,22,3.9,Japan,Asia-Pacific,Mass Market,16.91,168.12,781.69,4.2
+464,Tata Motors Nexon EV Max Long Range,Tata Motors,Sedan,2025,Sodium-Ion,Sodium-Ion (Na-Ion),60.0,781.6,485.7,24295.0,481052,17,4.3,India,Asia-Pacific,Budget,7.68,31.08,914.0,4.8
+465,BMW iX xDrive50 Pro,BMW,Hatchback,2025,NMC,Nickel Manganese Cobalt (NMC),51.2,441.0,274.0,47740.0,387738,23,3.9,Germany,Europe,Luxury,11.61,108.25,581.61,4.2
+466,Ford F-150 Lightning Performance,Ford,SUV,2021,NCA,Nickel Cobalt Aluminum (NCA),99.2,421.8,262.1,70869.0,126902,32,4.3,USA,North America,Mass Market,23.52,168.02,304.56,4.0
+467,BMW iX xDrive50 Plus,BMW,SUV,2020,NMC,Nickel Manganese Cobalt (NMC),93.7,425.9,264.6,128836.0,157475,18,3.8,Germany,Europe,Luxury,22.0,302.5,377.94,4.2
+468,Tata Motors Punch EV Standard,Tata Motors,Sedan,2020,NMC,Nickel Manganese Cobalt (NMC),113.9,402.3,250.0,45488.0,179793,35,3.8,India,Asia-Pacific,Budget,28.31,113.07,341.61,4.2
+469,Hyundai Ioniq 5 Dual Motor,Hyundai,SUV,2025,NMC,Nickel Manganese Cobalt (NMC),68.0,482.2,299.6,66339.0,450182,27,4.0,South Korea,Asia-Pacific,Mass Market,14.1,137.58,1080.44,4.2
+470,Hyundai Elec City Bus Pro,Hyundai,SUV,2022,NMC,Nickel Manganese Cobalt (NMC),102.0,607.6,377.5,85694.0,100874,32,4.2,South Korea,Asia-Pacific,Mass Market,16.79,141.04,242.1,4.2
+471,BYD Song Plus Max,BYD,SUV,2022,LFP,Lithium Iron Phosphate (LFP),105.1,675.0,419.4,64904.0,731513,24,4.2,China,Asia-Pacific,Mass Market,15.57,96.15,1755.63,4.9
+472,XPeng G6 Ultra Plus,XPeng,Sedan,2024,LFP,Lithium Iron Phosphate (LFP),58.2,558.3,346.9,57913.0,410130,38,4.3,China,Asia-Pacific,Mass Market,10.42,103.73,779.25,4.9
+473,Yutong ICe12 Intercity Performance,Yutong,Bus,2025,NMC,Nickel Manganese Cobalt (NMC),353.5,462.6,287.4,320231.0,2942,26,3.0,China,Asia-Pacific,Fleet/Commercial,76.42,692.24,77.96,4.2
+474,General Motors Cadillac LYRIQ Standard,General Motors,Sedan,2024,NCA,Nickel Cobalt Aluminum (NCA),99.4,677.6,421.0,105043.0,173293,27,3.9,USA,North America,Mass Market,14.67,155.02,329.26,4.0
+475,BMW iX xDrive50 Standard,BMW,SUV,2025,NCA,Nickel Cobalt Aluminum (NCA),71.4,699.8,434.8,98944.0,321601,31,4.4,Germany,Europe,Luxury,10.2,141.39,771.84,4.0
+476,Toyota bZ Compact SUV Pro,Toyota,SUV,2022,LFP,Lithium Iron Phosphate (LFP),76.5,403.7,250.8,55410.0,27235,25,4.2,Japan,Asia-Pacific,Mass Market,18.95,137.26,65.36,4.9
+477,Volvo EX90 Plus,Volvo,Hatchback,2024,Solid-State,Solid-State Battery,40.8,626.5,389.3,66624.0,436127,17,4.6,Sweden,Europe,Luxury,6.51,106.34,654.19,4.95
+478,Mercedes-Benz EQA 250 Pro,Mercedes-Benz,Hatchback,2026,NMC,Nickel Manganese Cobalt (NMC),64.4,406.9,252.8,36871.0,86680,34,3.8,Germany,Europe,Luxury,15.83,90.61,130.02,4.2
+479,Porsche Taycan Turbo S Performance,Porsche,Sedan,2021,NMC,Nickel Manganese Cobalt (NMC),115.9,539.3,335.1,136093.0,42711,22,4.3,Germany,Europe,Luxury,21.49,252.35,81.15,4.2
+480,Ford F-150 Lightning Dual Motor,Ford,Hatchback,2021,NMC,Nickel Manganese Cobalt (NMC),63.3,451.0,280.2,38524.0,128626,19,4.2,USA,North America,Mass Market,14.04,85.42,192.94,4.2
+481,Volkswagen ID.4 Long Range,Volkswagen,Sedan,2021,LFP,Lithium Iron Phosphate (LFP),71.6,721.4,448.3,60937.0,80358,25,4.0,Germany,Europe,Mass Market,9.93,84.47,152.68,4.9
+482,Tata Motors Tiago EV Performance,Tata Motors,Sedan,2026,NMC,Nickel Manganese Cobalt (NMC),72.0,730.3,453.8,70489.0,444613,27,4.2,India,Asia-Pacific,Budget,9.86,96.52,844.76,4.2
+483,Ola Electric S1 Pro Gen 2 Standard,Ola Electric,Two-Wheeler,2026,LFP,Lithium Iron Phosphate (LFP),5.1,264.0,164.0,3378.0,65788,23,3.6,India,Asia-Pacific,Budget,1.93,12.8,39.47,4.9
+484,NIO ET7 Max,NIO,Hatchback,2026,NMC,Nickel Manganese Cobalt (NMC),53.9,340.7,211.7,23778.0,442280,27,4.2,China,Asia-Pacific,Premium,15.82,69.79,663.42,4.2
+485,Toyota bZ4X Long Range,Toyota,Sedan,2021,LFP,Lithium Iron Phosphate (LFP),72.6,519.2,322.6,55674.0,60510,30,4.3,Japan,Asia-Pacific,Mass Market,13.98,107.23,114.97,4.9
+486,Kia EV6 GT Max,Kia,Sedan,2024,LFP,Lithium Iron Phosphate (LFP),93.7,530.5,329.6,41535.0,180528,27,4.3,South Korea,Asia-Pacific,Mass Market,17.66,78.29,343.0,4.9
+487,General Motors Equinox EV Plus,General Motors,Hatchback,2023,LFP,Lithium Iron Phosphate (LFP),62.1,290.7,180.6,17798.0,226493,23,4.4,USA,North America,Mass Market,21.36,61.22,339.74,4.9
+488,General Motors Chevrolet Bolt EUV Plus,General Motors,Sedan,2022,NMC,Nickel Manganese Cobalt (NMC),101.1,708.0,439.9,77079.0,224809,22,4.3,USA,North America,Mass Market,14.28,108.87,427.14,4.2
+489,BMW i7 xDrive60 Pro,BMW,Sedan,2025,NMC,Nickel Manganese Cobalt (NMC),89.0,818.6,508.7,133806.0,136955,26,4.4,Germany,Europe,Luxury,10.87,163.46,260.21,4.2
+490,Tata Motors Harrier EV Long Range,Tata Motors,Sedan,2020,NMC,Nickel Manganese Cobalt (NMC),88.4,523.0,325.0,38759.0,106387,22,3.9,India,Asia-Pacific,Budget,16.9,74.11,202.14,4.2
+491,Volvo EX90 Performance,Volvo,Truck,2026,LFP,Lithium Iron Phosphate (LFP),101.0,652.1,405.2,68809.0,34710,34,3.9,Sweden,Europe,Luxury,15.49,105.52,145.78,4.9
+492,Mahindra BE.05 Performance,Mahindra,Sedan,2022,LFP,Lithium Iron Phosphate (LFP),78.7,700.8,435.5,65016.0,268453,32,4.0,India,Asia-Pacific,Budget,11.23,92.77,510.06,4.9
+493,Nissan Ariya e-4ORCE Max,Nissan,Hatchback,2025,Solid-State,Solid-State Battery,49.6,567.4,352.6,41712.0,354504,15,3.5,Japan,Asia-Pacific,Mass Market,8.74,73.51,531.76,4.95
+494,Volvo EX30 Ultra,Volvo,SUV,2020,NMC,Nickel Manganese Cobalt (NMC),115.6,528.9,328.6,84143.0,184080,19,3.9,Sweden,Europe,Luxury,21.86,159.09,441.79,4.2
+495,Mercedes-Benz EQA 250 Max,Mercedes-Benz,Hatchback,2026,LFP,Lithium Iron Phosphate (LFP),39.5,356.6,221.6,30699.0,342314,40,3.9,Germany,Europe,Luxury,11.08,86.09,513.47,4.9
+496,Ford E-Transit Van Standard,Ford,Truck,2025,LFP,Lithium Iron Phosphate (LFP),132.0,742.8,461.6,82332.0,27061,24,4.2,USA,North America,Mass Market,17.77,110.84,113.66,4.9
+497,General Motors Hummer EV Long Range,General Motors,Sedan,2026,LFP,Lithium Iron Phosphate (LFP),75.3,638.8,396.9,52774.0,84466,22,3.9,USA,North America,Mass Market,11.79,82.61,160.49,4.9
+498,NIO EC7 Ultra,NIO,SUV,2023,NMC,Nickel Manganese Cobalt (NMC),85.2,531.5,330.3,68861.0,225447,31,3.5,China,Asia-Pacific,Premium,16.03,129.56,541.07,4.2
+499,Nissan Ariya e-4ORCE Standard,Nissan,SUV,2021,LFP,Lithium Iron Phosphate (LFP),110.8,486.3,302.2,70806.0,73180,31,4.6,Japan,Asia-Pacific,Mass Market,22.78,145.6,175.63,4.9
+500,Volkswagen ID.2all Concept Dual Motor,Volkswagen,Hatchback,2021,NMC,Nickel Manganese Cobalt (NMC),52.9,368.1,228.7,44605.0,49096,22,4.1,Germany,Europe,Mass Market,14.37,121.18,73.64,4.2
+501,Tata Motors Harrier EV Standard,Tata Motors,Hatchback,2024,Solid-State,Solid-State Battery,48.6,561.8,349.1,29172.0,303185,16,4.0,India,Asia-Pacific,Budget,8.65,51.93,454.78,4.95
+502,Ford Mustang Mach-E Plus,Ford,Sedan,2025,LFP,Lithium Iron Phosphate (LFP),77.6,705.1,438.1,54555.0,289114,23,4.3,USA,North America,Mass Market,11.01,77.37,549.32,4.9
+503,Proterra ZX5 Electric Bus Ultra,Proterra,Bus,2022,LFP,Lithium Iron Phosphate (LFP),318.1,344.8,214.2,219007.0,4662,30,4.0,USA,North America,Fleet/Commercial,92.26,635.17,123.54,4.9
+504,Mahindra XEV 9e Standard,Mahindra,Hatchback,2025,Solid-State,Solid-State Battery,54.0,407.9,253.5,35091.0,251989,10,4.1,India,Asia-Pacific,Budget,13.24,86.03,377.98,4.95
+505,Mahindra XEV 9e Max,Mahindra,Sedan,2023,NMC,Nickel Manganese Cobalt (NMC),81.9,585.7,363.9,81314.0,180774,27,4.4,India,Asia-Pacific,Budget,13.98,138.83,343.47,4.2
+506,BYD Dolphin Plus,BYD,Hatchback,2024,LFP,Lithium Iron Phosphate (LFP),64.7,307.8,191.3,28557.0,1140563,22,4.8,China,Asia-Pacific,Mass Market,21.02,92.78,1710.84,4.9
+507,Volkswagen ID. Buzz Performance,Volkswagen,SUV,2020,NCA,Nickel Cobalt Aluminum (NCA),67.3,433.4,269.3,63738.0,82359,18,4.1,Germany,Europe,Mass Market,15.53,147.07,197.66,4.0
+508,Nissan Leaf Gen 2 Long Range,Nissan,Sedan,2026,LFP,Lithium Iron Phosphate (LFP),68.0,855.8,531.8,33276.0,447492,23,3.6,Japan,Asia-Pacific,Mass Market,7.95,38.88,850.23,4.9
+509,Mercedes-Benz eCitaro Bus Pro,Mercedes-Benz,Sedan,2026,LFP,Lithium Iron Phosphate (LFP),109.6,728.4,452.6,87083.0,225937,36,4.1,Germany,Europe,Luxury,15.05,119.55,429.28,4.9
+510,BYD Atto 3 Dual Motor,BYD,Hatchback,2026,Sodium-Ion,Sodium-Ion (Na-Ion),48.9,298.4,185.4,16803.0,1143413,23,4.1,China,Asia-Pacific,Mass Market,16.39,56.31,1715.12,4.8
+511,Nissan Sakura Kei EV Standard,Nissan,Hatchback,2023,LFP,Lithium Iron Phosphate (LFP),48.0,410.2,254.9,21485.0,260003,34,3.7,Japan,Asia-Pacific,Mass Market,11.7,52.38,390.0,4.9
+512,BMW i7 xDrive60 Long Range,BMW,Hatchback,2022,NCA,Nickel Cobalt Aluminum (NCA),62.5,371.3,230.7,58650.0,168606,26,3.3,Germany,Europe,Luxury,16.83,157.96,252.91,4.0
+513,Lucid Motors Air Touring Pro,Lucid Motors,Hatchback,2023,NMC,Nickel Manganese Cobalt (NMC),46.5,444.7,276.3,47889.0,129552,34,4.0,USA,North America,Luxury,10.46,107.69,194.33,4.2
+514,Porsche Taycan 4S Max,Porsche,SUV,2020,NMC,Nickel Manganese Cobalt (NMC),71.9,353.6,219.7,65225.0,131901,29,4.8,Germany,Europe,Luxury,20.33,184.46,316.56,4.2
+515,Lucid Motors Air Touring Dual Motor,Lucid Motors,SUV,2020,NMC,Nickel Manganese Cobalt (NMC),101.9,367.1,228.1,132100.0,71839,21,4.3,USA,North America,Luxury,27.76,359.85,172.41,4.2
+516,Nissan Leaf Gen 2 Long Range,Nissan,Truck,2025,NMC,Nickel Manganese Cobalt (NMC),188.3,749.8,465.9,90451.0,21102,27,3.9,Japan,Asia-Pacific,Mass Market,25.11,120.63,88.63,4.2
+517,Toyota bZ4X Dual Motor,Toyota,Sedan,2022,NMC,Nickel Manganese Cobalt (NMC),100.9,700.1,435.0,95675.0,135232,23,4.2,Japan,Asia-Pacific,Mass Market,14.41,136.66,256.94,4.2
+518,Volvo EX90 Plus,Volvo,SUV,2020,LFP,Lithium Iron Phosphate (LFP),69.8,593.8,369.0,48144.0,67604,34,3.8,Sweden,Europe,Luxury,11.75,81.08,162.25,4.9
+519,BMW i7 xDrive60 Plus,BMW,SUV,2026,NMC,Nickel Manganese Cobalt (NMC),72.4,678.4,421.5,76922.0,242050,21,4.2,Germany,Europe,Luxury,10.67,113.39,580.92,4.2
+520,Tesla Cybertruck Standard,Tesla,SUV,2025,NMC,Nickel Manganese Cobalt (NMC),106.2,771.6,479.4,57189.0,738649,30,4.3,USA,North America,Premium,13.76,74.12,1772.76,4.2
+521,Audi A6 Avant e-tron Long Range,Audi,Hatchback,2026,NMC,Nickel Manganese Cobalt (NMC),66.4,433.8,269.6,45808.0,97457,35,4.2,Germany,Europe,Luxury,15.31,105.6,146.19,4.2
+522,Ford F-150 Lightning Pro,Ford,Sedan,2022,LFP,Lithium Iron Phosphate (LFP),58.0,551.5,342.7,87709.0,302786,24,4.4,USA,North America,Mass Market,10.52,159.04,575.29,4.9
+523,Volkswagen ID.5 Plus,Volkswagen,Sedan,2025,LFP,Lithium Iron Phosphate (LFP),108.2,727.7,452.2,60846.0,242702,34,4.5,Germany,Europe,Mass Market,14.87,83.61,461.13,4.9
+524,Volkswagen ID.7 Long Range,Volkswagen,Sedan,2025,LFP,Lithium Iron Phosphate (LFP),56.4,505.3,314.0,79276.0,201544,37,3.8,Germany,Europe,Mass Market,11.16,156.89,382.93,4.9
+525,Ather Energy Rizta Family Standard,Ather Energy,Two-Wheeler,2024,NMC,Nickel Manganese Cobalt (NMC),8.1,177.0,110.0,4022.0,16303,19,3.9,India,Asia-Pacific,Budget,4.58,22.72,9.78,4.2
+526,Volvo EX90 Long Range,Volvo,SUV,2026,NMC,Nickel Manganese Cobalt (NMC),122.9,643.8,400.0,106672.0,454515,22,4.4,Sweden,Europe,Luxury,19.09,165.69,1090.84,4.2
+527,BYD Dolphin Long Range,BYD,Hatchback,2023,NMC,Nickel Manganese Cobalt (NMC),68.8,396.1,246.1,22939.0,1015689,22,4.8,China,Asia-Pacific,Mass Market,17.37,57.91,1523.53,4.2
+528,Tata Motors Nexon EV Max Ultra,Tata Motors,Hatchback,2026,NMC,Nickel Manganese Cobalt (NMC),42.0,535.6,332.8,21609.0,515038,25,4.1,India,Asia-Pacific,Budget,7.84,40.35,772.56,4.2
+529,Polestar Polestar 3 Standard,Polestar,SUV,2026,Solid-State,Solid-State Battery,77.8,878.7,546.0,128016.0,484679,18,4.5,Sweden,Europe,Premium,8.85,145.69,1163.23,4.95
+530,Ford F-150 Lightning Ultra,Ford,SUV,2020,LFP,Lithium Iron Phosphate (LFP),82.8,392.4,243.8,66036.0,160072,27,4.6,USA,North America,Mass Market,21.1,168.29,384.17,4.9
+531,Ford Mustang Mach-E Max,Ford,SUV,2020,NMC,Nickel Manganese Cobalt (NMC),88.8,539.7,335.4,51691.0,142655,20,4.3,USA,North America,Mass Market,16.45,95.78,342.37,4.2
+532,Polestar Polestar 5 Ultra,Polestar,Hatchback,2026,NCA,Nickel Cobalt Aluminum (NCA),41.2,502.2,312.1,38719.0,444202,32,4.1,Sweden,Europe,Premium,8.2,77.1,666.3,4.0
+533,Hyundai Ioniq 6 Long Range,Hyundai,Hatchback,2020,NMC,Nickel Manganese Cobalt (NMC),58.7,400.6,248.9,26136.0,93957,29,3.7,South Korea,Asia-Pacific,Mass Market,14.65,65.24,140.94,4.2
+534,Audi e-tron GT Standard,Audi,Hatchback,2022,NCA,Nickel Cobalt Aluminum (NCA),50.2,498.4,309.7,46846.0,293925,24,4.3,Germany,Europe,Luxury,10.07,93.99,440.89,4.0
+535,Kia EV9 Dual Motor,Kia,SUV,2021,NMC,Nickel Manganese Cobalt (NMC),94.7,669.4,415.9,51270.0,251688,19,4.4,South Korea,Asia-Pacific,Mass Market,14.15,76.59,604.05,4.2
+536,Lucid Motors Air Touring Standard,Lucid Motors,SUV,2026,Sodium-Ion,Sodium-Ion (Na-Ion),65.7,555.4,345.1,29494.0,455125,17,4.4,USA,North America,Luxury,11.83,53.1,1092.3,4.8
+537,Mahindra BE.05 Long Range,Mahindra,Sedan,2020,NCA,Nickel Cobalt Aluminum (NCA),87.6,652.5,405.4,52015.0,67101,28,4.1,India,Asia-Pacific,Budget,13.43,79.72,127.49,4.0
+538,Rivian R1T Adventure Ultra,Rivian,SUV,2026,LFP,Lithium Iron Phosphate (LFP),64.0,784.1,487.2,57191.0,85392,35,4.3,USA,North America,Premium,8.16,72.94,204.94,4.9
+539,General Motors Equinox EV Standard,General Motors,Sedan,2023,LFP,Lithium Iron Phosphate (LFP),65.7,635.8,395.1,47379.0,167968,28,4.1,USA,North America,Mass Market,10.33,74.52,319.14,4.9
+540,Lucid Motors Air Touring Ultra,Lucid Motors,SUV,2026,NMC,Nickel Manganese Cobalt (NMC),112.0,603.8,375.2,61532.0,269732,23,4.4,USA,North America,Luxury,18.55,101.91,647.36,4.2
+541,Volkswagen ID.4 Ultra,Volkswagen,Sedan,2024,NMC,Nickel Manganese Cobalt (NMC),96.3,883.2,548.8,94488.0,201054,18,4.0,Germany,Europe,Mass Market,10.9,106.98,382.0,4.2
+542,XPeng G6 Ultra Standard,XPeng,Sedan,2021,NCA,Nickel Cobalt Aluminum (NCA),63.2,634.4,394.2,88822.0,21556,31,3.5,China,Asia-Pacific,Mass Market,9.96,140.01,40.96,4.0
+543,Mahindra XUV400 Pro Dual Motor,Mahindra,Hatchback,2024,LFP,Lithium Iron Phosphate (LFP),49.4,426.6,265.1,21296.0,92770,36,4.0,India,Asia-Pacific,Budget,11.58,49.92,139.16,4.9
+544,Kia EV3 Standard,Kia,SUV,2022,LFP,Lithium Iron Phosphate (LFP),60.9,708.2,440.1,60832.0,94160,36,4.1,South Korea,Asia-Pacific,Mass Market,8.6,85.9,225.98,4.9
+545,Tata Motors Tiago EV Standard,Tata Motors,Sedan,2021,NCA,Nickel Cobalt Aluminum (NCA),98.4,566.3,351.9,53354.0,180459,18,4.2,India,Asia-Pacific,Budget,17.38,94.22,342.87,4.0
+546,NIO EC7 Pro,NIO,Sedan,2022,NMC,Nickel Manganese Cobalt (NMC),95.3,669.7,416.1,59150.0,318947,20,4.0,China,Asia-Pacific,Premium,14.23,88.32,606.0,4.2
+547,Yutong ICe12 Intercity Performance,Yutong,Bus,2020,NMC,Nickel Manganese Cobalt (NMC),278.1,402.0,249.8,277613.0,3487,29,4.0,China,Asia-Pacific,Fleet/Commercial,69.18,690.58,92.41,4.2
+548,Toyota Solid-State Prototype Ultra,Toyota,Sedan,2020,NMC,Nickel Manganese Cobalt (NMC),68.9,670.8,416.8,65400.0,156461,21,4.1,Japan,Asia-Pacific,Mass Market,10.27,97.5,297.28,4.2
+549,Ola Electric Diamondhead Cruiser Plus,Ola Electric,Two-Wheeler,2025,NCA,Nickel Cobalt Aluminum (NCA),7.0,157.4,97.8,2985.0,122868,26,4.4,India,Asia-Pacific,Budget,4.45,18.96,73.72,4.0
+550,Audi Q4 e-tron Ultra,Audi,Sedan,2020,NMC,Nickel Manganese Cobalt (NMC),110.4,586.2,364.2,152002.0,133483,29,4.2,Germany,Europe,Luxury,18.83,259.3,253.62,4.2
+551,Tata Motors Punch EV Standard,Tata Motors,SUV,2023,Sodium-Ion,Sodium-Ion (Na-Ion),112.6,445.9,277.1,19623.0,171178,16,4.0,India,Asia-Pacific,Budget,25.25,44.01,410.83,4.8
+552,NIO ET5 Touring Ultra,NIO,Sedan,2025,NMC,Nickel Manganese Cobalt (NMC),81.5,546.6,339.6,72830.0,478400,18,3.7,China,Asia-Pacific,Premium,14.91,133.24,908.96,4.2
+553,Volkswagen ID. Buzz Plus,Volkswagen,SUV,2026,LFP,Lithium Iron Phosphate (LFP),95.5,805.5,500.5,42842.0,306191,32,3.6,Germany,Europe,Mass Market,11.86,53.19,734.86,4.9
+554,Tata Motors Nexon EV Max Performance,Tata Motors,SUV,2021,NCA,Nickel Cobalt Aluminum (NCA),103.4,461.8,286.9,43718.0,148488,27,4.1,India,Asia-Pacific,Budget,22.39,94.67,356.37,4.0
+555,Geely / Zeekr Zeekr 009 Performance,Geely / Zeekr,SUV,2021,NMC,Nickel Manganese Cobalt (NMC),98.4,416.2,258.6,51632.0,80479,22,4.2,China,Asia-Pacific,Mass Market,23.64,124.06,193.15,4.2
+556,Tata Motors Curvv EV Performance,Tata Motors,SUV,2021,LFP,Lithium Iron Phosphate (LFP),96.6,587.4,365.0,57971.0,70992,33,4.2,India,Asia-Pacific,Budget,16.45,98.69,170.38,4.9
+557,Porsche Macan Electric Pro,Porsche,SUV,2020,LFP,Lithium Iron Phosphate (LFP),68.0,499.8,310.6,73564.0,98943,26,4.9,Germany,Europe,Luxury,13.61,147.19,237.46,4.9
+558,Toyota Solid-State Prototype Pro,Toyota,Hatchback,2023,Sodium-Ion,Sodium-Ion (Na-Ion),57.6,463.4,287.9,24773.0,372047,17,4.1,Japan,Asia-Pacific,Mass Market,12.43,53.46,558.07,4.8
+559,Proterra Catalyst E2 Pro,Proterra,Bus,2020,NMC,Nickel Manganese Cobalt (NMC),228.7,400.0,248.5,409453.0,2873,18,3.6,USA,North America,Fleet/Commercial,57.17,1023.63,76.13,4.2
+560,Volkswagen ID.3 Long Range,Volkswagen,SUV,2024,NMC,Nickel Manganese Cobalt (NMC),79.4,619.5,384.9,88410.0,200311,24,4.5,Germany,Europe,Mass Market,12.82,142.71,480.75,4.2
+561,Porsche Taycan Turbo S Dual Motor,Porsche,Hatchback,2025,Solid-State,Solid-State Battery,46.8,696.6,432.8,52927.0,450104,18,5.0,Germany,Europe,Luxury,6.72,75.98,675.16,4.95
+562,Mercedes-Benz EQE 350+ Ultra,Mercedes-Benz,Hatchback,2023,LFP,Lithium Iron Phosphate (LFP),43.5,372.6,231.5,30311.0,258337,39,3.8,Germany,Europe,Luxury,11.67,81.35,387.51,4.9
+563,Yutong E12 City Bus Performance,Yutong,Bus,2023,NMC,Nickel Manganese Cobalt (NMC),295.4,344.0,213.8,279589.0,3822,31,4.4,China,Asia-Pacific,Fleet/Commercial,85.87,812.76,101.28,4.2
+564,Kia EV6 GT Dual Motor,Kia,SUV,2026,NMC,Nickel Manganese Cobalt (NMC),122.5,572.3,355.6,64645.0,331437,20,4.5,South Korea,Asia-Pacific,Mass Market,21.4,112.96,795.45,4.2
+565,Toyota bZ Compact SUV Max,Toyota,Sedan,2021,NMC,Nickel Manganese Cobalt (NMC),106.2,677.8,421.2,47382.0,84163,30,4.0,Japan,Asia-Pacific,Mass Market,15.67,69.91,159.91,4.2
+566,Mahindra XUV400 Pro Max,Mahindra,Sedan,2023,LFP,Lithium Iron Phosphate (LFP),63.5,768.3,477.4,32959.0,358517,37,4.5,India,Asia-Pacific,Budget,8.27,42.9,681.18,4.9
+567,Polestar Polestar 4 Plus,Polestar,SUV,2025,NMC,Nickel Manganese Cobalt (NMC),112.3,439.2,272.9,71078.0,84476,29,3.7,Sweden,Europe,Premium,25.57,161.84,202.74,4.2
+568,Proterra ZX5 Electric Bus Performance,Proterra,Bus,2026,LFP,Lithium Iron Phosphate (LFP),295.1,409.6,254.5,308678.0,1684,40,3.9,USA,North America,Fleet/Commercial,72.05,753.61,44.63,4.9
+569,XPeng G6 Ultra Ultra,XPeng,Sedan,2025,LFP,Lithium Iron Phosphate (LFP),70.0,560.0,348.0,47601.0,281629,23,4.0,China,Asia-Pacific,Mass Market,12.5,85.0,535.1,4.9
+570,Ola Electric S1 X Pro,Ola Electric,Two-Wheeler,2025,LFP,Lithium Iron Phosphate (LFP),6.3,124.1,77.1,2261.0,94892,31,4.5,India,Asia-Pacific,Budget,5.08,18.22,56.94,4.9
+571,BMW i4 eDrive40 Ultra,BMW,Sedan,2022,NMC,Nickel Manganese Cobalt (NMC),91.8,440.9,274.0,87033.0,233065,31,3.7,Germany,Europe,Luxury,20.82,197.4,442.82,4.2
+572,Mercedes-Benz eCitaro Bus Long Range,Mercedes-Benz,Sedan,2026,LFP,Lithium Iron Phosphate (LFP),88.7,906.7,563.4,91449.0,446164,39,4.7,Germany,Europe,Luxury,9.78,100.86,847.71,4.9
+573,Polestar Polestar 4 Performance,Polestar,Sedan,2020,LFP,Lithium Iron Phosphate (LFP),56.0,445.9,277.1,59104.0,110045,26,4.4,Sweden,Europe,Premium,12.56,132.55,209.09,4.9
+574,Proterra Catalyst E2 Performance,Proterra,Bus,2022,LFP,Lithium Iron Phosphate (LFP),224.5,417.4,259.4,356063.0,1516,29,3.4,USA,North America,Fleet/Commercial,53.79,853.05,40.17,4.9
+575,Kia EV3 Standard,Kia,SUV,2020,NMC,Nickel Manganese Cobalt (NMC),72.8,578.9,359.7,42979.0,141944,31,4.3,South Korea,Asia-Pacific,Mass Market,12.58,74.24,340.67,4.2
+576,Mahindra BE.05 Performance,Mahindra,SUV,2022,LFP,Lithium Iron Phosphate (LFP),60.6,480.1,298.3,26068.0,77819,28,4.1,India,Asia-Pacific,Budget,12.62,54.3,186.77,4.9
+577,Nissan Sakura Kei EV Ultra,Nissan,Sedan,2020,LFP,Lithium Iron Phosphate (LFP),70.3,661.2,410.9,66352.0,107327,27,4.5,Japan,Asia-Pacific,Mass Market,10.63,100.35,203.92,4.9
+578,Audi Q4 e-tron Long Range,Audi,Sedan,2020,NMC,Nickel Manganese Cobalt (NMC),92.5,667.1,414.5,131277.0,88887,23,3.6,Germany,Europe,Luxury,13.87,196.79,168.89,4.2
+579,Kia EV3 Ultra,Kia,Hatchback,2023,LFP,Lithium Iron Phosphate (LFP),48.2,424.2,263.6,31833.0,122319,33,4.5,South Korea,Asia-Pacific,Mass Market,11.36,75.04,183.48,4.9
+580,Polestar Polestar 2 Long Range,Polestar,SUV,2022,LFP,Lithium Iron Phosphate (LFP),67.5,417.6,259.5,74840.0,148531,39,4.1,Sweden,Europe,Premium,16.16,179.21,356.47,4.9
+581,XPeng X9 MPV Ultra,XPeng,Sedan,2023,LFP,Lithium Iron Phosphate (LFP),72.2,692.5,430.3,83685.0,257504,29,3.8,China,Asia-Pacific,Mass Market,10.43,120.84,489.26,4.9
+582,Volkswagen ID. Buzz Long Range,Volkswagen,Sedan,2025,NMC,Nickel Manganese Cobalt (NMC),101.3,495.5,307.9,79549.0,309153,32,4.0,Germany,Europe,Mass Market,20.44,160.54,587.39,4.2
+583,BMW iX xDrive50 Dual Motor,BMW,SUV,2023,NMC,Nickel Manganese Cobalt (NMC),110.9,730.1,453.7,120092.0,116088,20,3.9,Germany,Europe,Luxury,15.19,164.49,278.61,4.2
+584,BMW i7 xDrive60 Plus,BMW,SUV,2023,NMC,Nickel Manganese Cobalt (NMC),109.2,492.1,305.8,96175.0,169653,30,4.3,Germany,Europe,Luxury,22.19,195.44,407.17,4.2
+585,Nissan Ariya e-4ORCE Standard,Nissan,Hatchback,2023,Sodium-Ion,Sodium-Ion (Na-Ion),39.4,365.1,226.9,18391.0,92180,19,3.8,Japan,Asia-Pacific,Mass Market,10.79,50.37,138.27,4.8
+586,BMW iX xDrive50 Max,BMW,Hatchback,2026,LFP,Lithium Iron Phosphate (LFP),64.2,498.4,309.7,27902.0,563703,32,4.1,Germany,Europe,Luxury,12.88,55.98,845.55,4.9
+587,General Motors Hummer EV Pro,General Motors,Hatchback,2026,LFP,Lithium Iron Phosphate (LFP),58.0,518.0,321.9,26385.0,198370,31,3.9,USA,North America,Mass Market,11.2,50.94,297.56,4.9
+588,Ather Energy 450S Pro,Ather Energy,Two-Wheeler,2026,NMC,Nickel Manganese Cobalt (NMC),7.0,117.0,72.7,4365.0,43230,30,3.8,India,Asia-Pacific,Budget,5.98,37.31,25.94,4.2
+589,Volvo XC40 Recharge Plus,Volvo,Sedan,2020,LFP,Lithium Iron Phosphate (LFP),102.3,594.8,369.6,65444.0,58029,37,3.8,Sweden,Europe,Luxury,17.2,110.03,110.26,4.9
+590,Ola Electric S1 Air Standard,Ola Electric,Two-Wheeler,2020,NMC,Nickel Manganese Cobalt (NMC),5.8,148.9,92.5,3424.0,135160,33,4.2,India,Asia-Pacific,Budget,3.9,23.0,81.1,4.2
+591,Volvo C40 Recharge Pro,Volvo,SUV,2024,Solid-State,Solid-State Battery,79.4,789.2,490.4,161466.0,225747,10,4.2,Sweden,Europe,Luxury,10.06,204.59,541.79,4.95
+592,Ather Energy 450S Dual Motor,Ather Energy,Two-Wheeler,2025,NMC,Nickel Manganese Cobalt (NMC),6.2,222.7,138.4,2343.0,124236,29,4.1,India,Asia-Pacific,Budget,2.78,10.52,74.54,4.2
+593,Geely / Zeekr Zeekr 009 Standard,Geely / Zeekr,SUV,2021,LFP,Lithium Iron Phosphate (LFP),92.6,568.9,353.5,74116.0,42464,31,4.3,China,Asia-Pacific,Mass Market,16.28,130.28,101.91,4.9
+594,Tata Motors Tiago EV Dual Motor,Tata Motors,Hatchback,2023,NMC,Nickel Manganese Cobalt (NMC),47.3,498.6,309.8,26966.0,331508,18,4.2,India,Asia-Pacific,Budget,9.49,54.08,497.26,4.2
+595,Ford Mustang Mach-E Max,Ford,Sedan,2024,LFP,Lithium Iron Phosphate (LFP),93.0,673.7,418.6,37137.0,331090,38,4.3,USA,North America,Mass Market,13.8,55.12,629.07,4.9
+596,Geely / Zeekr Zeekr 009 Standard,Geely / Zeekr,SUV,2023,NMC,Nickel Manganese Cobalt (NMC),70.6,728.9,452.9,86556.0,139393,27,3.6,China,Asia-Pacific,Mass Market,9.69,118.75,334.54,4.2
+597,NIO EC7 Plus,NIO,Sedan,2026,LFP,Lithium Iron Phosphate (LFP),60.1,838.2,520.8,78679.0,116312,40,4.0,China,Asia-Pacific,Premium,7.17,93.87,220.99,4.9
+598,Polestar Polestar 4 Ultra,Polestar,SUV,2026,LFP,Lithium Iron Phosphate (LFP),87.8,758.3,471.2,44161.0,551649,39,4.2,Sweden,Europe,Premium,11.58,58.24,1323.96,4.9
+599,Polestar Polestar 3 Plus,Polestar,Sedan,2024,NMC,Nickel Manganese Cobalt (NMC),93.6,749.4,465.7,112375.0,409453,34,4.4,Sweden,Europe,Premium,12.49,149.95,777.96,4.2
+600,Lucid Motors Air Touring Pro,Lucid Motors,Hatchback,2026,NMC,Nickel Manganese Cobalt (NMC),52.8,522.6,324.7,40577.0,523556,19,4.0,USA,North America,Luxury,10.1,77.64,785.33,4.2
+601,Tata Motors Tiago EV Performance,Tata Motors,SUV,2021,NMC,Nickel Manganese Cobalt (NMC),117.1,605.7,376.4,49123.0,42093,24,4.3,India,Asia-Pacific,Budget,19.33,81.1,101.02,4.2
+602,Lucid Motors Gravity SUV Dual Motor,Lucid Motors,Hatchback,2021,LFP,Lithium Iron Phosphate (LFP),40.8,286.2,177.8,29955.0,127255,36,4.1,USA,North America,Luxury,14.26,104.66,190.88,4.9
+603,Polestar Polestar 5 Standard,Polestar,Hatchback,2020,LFP,Lithium Iron Phosphate (LFP),35.9,307.3,190.9,36943.0,87816,39,4.4,Sweden,Europe,Premium,11.68,120.22,131.72,4.9
+604,BYD Han EV Performance,BYD,SUV,2022,NMC,Nickel Manganese Cobalt (NMC),120.5,665.1,413.3,63280.0,506368,20,4.9,China,Asia-Pacific,Mass Market,18.12,95.14,1215.28,4.2
+605,Rivian Commercial Van EDV Long Range,Rivian,Truck,2024,NCA,Nickel Cobalt Aluminum (NCA),139.4,712.6,442.8,125075.0,38923,26,3.9,USA,North America,Premium,19.56,175.52,163.48,4.0
+606,Ola Electric S1 Air Performance,Ola Electric,Two-Wheeler,2026,LFP,Lithium Iron Phosphate (LFP),6.2,241.1,149.8,2880.0,73849,35,4.1,India,Asia-Pacific,Budget,2.57,11.95,44.31,4.9
+607,BMW iX xDrive50 Max,BMW,SUV,2022,NMC,Nickel Manganese Cobalt (NMC),101.7,464.7,288.8,92060.0,185690,21,4.0,Germany,Europe,Luxury,21.89,198.11,445.66,4.2
+608,Ather Energy Rizta Family Standard,Ather Energy,Two-Wheeler,2021,LFP,Lithium Iron Phosphate (LFP),6.6,183.8,114.2,932.0,170810,23,4.4,India,Asia-Pacific,Budget,3.59,5.07,102.49,4.9
+609,Proterra Catalyst E2 Dual Motor,Proterra,Bus,2026,NMC,Nickel Manganese Cobalt (NMC),282.6,343.7,213.6,354800.0,3322,21,3.8,USA,North America,Fleet/Commercial,82.22,1032.3,88.03,4.2
+610,Tesla Semi Pro,Tesla,Sedan,2022,LFP,Lithium Iron Phosphate (LFP),96.6,793.2,492.9,52011.0,261752,36,4.2,USA,North America,Premium,12.18,65.57,497.33,4.9
+611,Ather Energy 450S Dual Motor,Ather Energy,Two-Wheeler,2026,NMC,Nickel Manganese Cobalt (NMC),4.3,234.6,145.8,1223.0,140894,33,4.0,India,Asia-Pacific,Budget,1.83,5.21,84.54,4.2
+612,BMW iX3 Standard,BMW,Truck,2025,LFP,Lithium Iron Phosphate (LFP),130.8,485.0,301.4,96322.0,40395,32,3.3,Germany,Europe,Luxury,26.97,198.6,169.66,4.9
+613,Ola Electric S1 Pro Gen 2 Long Range,Ola Electric,Two-Wheeler,2020,NMC,Nickel Manganese Cobalt (NMC),5.2,112.0,69.6,3852.0,12806,30,4.2,India,Asia-Pacific,Budget,4.64,34.39,7.68,4.2
+614,Hyundai Kona Electric Plus,Hyundai,SUV,2025,Solid-State,Solid-State Battery,102.0,917.5,570.1,106336.0,506391,16,4.4,South Korea,Asia-Pacific,Mass Market,11.12,115.9,1215.34,4.95
+615,Mahindra e-Verito Ultra,Mahindra,SUV,2022,LFP,Lithium Iron Phosphate (LFP),78.0,575.4,357.5,32397.0,60883,35,3.9,India,Asia-Pacific,Budget,13.56,56.3,146.12,4.9
+616,Tesla Model 3 Dual Motor,Tesla,Hatchback,2025,NMC,Nickel Manganese Cobalt (NMC),41.4,365.1,226.9,33600.0,608782,23,4.6,USA,North America,Premium,11.34,92.03,913.17,4.2
+617,General Motors Silverado EV Plus,General Motors,Sedan,2022,LFP,Lithium Iron Phosphate (LFP),64.4,801.5,498.0,61611.0,30668,38,3.4,USA,North America,Mass Market,8.03,76.87,58.27,4.9
+618,BMW iX xDrive50 Dual Motor,BMW,SUV,2021,LFP,Lithium Iron Phosphate (LFP),103.0,636.0,395.2,60567.0,190796,34,4.4,Germany,Europe,Luxury,16.19,95.23,457.91,4.9
+619,Kia EV3 Plus,Kia,Hatchback,2026,LFP,Lithium Iron Phosphate (LFP),47.5,498.1,309.5,21029.0,155513,22,4.0,South Korea,Asia-Pacific,Mass Market,9.54,42.22,233.27,4.9
+620,Rivian Commercial Van EDV Ultra,Rivian,SUV,2024,NMC,Nickel Manganese Cobalt (NMC),66.6,575.2,357.4,50754.0,227398,30,4.4,USA,North America,Premium,11.58,88.24,545.76,4.2
+621,Proterra Catalyst E2 Standard,Proterra,Bus,2023,NMC,Nickel Manganese Cobalt (NMC),254.4,416.8,259.0,263130.0,831,19,4.0,USA,North America,Fleet/Commercial,61.04,631.31,22.02,4.2
+622,Tesla Cybertruck Performance,Tesla,SUV,2024,NMC,Nickel Manganese Cobalt (NMC),106.6,759.0,471.6,50692.0,1032197,19,4.5,USA,North America,Premium,14.04,66.79,2477.27,4.2
+623,Lucid Motors Air Pure Performance,Lucid Motors,SUV,2023,Sodium-Ion,Sodium-Ion (Na-Ion),67.3,626.6,389.4,44787.0,301932,21,4.4,USA,North America,Luxury,10.74,71.48,724.64,4.8
+624,Mahindra XEV 9e Dual Motor,Mahindra,Sedan,2025,NMC,Nickel Manganese Cobalt (NMC),115.1,674.4,419.1,37871.0,218769,34,4.2,India,Asia-Pacific,Budget,17.07,56.16,415.66,4.2
+625,Hyundai Ioniq 6 Standard,Hyundai,SUV,2023,NCA,Nickel Cobalt Aluminum (NCA),106.9,448.8,278.9,81043.0,255466,19,4.1,South Korea,Asia-Pacific,Mass Market,23.82,180.58,613.12,4.0
+626,Mahindra e-Verito Plus,Mahindra,SUV,2025,NMC,Nickel Manganese Cobalt (NMC),120.2,471.4,292.9,46430.0,339926,29,4.2,India,Asia-Pacific,Budget,25.5,98.49,815.82,4.2
+627,Mahindra BE.05 Standard,Mahindra,SUV,2025,Sodium-Ion,Sodium-Ion (Na-Ion),65.1,426.8,265.2,36252.0,162128,17,4.1,India,Asia-Pacific,Budget,15.25,84.94,389.11,4.8
+628,Audi e-tron GT Long Range,Audi,Truck,2021,LFP,Lithium Iron Phosphate (LFP),160.3,416.4,258.7,106426.0,26038,22,3.4,Germany,Europe,Luxury,38.5,255.59,109.36,4.9
+629,Volvo EX30 Pro,Volvo,Sedan,2020,NMC,Nickel Manganese Cobalt (NMC),65.4,453.8,282.0,144243.0,187894,33,3.3,Sweden,Europe,Luxury,14.41,317.86,357.0,4.2
+630,BYD Atto 3 Standard,BYD,Hatchback,2023,LFP,Lithium Iron Phosphate (LFP),57.0,458.1,284.7,31828.0,901133,26,4.5,China,Asia-Pacific,Mass Market,12.44,69.48,1351.7,4.9
+631,Ather Energy 450X Gen 3 Dual Motor,Ather Energy,Two-Wheeler,2025,LFP,Lithium Iron Phosphate (LFP),6.2,227.6,141.4,2271.0,169887,34,4.3,India,Asia-Pacific,Budget,2.72,9.98,101.93,4.9
+632,Volkswagen ID.3 Max,Volkswagen,SUV,2021,LFP,Lithium Iron Phosphate (LFP),75.7,610.1,379.1,66699.0,246125,26,4.2,Germany,Europe,Mass Market,12.41,109.32,590.7,4.9
+633,Mahindra e-Verito Plus,Mahindra,Truck,2025,Sodium-Ion,Sodium-Ion (Na-Ion),153.2,501.0,311.3,26055.0,10798,20,3.7,India,Asia-Pacific,Budget,30.58,52.01,45.35,4.8
+634,Lucid Motors Air Pure Standard,Lucid Motors,Sedan,2023,LFP,Lithium Iron Phosphate (LFP),75.3,621.9,386.4,50293.0,353446,35,4.3,USA,North America,Luxury,12.11,80.87,671.55,4.9
+635,Audi Q4 e-tron Plus,Audi,SUV,2023,NMC,Nickel Manganese Cobalt (NMC),109.2,617.8,383.9,123038.0,300315,34,4.4,Germany,Europe,Luxury,17.68,199.16,720.76,4.2
+636,NIO EC7 Long Range,NIO,SUV,2021,NMC,Nickel Manganese Cobalt (NMC),81.0,459.9,285.8,76544.0,216530,19,4.3,China,Asia-Pacific,Premium,17.61,166.44,519.67,4.2
+637,BYD Tang EV Standard,BYD,Sedan,2024,NMC,Nickel Manganese Cobalt (NMC),100.5,511.0,317.5,74734.0,519796,29,4.3,China,Asia-Pacific,Mass Market,19.67,146.25,987.61,4.2
+638,BMW i5 eDrive40 Plus,BMW,Hatchback,2023,LFP,Lithium Iron Phosphate (LFP),46.8,327.2,203.3,24712.0,182330,32,4.2,Germany,Europe,Luxury,14.3,75.53,273.5,4.9
+639,Ola Electric S1 X Long Range,Ola Electric,Two-Wheeler,2025,NMC,Nickel Manganese Cobalt (NMC),4.6,229.0,142.3,4265.0,61071,24,4.3,India,Asia-Pacific,Budget,2.01,18.62,36.64,4.2
+640,Polestar Polestar 4 Pro,Polestar,Sedan,2020,LFP,Lithium Iron Phosphate (LFP),91.1,404.7,251.5,67421.0,121192,37,4.6,Sweden,Europe,Premium,22.51,166.6,230.26,4.9
+641,Proterra ZX5 Electric Bus Standard,Proterra,Bus,2025,Solid-State,Solid-State Battery,340.9,543.6,337.8,321722.0,1456,10,4.3,USA,North America,Fleet/Commercial,62.71,591.84,38.58,4.95
+642,Kia Niro EV Plus,Kia,Sedan,2021,NMC,Nickel Manganese Cobalt (NMC),98.4,577.4,358.8,100342.0,85862,20,4.7,South Korea,Asia-Pacific,Mass Market,17.04,173.78,163.14,4.2
+643,Mercedes-Benz EQS 450+ Ultra,Mercedes-Benz,Sedan,2020,LFP,Lithium Iron Phosphate (LFP),95.6,715.8,444.8,77847.0,142152,37,4.5,Germany,Europe,Luxury,13.36,108.76,270.09,4.9
+644,NIO ES8 Max,NIO,Sedan,2026,NMC,Nickel Manganese Cobalt (NMC),66.7,656.4,407.9,102091.0,374314,31,4.1,China,Asia-Pacific,Premium,10.16,155.53,711.2,4.2
+645,BYD Han EV Pro,BYD,Sedan,2023,NMC,Nickel Manganese Cobalt (NMC),117.1,741.9,461.0,102888.0,784235,25,4.2,China,Asia-Pacific,Mass Market,15.78,138.68,1490.05,4.2
+646,Porsche Macan Electric Dual Motor,Porsche,SUV,2025,NMC,Nickel Manganese Cobalt (NMC),95.9,602.7,374.5,115522.0,275345,32,3.9,Germany,Europe,Luxury,15.91,191.67,660.83,4.2
+647,Tesla Semi Plus,Tesla,SUV,2025,LFP,Lithium Iron Phosphate (LFP),72.8,555.1,344.9,41978.0,1416402,32,4.9,USA,North America,Premium,13.11,75.62,3399.36,4.9
+648,Mercedes-Benz EQS 450+ Ultra,Mercedes-Benz,Hatchback,2025,NMC,Nickel Manganese Cobalt (NMC),69.6,413.5,256.9,44242.0,284538,33,3.8,Germany,Europe,Luxury,16.83,106.99,426.81,4.2
+649,NIO ES6 Ultra,NIO,Hatchback,2020,NMC,Nickel Manganese Cobalt (NMC),45.1,277.1,172.2,43155.0,41451,31,4.5,China,Asia-Pacific,Premium,16.28,155.74,62.18,4.2
+650,Porsche Taycan 4S Pro,Porsche,SUV,2020,LFP,Lithium Iron Phosphate (LFP),97.2,428.2,266.1,55033.0,146983,23,4.2,Germany,Europe,Luxury,22.7,128.52,352.76,4.9

@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>EV Detail &mdash; EV Market Insights</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="theme/css/custom-bs.css">
+  <link rel="stylesheet" href="theme/fonts/icomoon/style.css">
+  <link rel="stylesheet" href="theme/fonts/line-icons/style.css">
+  <link rel="stylesheet" href="theme/css/animate.min.css">
+  <link rel="stylesheet" href="theme/css/style.css">
+  <style>
+    .ev-badge { font-size:12px; padding:4px 12px; border-radius:20px; font-weight:700; display:inline-block; }
+    .badge-lfp{background:#fff3cd;color:#856404;} .badge-nmc{background:#cfe2ff;color:#084298;}
+    .badge-nca{background:#d1e7dd;color:#0a3622;} .badge-solid{background:#f8d7da;color:#842029;}
+    .badge-sodium{background:#e2d9f3;color:#432874;}
+    .spec-card { border-left: 4px solid #059669; border-radius: 0 8px 8px 0; background: #f8fafc; padding: 16px 20px; margin-bottom: 12px; }
+    .spec-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #6c757d; }
+    .spec-value { font-size: 1.3rem; font-weight: 800; color: #1e293b; margin: 2px 0; }
+    .spec-sub { font-size: 12px; color: #94a3b8; }
+    .metric-badge { display: inline-block; background: #e8f5e9; color: #065f46; border-radius: 6px; padding: 4px 12px; font-size: 12px; font-weight: 700; margin: 4px 4px 4px 0; }
+    .safety-bar { height: 8px; border-radius: 4px; background: #e2e8f0; overflow: hidden; }
+    .safety-fill { height: 100%; border-radius: 4px; background: linear-gradient(90deg, #059669, #34d399); transition: width 1s ease; }
+  </style>
+</head>
+<body id="top">
+
+<div id="overlayer"></div>
+<div class="loader"><div class="spinner-border text-primary" role="status"><span class="sr-only">Loading...</span></div></div>
+
+<div class="site-wrap">
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close mt-3"><span class="icon-close2 js-menu-toggle"></span></div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <header class="site-navbar mt-3">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="site-logo col-6"><a href="index.html">⚡ EV Market Insights</a></div>
+        <nav class="mx-auto site-navigation">
+          <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ev-listings.html">EV Models</a></li>
+            <li><a href="dashboard.html">Analytics</a></li>
+            <li><a href="submit-ev.html">Submit EV Data</a></li>
+          </ul>
+        </nav>
+        <div class="right-cta-menu text-right d-flex align-items-center col-6">
+          <div class="ml-auto">
+            <a href="submit-ev.html" class="btn btn-primary border-width-2 d-none d-lg-inline-block">
+              <span class="mr-2 icon-add"></span>Submit EV Data
+            </a>
+          </div>
+          <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="section-hero overlay inner-page bg-image" style="background-image: url('theme/images/hero_1.jpg');" id="home-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h1 class="text-white font-weight-bold" id="heroTitle">EV Details</h1>
+          <div class="custom-breadcrumbs">
+            <a href="index.html">Home</a> <span class="mx-2 slash">/</span>
+            <a href="ev-listings.html">EV Models</a> <span class="mx-2 slash">/</span>
+            <span class="text-white"><strong id="breadcrumbModel">—</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="site-section">
+    <div class="container">
+
+      <!-- NOT FOUND STATE -->
+      <div id="notFound" class="text-center py-5 d-none">
+        <h3 class="text-muted">EV record not found.</h3>
+        <a href="ev-listings.html" class="btn btn-primary mt-3">← Back to Listings</a>
+      </div>
+
+      <!-- EV DETAIL CARD -->
+      <div id="evDetailContainer">
+        <div class="row mb-4">
+          <div class="col-md-8">
+            <div class="d-flex align-items-center mb-2" id="badgeRow"></div>
+            <h2 class="font-weight-bold" id="detailModelName"></h2>
+            <p class="text-muted" id="detailMeta"></p>
+          </div>
+          <div class="col-md-4 text-right">
+            <a href="ev-listings.html" class="btn btn-outline-secondary btn-sm mr-2">← All EVs</a>
+            <a href="submit-ev.html" class="btn btn-primary btn-sm">+ Submit EV</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Left: Spec Cards -->
+          <div class="col-lg-8 mb-5">
+            <h5 class="font-weight-bold mb-4 border-bottom pb-2">Technical Specifications</h5>
+
+            <div class="row" id="specCardsRow"></div>
+
+            <div class="mt-4" id="calcFieldsSection">
+              <h5 class="font-weight-bold mb-3">📊 Calculated Performance Metrics</h5>
+              <div id="calcFieldsRow" class="d-flex flex-wrap"></div>
+            </div>
+
+          </div>
+
+          <!-- Right: Summary Sidebar -->
+          <div class="col-lg-4">
+            <div class="card border-0 shadow-sm mb-4">
+              <div class="card-body p-4">
+                <h5 class="font-weight-bold mb-4">Market Overview</h5>
+                <div class="border-bottom pb-3 mb-3">
+                  <span class="d-block text-muted small mb-1">Base MSRP</span>
+                  <strong class="d-block h4 text-primary" id="sidePrice">—</strong>
+                </div>
+                <div class="border-bottom pb-3 mb-3">
+                  <span class="d-block text-muted small mb-1">Customer Rating</span>
+                  <strong class="d-block text-warning h5" id="sideRating">—</strong>
+                </div>
+                <div class="border-bottom pb-3 mb-3">
+                  <span class="d-block text-muted small mb-1">Annual Sales</span>
+                  <strong class="d-block" id="sideSales">—</strong>
+                </div>
+                <div class="border-bottom pb-3 mb-3">
+                  <span class="d-block text-muted small mb-1">Market Tier</span>
+                  <strong class="d-block" id="sideTier">—</strong>
+                </div>
+                <div>
+                  <span class="d-block text-muted small mb-1">CO₂ Abatement (k-Tons/yr)</span>
+                  <strong class="d-block text-success" id="sideCO2">—</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="card border-0 shadow-sm mb-4">
+              <div class="card-body p-4">
+                <h6 class="font-weight-bold mb-3">Battery Safety Index</h6>
+                <p class="text-muted small mb-2" id="safetyLabel">—</p>
+                <div class="safety-bar mb-2">
+                  <div class="safety-fill" id="safetyBar" style="width: 0%"></div>
+                </div>
+                <small class="text-muted" id="safetyScore">—</small>
+              </div>
+            </div>
+
+            <div class="card bg-dark text-white border-0 shadow-sm">
+              <div class="card-body p-4 text-center">
+                <span class="display-4">⚡</span>
+                <h6 class="mt-2 text-white">Know another EV?</h6>
+                <p class="small text-white-50">Help grow our database by contributing EV records.</p>
+                <a href="submit-ev.html" class="btn btn-primary btn-sm btn-block">+ Submit EV Data</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- #evDetailContainer -->
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <a href="#top" class="smoothscroll scroll-top"><span class="icon-keyboard_arrow_up"></span></a>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12">
+          <p class="copyright"><small>Copyright &copy; <script>document.write(new Date().getFullYear());</script> EV Market Insights.</small></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="theme/js/jquery.min.js"></script>
+<script src="theme/js/bootstrap.bundle.min.js"></script>
+<script src="theme/js/jquery.easing.1.3.js"></script>
+<script src="theme/js/stickyfill.min.js"></script>
+<script src="theme/js/custom.js"></script>
+<script src="ev-data.js"></script>
+<script>
+const BADGE_MAP = { LFP:'badge-lfp', NMC:'badge-nmc', NCA:'badge-nca', 'Solid-State':'badge-solid', 'Sodium-Ion':'badge-sodium' };
+
+function makeBadge(tech) {
+  return `<span class="ev-badge ${BADGE_MAP[tech] || ''} mr-2">${tech}</span>`;
+}
+
+function renderDetail(ev) {
+  document.getElementById('heroTitle').textContent = ev.model_name;
+  document.getElementById('breadcrumbModel').textContent = ev.model_name;
+  document.getElementById('detailModelName').textContent = ev.model_name;
+  document.getElementById('detailMeta').innerHTML = `
+    <strong>${ev.manufacturer}</strong> &bull; ${ev.manufacturing_country} &bull; ${ev.manufacturing_region} &bull; ${ev.release_year} &bull; ${ev.category}
+  `;
+  document.getElementById('badgeRow').innerHTML = makeBadge(ev.battery_tech) +
+    `<span class="badge badge-light border ml-1">${ev.category}</span>` +
+    `<span class="badge badge-secondary ml-1">${ev.release_year}</span>`;
+
+  // Spec cards
+  const specs = [
+    { label: 'Driving Range', value: ev.driving_range_km + ' km', sub: ev.driving_range_mi ? `${ev.driving_range_mi} miles` : '', icon: '🛣️', color: '#059669' },
+    { label: 'Battery Capacity', value: ev.battery_capacity_kwh + ' kWh', sub: ev.battery_tech_full || ev.battery_tech, icon: '🔋', color: '#d97706' },
+    { label: 'Fast Charge (10-80%)', value: ev.fast_charge_mins + ' min', sub: 'DC fast charging', icon: '⚡', color: '#dc2626' },
+    { label: 'Energy Efficiency', value: (ev.energy_efficiency_kwh_100km || ((ev.battery_capacity_kwh/ev.driving_range_km)*100).toFixed(1)) + ' kWh/100km', sub: 'Lower is better', icon: '📉', color: '#7c3aed' },
+    { label: 'Base MSRP', value: '$' + Number(ev.base_price_usd).toLocaleString(), sub: 'Manufacturer suggested price', icon: '💰', color: '#2563eb' },
+    { label: 'Price per km Range', value: '$' + (ev.price_per_km_range || (ev.base_price_usd/ev.driving_range_km).toFixed(2)), sub: 'Affordability index', icon: '📊', color: '#0891b2' },
+  ];
+
+  document.getElementById('specCardsRow').innerHTML = specs.map(s => `
+    <div class="col-md-6 mb-3">
+      <div class="spec-card" style="border-left-color: ${s.color}">
+        <span class="spec-label">${s.icon} ${s.label}</span>
+        <div class="spec-value" style="color:${s.color}">${s.value}</div>
+        <div class="spec-sub">${s.sub}</div>
+      </div>
+    </div>
+  `).join('');
+
+  // Calculated fields pills
+  const calcs = [
+    `Safety Score: ${ev.safety_score}/5`,
+    `Efficiency: ${(ev.energy_efficiency_kwh_100km || ((ev.battery_capacity_kwh/ev.driving_range_km)*100).toFixed(1))} kWh/100km`,
+    `CO₂ Offset: ${ev.co2_saved_ktons} k-Tons/yr`,
+    `Market Tier: ${ev.market_tier}`,
+    `Region: ${ev.manufacturing_region}`
+  ];
+  document.getElementById('calcFieldsRow').innerHTML = calcs.map(c => `<span class="metric-badge">${c}</span>`).join('');
+
+  // Sidebar
+  document.getElementById('sidePrice').textContent = '$' + Number(ev.base_price_usd).toLocaleString();
+  document.getElementById('sideRating').textContent = '★'.repeat(Math.round(ev.customer_rating)) + ' ' + ev.customer_rating;
+  document.getElementById('sideSales').textContent = ev.annual_sales_units ? Number(ev.annual_sales_units).toLocaleString() + ' units/yr' : 'N/A';
+  document.getElementById('sideTier').textContent = ev.market_tier || 'N/A';
+  document.getElementById('sideCO2').textContent = ev.co2_saved_ktons + ' k-Tons/yr';
+
+  // Safety bar
+  const safetyPct = ((ev.safety_score / 5) * 100).toFixed(0);
+  document.getElementById('safetyBar').style.width = safetyPct + '%';
+  document.getElementById('safetyScore').textContent = `${ev.safety_score} / 5.0 (${safetyPct}% Safety Rating)`;
+  document.getElementById('safetyLabel').textContent = `${ev.battery_tech} chemistry safety benchmark`;
+}
+
+$(document).ready(function() {
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get('id');
+  const ev = id ? getEVById(id) : null;
+
+  if (!ev) {
+    document.getElementById('notFound').classList.remove('d-none');
+    document.getElementById('evDetailContainer').classList.add('d-none');
+  } else {
+    renderDetail(ev);
+  }
+});
+</script>
+</body>
+</html>
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EV Market Performance & Insights | Flask Integration Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen p-8">
+  <div class="max-w-4xl mx-auto space-y-6">
+    <div class="p-6 bg-slate-900 border border-slate-800 rounded-2xl shadow-xl">
+      <div class="flex items-center space-x-3 mb-2">
+        <span class="px-2.5 py-1 text-xs font-bold rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+          Flask Backend Connected
+        </span>
+        <span class="text-xs text-slate-400">SQLite Database: database/ev_market.db</span>
+      </div>
+      <h1 class="text-2xl font-bold text-white">Electric Vehicle Market Performance & Insights</h1>
+      <p class="text-sm text-slate-300 mt-1">
+        Flask Python Integration endpoint connected to SQLite database for local project demonstration.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="p-5 bg-slate-900 border border-slate-800 rounded-xl">
+        <h3 class="text-sm font-bold text-white mb-2">REST API Endpoints</h3>
+        <ul class="space-y-2 text-xs font-mono text-cyan-300">
+          <li><a href="/api/models?limit=10" class="hover:underline">GET /api/models?limit=10</a></li>
+          <li><a href="/api/analytics/market-share" class="hover:underline">GET /api/analytics/market-share</a></li>
+          <li><a href="/api/analytics/battery-benchmark" class="hover:underline">GET /api/analytics/battery-benchmark</a></li>
+          <li><a href="/api/health" class="hover:underline">GET /api/health</a></li>
+        </ul>
+      </div>
+
+      <div class="p-5 bg-slate-900 border border-slate-800 rounded-xl">
+        <h3 class="text-sm font-bold text-white mb-2">Frontend Deployment</h3>
+        <p class="text-xs text-slate-300">
+          The production React dashboard is optimized for Vercel cloud hosting and can be built with <code class="bg-slate-800 px-1 py-0.5 rounded text-emerald-400">npm run build</code> into <code class="bg-slate-800 px-1 py-0.5 rounded text-emerald-400">dist/</code>.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Contact Us &mdash; EV Market Insights</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Get in touch with the EV Market Insights team for data submissions, partnerships, or feedback." />
+
+  <link rel="stylesheet" href="theme/css/custom-bs.css">
+  <link rel="stylesheet" href="theme/css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="theme/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="theme/fonts/icomoon/style.css">
+  <link rel="stylesheet" href="theme/fonts/line-icons/style.css">
+  <link rel="stylesheet" href="theme/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="theme/css/animate.min.css">
+  <link rel="stylesheet" href="theme/css/style.css">
+  <style>
+    .hero-contact { background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 60%, #0a5940 100%); padding: 80px 0 60px; }
+    .site-logo a { color: #fff !important; font-weight: 800; font-size: 1.3rem; }
+    .btn-ev-primary { background: #059669; border-color: #059669; color: #fff; }
+    .btn-ev-primary:hover { background: #047857; border-color: #047857; color: #fff; }
+    .contact-card { border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); border: 1px solid #e2e8f0; overflow: hidden; }
+    .contact-info-box { background: linear-gradient(145deg, #0f172a, #1e3a5f); color: #fff; padding: 40px 30px; height: 100%; border-radius: 16px 0 0 16px; }
+    .contact-info-box h3 { color: #34d399; font-weight: 700; }
+    .contact-info-item { display: flex; align-items: flex-start; margin-bottom: 28px; }
+    .contact-info-item .icon-wrap { width: 44px; height: 44px; background: rgba(52,211,153,0.15); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 20px; color: #34d399; flex-shrink: 0; margin-right: 15px; }
+    .contact-info-item p { margin: 0; color: rgba(255,255,255,0.85); font-size: 14px; }
+    .contact-info-item strong { color: #fff; display: block; margin-bottom: 3px; }
+    .contact-form-box { background: #fff; padding: 40px 35px; }
+    .contact-form-box h3 { font-weight: 700; color: #1e293b; margin-bottom: 5px; }
+    .contact-form-box p.sub { color: #64748b; font-size: 14px; margin-bottom: 28px; }
+    .form-control:focus { border-color: #059669; box-shadow: 0 0 0 3px rgba(5,150,105,0.15); }
+    .team-card { border-radius: 12px; border: 1px solid #e2e8f0; padding: 25px 20px; text-align: center; transition: transform .2s, box-shadow .2s; }
+    .team-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,0.1); }
+    .team-avatar { width: 72px; height: 72px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; margin: 0 auto 14px; }
+    .faq-item { border: 1px solid #e2e8f0; border-radius: 10px; margin-bottom: 12px; overflow: hidden; }
+    .faq-item .faq-q { background: #f8fafc; padding: 16px 20px; font-weight: 600; cursor: pointer; color: #1e293b; display: flex; justify-content: space-between; align-items: center; }
+    .faq-item .faq-a { padding: 16px 20px; color: #475569; font-size: 14px; display: none; background: #fff; }
+    .faq-item.open .faq-a { display: block; }
+    .faq-item .faq-q .icon { transition: transform .2s; }
+    .faq-item.open .faq-q .icon { transform: rotate(180deg); }
+    .alert-success-custom { background: #d1fae5; border: 1px solid #6ee7b7; color: #065f46; border-radius: 10px; padding: 16px 20px; display: none; }
+    .social-link { width: 42px; height: 42px; border-radius: 50%; background: rgba(52,211,153,0.15); display: inline-flex; align-items: center; justify-content: center; color: #34d399; font-size: 18px; margin-right: 8px; text-decoration: none; transition: background .2s; }
+    .social-link:hover { background: #34d399; color: #fff; }
+    .stat-pill { background: rgba(255,255,255,0.1); border-radius: 8px; padding: 12px 18px; text-align: center; }
+    .stat-pill strong { display: block; font-size: 1.5rem; color: #34d399; font-weight: 800; }
+    .stat-pill span { font-size: 12px; color: rgba(255,255,255,0.7); }
+  </style>
+</head>
+<body id="top">
+
+<div id="overlayer"></div>
+<div class="loader">
+  <div class="spinner-border text-primary" role="status"><span class="sr-only">Loading...</span></div>
+</div>
+
+<div class="site-wrap">
+
+  <!-- Mobile Menu -->
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close mt-3"><span class="icon-close2 js-menu-toggle"></span></div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="site-navbar mt-3" style="background: transparent;">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="site-logo col-6">
+          <a href="index.html" style="color:#fff; font-weight:800; font-size:1.25rem;">
+            ⚡ EV Market Insights
+          </a>
+        </div>
+        <nav class="mx-auto site-navigation">
+          <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="ev-listings.html">EV Models</a></li>
+            <li><a href="dashboard.html">Analytics Dashboard</a></li>
+            <li><a href="submit-ev.html">Submit EV Data</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="right-cta-menu text-right d-flex align-items-center col-6">
+          <div class="ml-auto">
+            <a href="submit-ev.html" class="btn btn-ev-primary border-width-2 d-none d-lg-inline-block">
+              <span class="mr-2 icon-add"></span>Submit EV Data
+            </a>
+          </div>
+          <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3">
+            <span class="icon-menu h3 m-0 p-0 mt-2"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero-contact">
+    <div class="container text-center text-white">
+      <h1 class="font-weight-bold mb-3" style="font-size:2.6rem;">Get In Touch</h1>
+      <p class="lead mb-4" style="color:rgba(255,255,255,0.8); max-width:550px; margin: 0 auto;">
+        Have questions about EV data, want to collaborate, or found a data issue? We'd love to hear from you.
+      </p>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center" style="background:transparent; padding:0;">
+          <li class="breadcrumb-item"><a href="index.html" style="color:#34d399;">Home</a></li>
+          <li class="breadcrumb-item active text-white" aria-current="page">Contact</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <!-- STATS BAR -->
+  <div style="background: #0f172a; padding: 20px 0;">
+    <div class="container">
+      <div class="row text-center" id="contactStats">
+        <div class="col-6 col-md-3 mb-2 mb-md-0">
+          <div class="stat-pill"><strong id="cs1">650+</strong><span>EV Records</span></div>
+        </div>
+        <div class="col-6 col-md-3 mb-2 mb-md-0">
+          <div class="stat-pill"><strong id="cs2">26</strong><span>Manufacturers</span></div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-pill"><strong id="cs3">5</strong><span>Battery Technologies</span></div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-pill"><strong id="cs4">2020–2026</strong><span>Data Coverage</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section class="site-section py-5">
+    <div class="container">
+      <div class="contact-card">
+        <div class="row no-gutters">
+          <!-- Info Panel -->
+          <div class="col-lg-5">
+            <div class="contact-info-box h-100">
+              <h3 class="mb-2">Contact Information</h3>
+              <p style="color:rgba(255,255,255,0.65); font-size:14px; margin-bottom:32px;">
+                Reach out anytime — we typically respond within 24 hours.
+              </p>
+
+              <div class="contact-info-item">
+                <div class="icon-wrap"><span class="icon-home"></span></div>
+                <div>
+                  <strong>Project Institution</strong>
+                  <p>Department of Computer Science &amp; Engineering<br>Sagar's Academic Research Project</p>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="icon-wrap"><span class="icon-envelope"></span></div>
+                <div>
+                  <strong>Email</strong>
+                  <p>ev.insights@project.edu<br>data@ev-market-insights.vercel.app</p>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="icon-wrap"><span class="icon-map-marker"></span></div>
+                <div>
+                  <strong>Focus Areas</strong>
+                  <p>EV Market Analytics · Battery Technology<br>Sustainable Mobility Research</p>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="icon-wrap"><span class="icon-clock-o"></span></div>
+                <div>
+                  <strong>Response Time</strong>
+                  <p>Data inquiries: within 24 hours<br>Collaboration: within 48 hours</p>
+                </div>
+              </div>
+
+              <hr style="border-color: rgba(255,255,255,0.15); margin: 24px 0;">
+              <p style="color:rgba(255,255,255,0.6); font-size:13px; margin-bottom:12px;">Follow the project</p>
+              <a href="https://github.com" target="_blank" class="social-link" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="#" class="social-link" title="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="col-lg-7">
+            <div class="contact-form-box">
+              <h3>Send Us a Message</h3>
+              <p class="sub">Fill in the form below and we'll get back to you as soon as possible.</p>
+
+              <div class="alert-success-custom" id="successAlert">
+                <strong>✅ Message Sent!</strong> Thank you for reaching out. We'll respond within 24 hours.
+              </div>
+
+              <form id="contactForm" novalidate>
+                <div class="row">
+                  <div class="col-md-6 form-group mb-3">
+                    <label class="text-black font-weight-bold" for="cf_name">Full Name <span class="text-danger">*</span></label>
+                    <input type="text" id="cf_name" class="form-control" placeholder="e.g. Emily Johnson" required>
+                    <div class="invalid-feedback">Please enter your name.</div>
+                  </div>
+                  <div class="col-md-6 form-group mb-3">
+                    <label class="text-black font-weight-bold" for="cf_email">Email Address <span class="text-danger">*</span></label>
+                    <input type="email" id="cf_email" class="form-control" placeholder="you@example.com" required>
+                    <div class="invalid-feedback">Please enter a valid email.</div>
+                  </div>
+                </div>
+
+                <div class="form-group mb-3">
+                  <label class="text-black font-weight-bold" for="cf_subject">Subject <span class="text-danger">*</span></label>
+                  <select id="cf_subject" class="form-control" required>
+                    <option value="">— Select a subject —</option>
+                    <option value="data_query">Data Query / Accuracy Issue</option>
+                    <option value="new_data">Submit New EV Data</option>
+                    <option value="collaboration">Research Collaboration</option>
+                    <option value="feedback">General Feedback</option>
+                    <option value="academic">Academic / Educational Inquiry</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <div class="invalid-feedback">Please select a subject.</div>
+                </div>
+
+                <div class="form-group mb-3">
+                  <label class="text-black font-weight-bold" for="cf_org">Organization / Institution <small class="text-muted font-weight-normal">(optional)</small></label>
+                  <input type="text" id="cf_org" class="form-control" placeholder="e.g. MIT Energy Lab, Tesla, Inc.">
+                </div>
+
+                <div class="form-group mb-3">
+                  <label class="text-black font-weight-bold" for="cf_message">Message <span class="text-danger">*</span></label>
+                  <textarea id="cf_message" class="form-control" rows="5" placeholder="Describe your query, feedback, or request in detail..." required></textarea>
+                  <div class="invalid-feedback">Please enter your message.</div>
+                  <small class="text-muted"><span id="charCount">0</span> / 1000 characters</small>
+                </div>
+
+                <div class="form-group mb-3">
+                  <label class="text-black font-weight-bold">Areas of Interest <small class="text-muted font-weight-normal">(optional)</small></label>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-check mb-1"><input class="form-check-input" type="checkbox" id="int_battery"><label class="form-check-label" for="int_battery">Battery Technology</label></div>
+                      <div class="form-check mb-1"><input class="form-check-input" type="checkbox" id="int_market"><label class="form-check-label" for="int_market">Market Analytics</label></div>
+                      <div class="form-check mb-1"><input class="form-check-input" type="checkbox" id="int_perf"><label class="form-check-label" for="int_perf">Vehicle Performance</label></div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-check mb-1"><input class="form-check-input" type="checkbox" id="int_sustain"><label class="form-check-label" for="int_sustain">Sustainability Metrics</label></div>
+                      <div class="form-check mb-1"><input class="form-check-input" type="checkbox" id="int_mfg"><label class="form-check-label" for="int_mfg">Manufacturing Data</label></div>
+                      <div class="form-check mb-1"><input class="form-check-input" type="checkbox" id="int_policy"><label class="form-check-label" for="int_policy">EV Policy &amp; Incentives</label></div>
+                    </div>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-ev-primary btn-lg btn-block">
+                  <span class="mr-2">📨</span> Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM SECTION -->
+  <section class="site-section bg-light py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="font-weight-bold" style="color:#1e293b;">Project Team</h2>
+        <p class="text-muted">The researchers and analysts behind the EV Market Insights platform.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="team-card bg-white">
+            <div class="team-avatar" style="background:#dbeafe;">🔬</div>
+            <h5 class="font-weight-bold mb-1" style="color:#1e293b;">Emily Johnson</h5>
+            <p class="text-muted small mb-2">EV Market Strategy Director</p>
+            <p class="text-muted" style="font-size:13px;">Leads market trend analysis, battery technology evaluation, and executive reporting across global EV manufacturers.</p>
+            <span class="badge badge-pill" style="background:#dbeafe; color:#1d4ed8;">Strategy</span>
+            <span class="badge badge-pill ml-1" style="background:#d1fae5; color:#065f46;">Analytics</span>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="team-card bg-white">
+            <div class="team-avatar" style="background:#fef3c7;">📊</div>
+            <h5 class="font-weight-bold mb-1" style="color:#1e293b;">David Chen</h5>
+            <p class="text-muted small mb-2">Automotive BI Manager</p>
+            <p class="text-muted" style="font-size:13px;">Focuses on manufacturer performance benchmarking, competitive intelligence, and business intelligence dashboards.</p>
+            <span class="badge badge-pill" style="background:#fef3c7; color:#92400e;">BI</span>
+            <span class="badge badge-pill ml-1" style="background:#fce7f3; color:#9d174d;">SQL</span>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="team-card bg-white">
+            <div class="team-avatar" style="background:#d1fae5;">🌱</div>
+            <h5 class="font-weight-bold mb-1" style="color:#1e293b;">Dr. Sarah Williams</h5>
+            <p class="text-muted small mb-2">Sustainable Mobility Analyst</p>
+            <p class="text-muted" style="font-size:13px;">Researches battery innovation impact, CO₂ offset metrics, and government incentive effectiveness on EV adoption.</p>
+            <span class="badge badge-pill" style="background:#d1fae5; color:#065f46;">Sustainability</span>
+            <span class="badge badge-pill ml-1" style="background:#ede9fe; color:#5b21b6;">Research</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="site-section py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <h2 class="font-weight-bold mb-4" style="color:#1e293b;">Frequently Asked Questions</h2>
+
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFAQ(this)">
+              How is the EV data collected?
+              <span class="icon">▼</span>
+            </div>
+            <div class="faq-a">
+              Our dataset combines programmatically generated synthetic data (650+ records) based on real-world EV specifications from manufacturer announcements, market reports, and industry databases covering 2020–2026. The data is stored in SQLite and served via JSON.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFAQ(this)">
+              Can I submit my own EV data?
+              <span class="icon">▼</span>
+            </div>
+            <div class="faq-a">
+              Yes! Use our <a href="submit-ev.html" style="color:#059669;">Submit EV Data</a> page to add any electric vehicle record. Submissions are stored locally in your browser via localStorage and appear immediately across the platform's listings and dashboard.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFAQ(this)">
+              Is this data available for academic use?
+              <span class="icon">▼</span>
+            </div>
+            <div class="faq-a">
+              Absolutely. This project is designed as an academic BI case study. You may reference the visualizations, SQL queries, and analytical methodology for educational and research purposes with proper attribution.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFAQ(this)">
+              How do the analytics dashboards work?
+              <span class="icon">▼</span>
+            </div>
+            <div class="faq-a">
+              The React-based executive dashboard (accessible via the main app) uses Recharts for visualizations, with data loaded from JSON. The HTML dashboard page uses Chart.js via CDN. Both read from the same underlying dataset of 650+ EV records.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFAQ(this)">
+              What battery technologies are covered?
+              <span class="icon">▼</span>
+            </div>
+            <div class="faq-a">
+              The platform covers five battery chemistries: <strong>LFP</strong> (Lithium Iron Phosphate), <strong>NMC</strong> (Nickel Manganese Cobalt), <strong>NCA</strong> (Nickel Cobalt Aluminum), <strong>Sodium-Ion</strong>, and <strong>Solid-State</strong> — each with distinct energy density, cycle life, and safety trade-offs.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFAQ(this)">
+              How do I run this project locally?
+              <span class="icon">▼</span>
+            </div>
+            <div class="faq-a">
+              Open <code>public/index.html</code> directly in your browser for the HTML site (no server needed). For the React app, run <code>npm install</code> then <code>npm run dev</code> from the project root, then visit <code>http://localhost:3000</code>.
+            </div>
+          </div>
+        </div>
+
+        <!-- Map / Location Visual -->
+        <div class="col-lg-6">
+          <h2 class="font-weight-bold mb-4" style="color:#1e293b;">Quick Data Snapshot</h2>
+          <div class="card border-0 shadow-sm mb-4" style="border-radius:12px; overflow:hidden;">
+            <div class="card-body p-0">
+              <div style="background:linear-gradient(135deg,#0f172a,#1e3a5f); padding:24px; color:#fff;">
+                <h5 class="mb-3" style="color:#34d399;">📊 Platform at a Glance</h5>
+                <div class="row text-center">
+                  <div class="col-6 col-md-3 mb-3">
+                    <div style="font-size:1.6rem; font-weight:800;" id="snap1">650</div>
+                    <small style="color:rgba(255,255,255,0.65);">EV Records</small>
+                  </div>
+                  <div class="col-6 col-md-3 mb-3">
+                    <div style="font-size:1.6rem; font-weight:800;">26</div>
+                    <small style="color:rgba(255,255,255,0.65);">Brands</small>
+                  </div>
+                  <div class="col-6 col-md-3 mb-3">
+                    <div style="font-size:1.6rem; font-weight:800;">7</div>
+                    <small style="color:rgba(255,255,255,0.65);">Charts</small>
+                  </div>
+                  <div class="col-6 col-md-3 mb-3">
+                    <div style="font-size:1.6rem; font-weight:800;">6</div>
+                    <small style="color:rgba(255,255,255,0.65);">Story Scenes</small>
+                  </div>
+                </div>
+              </div>
+              <div class="p-4">
+                <h6 class="font-weight-bold mb-3" style="color:#1e293b;">🔋 Battery Tech Coverage</h6>
+                <div id="batteryBars"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card border-0 shadow-sm" style="border-radius:12px;">
+            <div class="card-body p-4">
+              <h6 class="font-weight-bold mb-3" style="color:#1e293b;">🚀 Quick Links</h6>
+              <a href="ev-listings.html" class="d-block p-3 mb-2 rounded" style="background:#f0fdf4; color:#059669; text-decoration:none; font-weight:600; border: 1px solid #d1fae5;">
+                📋 Browse All EV Models →
+              </a>
+              <a href="dashboard.html" class="d-block p-3 mb-2 rounded" style="background:#eff6ff; color:#1d4ed8; text-decoration:none; font-weight:600; border: 1px solid #dbeafe;">
+                📊 View Analytics Dashboard →
+              </a>
+              <a href="submit-ev.html" class="d-block p-3 mb-2 rounded" style="background:#fffbeb; color:#92400e; text-decoration:none; font-weight:600; border: 1px solid #fef3c7;">
+                ✏️ Submit EV Data →
+              </a>
+              <a href="index.html" class="d-block p-3 rounded" style="background:#fdf4ff; color:#6b21a8; text-decoration:none; font-weight:600; border: 1px solid #ede9fe;">
+                🏠 Back to Home →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-section bg-dark text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h5 class="font-weight-bold mb-3" style="color:#34d399;">⚡ EV Market Insights</h5>
+          <p style="color:rgba(255,255,255,0.65); font-size:14px;">
+            A comprehensive analytics platform tracking electric vehicle market performance, battery technology trends, and sustainable mobility data.
+          </p>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h6 class="font-weight-bold mb-3 text-white">Navigation</h6>
+          <ul class="list-unstyled" style="font-size:14px;">
+            <li class="mb-1"><a href="index.html" style="color:rgba(255,255,255,0.65); text-decoration:none;">Home</a></li>
+            <li class="mb-1"><a href="ev-listings.html" style="color:rgba(255,255,255,0.65); text-decoration:none;">EV Models</a></li>
+            <li class="mb-1"><a href="dashboard.html" style="color:rgba(255,255,255,0.65); text-decoration:none;">Dashboard</a></li>
+            <li class="mb-1"><a href="submit-ev.html" style="color:rgba(255,255,255,0.65); text-decoration:none;">Submit Data</a></li>
+            <li class="mb-1"><a href="contact.html" style="color:#34d399; text-decoration:none;">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h6 class="font-weight-bold mb-3 text-white">EV Categories</h6>
+          <ul class="list-unstyled" style="font-size:14px;">
+            <li class="mb-1"><a href="ev-listings.html?category=Sedan" style="color:rgba(255,255,255,0.65); text-decoration:none;">Sedans</a></li>
+            <li class="mb-1"><a href="ev-listings.html?category=SUV" style="color:rgba(255,255,255,0.65); text-decoration:none;">SUVs</a></li>
+            <li class="mb-1"><a href="ev-listings.html?category=Hatchback" style="color:rgba(255,255,255,0.65); text-decoration:none;">Hatchbacks</a></li>
+            <li class="mb-1"><a href="ev-listings.html?category=Truck" style="color:rgba(255,255,255,0.65); text-decoration:none;">Trucks</a></li>
+            <li class="mb-1"><a href="ev-listings.html?category=Bus" style="color:rgba(255,255,255,0.65); text-decoration:none;">Electric Buses</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h6 class="font-weight-bold mb-3 text-white">Battery Technologies</h6>
+          <ul class="list-unstyled" style="font-size:14px;">
+            <li class="mb-1"><a href="ev-listings.html?battery=LFP" style="color:rgba(255,255,255,0.65); text-decoration:none;">LFP — Lithium Iron Phosphate</a></li>
+            <li class="mb-1"><a href="ev-listings.html?battery=NMC" style="color:rgba(255,255,255,0.65); text-decoration:none;">NMC — Nickel Manganese Cobalt</a></li>
+            <li class="mb-1"><a href="ev-listings.html?battery=NCA" style="color:rgba(255,255,255,0.65); text-decoration:none;">NCA — Nickel Cobalt Aluminum</a></li>
+            <li class="mb-1"><a href="ev-listings.html?battery=Solid-State" style="color:rgba(255,255,255,0.65); text-decoration:none;">Solid-State</a></li>
+            <li class="mb-1"><a href="ev-listings.html?battery=Sodium-Ion" style="color:rgba(255,255,255,0.65); text-decoration:none;">Sodium-Ion</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr style="border-color: rgba(255,255,255,0.1);">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p class="mb-0" style="color:rgba(255,255,255,0.5); font-size:13px;">
+            &copy; 2024 EV Market Insights. Academic Research Project. Theme by <a href="https://colorlib.com" target="_blank" style="color:rgba(255,255,255,0.5);">Colorlib</a>.
+          </p>
+        </div>
+        <div class="col-md-6 text-md-right">
+          <p class="mb-0" style="color:rgba(255,255,255,0.5); font-size:13px;">
+            Built with ⚡ for sustainable mobility research
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div><!-- .site-wrap -->
+
+<!-- SCRIPTS -->
+<script src="theme/js/jquery-3.3.1.min.js"></script>
+<script src="theme/js/jquery-ui.js"></script>
+<script src="theme/js/popper.min.js"></script>
+<script src="theme/js/bootstrap.min.js"></script>
+<script src="theme/js/owl.carousel.min.js"></script>
+<script src="theme/js/jquery.easing.1.3.js"></script>
+<script src="theme/js/aos.js"></script>
+<script src="theme/js/jquery.fancybox.min.js"></script>
+<script src="theme/js/jquery.sticky.js"></script>
+<script src="theme/js/bootstrap-select.min.js"></script>
+<script src="theme/js/custom.js"></script>
+<script src="ev-data.js"></script>
+<script>
+  // ── Contact Form ──────────────────────────────────────────────
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('cf_name');
+    const email = document.getElementById('cf_email');
+    const subject = document.getElementById('cf_subject');
+    const message = document.getElementById('cf_message');
+    let valid = true;
+
+    [name, email, subject, message].forEach(el => {
+      if (!el.value.trim()) {
+        el.classList.add('is-invalid');
+        valid = false;
+      } else {
+        el.classList.remove('is-invalid');
+        el.classList.add('is-valid');
+      }
+    });
+
+    if (email.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+      email.classList.add('is-invalid');
+      valid = false;
+    }
+
+    if (valid) {
+      // Save to localStorage as a record
+      const msg = {
+        id: Date.now(),
+        name: name.value,
+        email: email.value,
+        subject: subject.value,
+        org: document.getElementById('cf_org').value,
+        message: message.value,
+        sentAt: new Date().toISOString()
+      };
+      const msgs = JSON.parse(localStorage.getItem('ev_contact_messages') || '[]');
+      msgs.push(msg);
+      localStorage.setItem('ev_contact_messages', JSON.stringify(msgs));
+
+      // Show success
+      document.getElementById('successAlert').style.display = 'block';
+      this.reset();
+      document.querySelectorAll('.is-valid').forEach(el => el.classList.remove('is-valid'));
+      document.getElementById('charCount').textContent = '0';
+      window.scrollTo({ top: document.getElementById('successAlert').offsetTop - 80, behavior: 'smooth' });
+    }
+  });
+
+  // ── Char Counter ──────────────────────────────────────────────
+  document.getElementById('cf_message').addEventListener('input', function() {
+    document.getElementById('charCount').textContent = this.value.length;
+  });
+
+  // ── FAQ Toggle ────────────────────────────────────────────────
+  function toggleFAQ(el) {
+    const item = el.parentElement;
+    item.classList.toggle('open');
+  }
+
+  // ── Battery Bars ──────────────────────────────────────────────
+  function renderBatteryBars() {
+    const data = getEVData();
+    const techs = { LFP: 0, NMC: 0, NCA: 0, 'Solid-State': 0, 'Sodium-Ion': 0 };
+    data.forEach(ev => { if (techs[ev.battery_tech] !== undefined) techs[ev.battery_tech]++; });
+    const total = data.length || 1;
+    const colors = { LFP: '#10b981', NMC: '#3b82f6', NCA: '#8b5cf6', 'Solid-State': '#f59e0b', 'Sodium-Ion': '#ef4444' };
+    const container = document.getElementById('batteryBars');
+    container.innerHTML = Object.entries(techs).map(([tech, count]) => `
+      <div class="mb-2">
+        <div class="d-flex justify-content-between mb-1">
+          <small class="font-weight-bold" style="color:#1e293b;">${tech}</small>
+          <small class="text-muted">${count} models (${Math.round(count/total*100)}%)</small>
+        </div>
+        <div style="height:8px; background:#e2e8f0; border-radius:4px; overflow:hidden;">
+          <div style="width:${Math.round(count/total*100)}%; height:100%; background:${colors[tech]}; border-radius:4px; transition: width 1s ease;"></div>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  // ── Live Stats Update ─────────────────────────────────────────
+  function updateContactStats() {
+    const data = getEVData();
+    document.getElementById('cs1').textContent = data.length + '+';
+    const mfgs = new Set(data.map(d => d.manufacturer)).size;
+    document.getElementById('cs2').textContent = mfgs;
+    document.getElementById('snap1').textContent = data.length;
+  }
+
+  $(document).ready(function() {
+    updateContactStats();
+    renderBatteryBars();
+  });
+</script>
+</body>
+</html>
+
